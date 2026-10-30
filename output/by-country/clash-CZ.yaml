@@ -5,29 +5,90 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 5.39.202.125
+  server: 195.123.245.241
   port: 443
   udp: true
   type: vless
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: WU5baXUzRH9BceiYI8MPBmDMEloTFImx2vvE5uh1yjM
-    short-id: f19e02a2fb573c18
-  servername: czekkk.loknietotop.digital
-  client-fingerprint: random
+    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
+    short-id: 23d0950d60bc0d5b
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 212.102.38.25
+  port: 443
+  udp: true
+  type: vless
+  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
+    short-id: e90360ec7cc61b20
+  servername: udemy.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: 31.77.13.22
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+  server: 193.124.17.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6dfc9149-1ff9-41c3-8563-0ef284381731
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 1374bddeb25d
+  servername: www.tradingview.com
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
+  server: 104.19.235.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  tls: true
+  servername: n.bitpulse.me
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128
+    headers:
+      Host: n.bitpulse.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
+  - 🇨🇿 捷克 (Czech) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
+  - 🇨🇿 捷克 (Czech) 05 - xiaohe
 rules:
 - MATCH,PROXIES

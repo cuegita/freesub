@@ -5,125 +5,78 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 185.103.110.68
-  port: 18283
+  server: 153.76.194.118
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: hysteria2
+  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
+  sni: finland.biznes.lol
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 185.239.141.248
-  port: 8388
+  server: 45.144.234.157
+  port: 14430
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: j_Z9yWqItCz_9yhD5YVY4w
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 31.77.151.175
-  port: 443
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
-    short-id: bdf5852d1423e694
-  servername: fi.pythonsetupbib.online
-  client-fingerprint: random
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 87.58.149.117
-  port: 443
+  server: 78.17.27.137
+  port: 8443
   udp: true
   type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  flow: xtls-rprx-vision
+  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
   tls: true
   reality-opts:
-    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
-    short-id: ff0ddf949624ef2a
-  servername: freefl.aiage.work
-  client-fingerprint: random
+    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
+    short-id: a05ccbf2edb5ebd1
+  servername: www.aalto.fi
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 95.216.27.15
-  port: 2053
+  server: hw3.divarkhaghazi.com
+  port: 465
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
+  servername: hw3.divarkhaghazi.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 185.103.110.66
-  port: 18280
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: edge10.cyrionflare.com
-  port: 2052
+  server: 65.109.211.81
+  port: 465
   udp: true
   type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  server: fi-p1.h1cloud.net
-  port: 25481
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
   tls: true
-  reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  servername: www.bing.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8cb5baa18cd7
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  server: finaluty.loknietotop.digital
-  port: 443
-  udp: true
-  type: vless
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: III2StgFziJtisbaKDYlEF2qYwBHJZnzZH5DHdwuFQ8
-    short-id: d110331f200987ae
-  servername: finaluty.loknietotop.digital
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
-  server: 65.108.3.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
+  servername: hw6.divarkhaghazi.com.
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 11 - xiaohe
-  server: 109.172.54.135
-  port: 8444
-  udp: true
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -135,11 +88,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -151,10 +99,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 11 - xiaohe
 rules:
 - MATCH,PROXIES
