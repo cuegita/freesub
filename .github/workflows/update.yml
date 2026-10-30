@@ -14,6 +14,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # ★ 单跑批串行化: 禁止两轮重叠。
+    #   实测 (2026-10-30): 手动 run#2 (19:00-19:44) 与定时任务 run#3 (19:13-19:58) 重叠并发,
+    #   两轮各自跑满 ~43 分钟, 结果 run#3 在 push 时被拒:
+    #     ! [rejected] main -> main (fetch first)
+    #     hint: Updates were rejected because the remote contains work that you do not have locally
+    #   → 43 分钟的活儿全废, 还白白多耗一轮 runner。
+    #   cancel-in-progress: false = 新的一轮排队等待, 不打断正在跑的那轮
+    #   (已在跑的那轮已有大量测活成果, 打断等于浪费)
+    concurrency:
+      group: freesub-update
+      cancel-in-progress: false
     # ★ 原为 50 分钟。候选池规模随订阅源波动, 单次跑满 45 分钟仍未完成的情况已实际发生过;
     #   被中断时后续 commit/push 永不执行, 整轮一个节点都发不出去。
     #   改为 180 分钟 (远低于公共仓库单 job 6 小时上限), 并让 main_v2.py 自带
