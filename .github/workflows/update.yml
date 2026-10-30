@@ -81,8 +81,25 @@ jobs:
           if git diff --staged --quiet; then
             echo "没有节点变动与内容更新。"
           else
-            git commit -m "Auto Update: $(date -u '+%Y-%m-%d %H:%M:%S') UTC"
-            git push
+            # ★ 推送前必须重新对齐远端 —— 本轮 checkout 之后, main 可能已被其他提交推进
+            #   (实测 2026-10-30 那轮就是这么被拒的:
+            #      ! [rejected] main -> main (fetch first)
+            #      hint: Updates were rejected because the remote contains work that you do not have locally
+            #    跑批期间有人往 main 推了提交, 45 分钟的活儿全部作废)。
+            #  fetch + reset --soft: 把本轮产出原样挪到远端最新之上, 保证一定 fast-forward。
+            #  output/ 与 README 都是本轮整轮重新生成的, 以本轮为准, 不会覆盖丢远端别人的改动。
+            #  仍失败则重试 3 次 (并发推送时退避重试即可)。
+            for i in 1 2 3; do
+              git fetch origin main
+              git reset --soft origin/main
+              git commit -m "Auto Update: $(date -u '+%Y-%m-%d %H:%M:%S') UTC"
+              if git push; then
+                echo "[+] 推送成功 (第 $i 次尝试)"
+                break
+              fi
+              echo "[!] 第 $i 次推送被拒 (远端又有新提交), 5s 后重试 ..."
+              sleep 5
+            done
           fi
 
       - name: Purge jsDelivr CDN (post-push)
