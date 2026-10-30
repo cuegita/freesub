@@ -1,7 +1,15 @@
 name: Update Subscriptions
 
 on:
-  workflow_dispatch:  # 仅保留手动触发按钮
+  schedule:
+    # 每 6 小时一轮: UTC 00:23 / 06:23 / 12:23 / 18:23
+    #   = 北京时间 08:23 / 14:23 / 20:23 / 02:23
+    #   分钟数取 23 而非 00: GitHub 整点是调度高峰, 定时任务会被排队延迟甚至丢弃
+    # ⚠️ 本仓库是 fork (parent: hezhanleiok/freesub)。GitHub 对 fork 默认禁用定时任务,
+    #    加完这段 cron 后必须去 Actions → 本 workflow → "Enable workflow" 手动开启一次,
+    #    否则永远不会有 event=schedule 的运行记录。
+    - cron: "23 0,6,12,18 * * *"
+  workflow_dispatch:  # 保留手动触发按钮
 
 jobs:
   build:
@@ -25,6 +33,11 @@ jobs:
         run: |
           pip install -r scripts/requirements.txt
 
+      - name: Run Unit Tests (解析器 / 配置合法性 / 分类)
+        # CHANGES.md 里 #3~#7 全是"导出丢参数"类回归, 解析器最容易坏且坏得最隐蔽
+        run: |
+          python scripts/test_parsers.py
+
       - name: Run Real-Prober and Classifier (sing-box v1.14 全协议)
         run: |
           python scripts/main_v2.py
@@ -32,7 +45,7 @@ jobs:
           # 便于 ip-api 等识别限速; GitHub runner 出口为美国 Azure
           PYTHONUNBUFFERED: '1'
 
-      - name: Upload test artifacts (调试用, 7天保留)
+      - name: Upload run report (调试用, 7天保留)
         uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -30,6 +30,7 @@ import uuid
 import base64
 import shutil
 import socket
+import errno
 import zipfile
 import tarfile
 import platform
@@ -117,6 +118,11 @@ WORKDIR = os.path.dirname(os.path.abspath(__file__))          # scripts/
 BASEDIR = os.path.dirname(WORKDIR)                              # repo root
 RUNTIME_DIR = os.path.join(BASEDIR, "runtime")                  # kernels & db
 SINGBOX_BIN = os.path.join(RUNTIME_DIR, "sing-box")
+
+# ★ 本仓库标识: README 里的 CDN/Raw 直链与 Worker 脚本参数都由此派生。
+#   生产环境优先取 CI 注入的 GITHUB_REPOSITORY; 本地跑或变量缺失时用它兜底。
+#   (本仓库 fork 自 hezhanleiok/freesub — 分叉后改这一行即可让全部链接指向自己的仓库)
+DEFAULT_REPO = "cuegita/freesub"
 
 # --- 测活阈值 (毫秒/秒) ---
 # ★ 分层超时: 首击宽 (12s 容慢节点), 重试窄 (4s 快速放弃死节点)
@@ -1081,40 +1087,73 @@ def resolve_host(host: str) -> str:
         return ""
 
 
-def knock_port(server: str, port: int, protocol_type: str) -> bool:
-    """TCP 直连预检 (DoH 解析防本地 DNS 污染); QUIC 类直接放行阶段B
-    注: 预检失败不淘汰 (本地大陆视角的假死 ≠ 节点死亡), 只影响排序;
-        生死由阶段B sing-box 全流程测活裁决 (Actions 海外视角)"""
+# TCP 层"确定性死亡"错误码: 对端明确拒绝 / 主机或网络不可达 —— 与观测点位置无关,
+# 不是超时。超时可能是本地限速、GFW 干扰或中间 ICMP 过滤, 必须交阶段B 全流程裁决,
+# 否则会重演 "本地假死 ≠ 节点死亡" 的误杀。
+DEAD_ERRNOS = tuple(
+    getattr(errno, n) for n in ("ECONNREFUSED", "EHOSTUNREACH", "ENETUNREACH")
+    if hasattr(errno, n))
+
+
+def knock_port(server: str, port: int, protocol_type: str) -> str:
+    """TCP 直连预检 → 三态: "ok" / "dead" / "unknown"
+
+      "ok"      — 握手成功, 优先进入阶段B
+      "dead"    — RST 拒绝 / 主机或网络不可达 → 确定性死亡, 可直接淘汰
+      "unknown" — 超时、DNS 未解出、QUIC 无法轻量预检 → 保留交阶段B
+                  (DoH 到本地 DNS 兜底都可能失败, 解析失败 ≠ 节点死亡)
+    """
     if protocol_type in ("hysteria2", "tuic"):
         # QUIC 无法轻量预检 UDP 端口连通性, 且本地 UDP 常被 QoS → 放行交阶段B
-        return True
+        return "unknown"
+    ip = resolve_host(server)
+    if not ip:
+        return "unknown"
     try:
-        ip = resolve_host(server)
-        if not ip:
-            return False
         with socket.create_connection((ip, port), timeout=PORT_KNOCK_TIMEOUT):
-            return True
+            return "ok"
+    except socket.timeout:
+        return "unknown"
+    except OSError as e:
+        return "dead" if e.errno in DEAD_ERRNOS else "unknown"
     except Exception:
-        return False
+        return "unknown"
 
 
 def prefilter_candidates(candidates: list) -> list:
-    """端口预检: 通过者优先, 未通过者降级保留 (防止本地网络/GFW 视角误杀;
-    真正生死由阶段B sing-box 全流程测活裁决 — Actions 海外视角)"""
+    """端口预检: 确定性死亡直接淘汰, 其余通过者优先排序后全部交阶段B
+
+    ★ 旧实现 `return passed + deferred` —— 一个都没淘汰, 等于对所有候选白跑一遍
+      DoH + TCP 握手; 而 run_liveness_test 一次性把全部 future 提交到线程池,
+      排序对总耗时几乎没有任何影响。纯浪费。
+    ★ 新实现只淘汰 RST/不可达这类"与观测点无关的确定性死亡"; 超时类一律保留,
+      守住 "宁可多测, 不可误杀" 的原则。
+    ★ 想退回全量测活: 环境变量 PREFILTER_DROP=0
+    """
     print(f"[*] 端口预检 (TCP {PORT_KNOCK_TIMEOUT}s): {len(candidates)} 候选 ...")
-    passed, deferred = [], []
+    passed, unknown, dead = [], [], []
 
     def _knock(item):
         raw, outbound, server, port, proto = item
         return knock_port(server, port, proto)
 
     with ThreadPoolExecutor(max_workers=64) as ex:
-        # ex.map 保序返回; 通过者优先, 未通过降级保留 (不淘汰, 防本地视角误杀)
-        for item, ok in zip(candidates, ex.map(_knock, candidates)):
-            (passed if ok else deferred).append(item)
-    print(f"[+] 预检通过: {len(passed)} | 预检未过(保留低优先级待全测): {len(deferred)}")
-    # 预检未过的仍进入全流程 (只是排在后面) — 交给 sing-box 真实裁决
-    return passed + deferred
+        for item, verdict in zip(candidates, ex.map(_knock, candidates)):
+            if verdict == "ok":
+                passed.append(item)
+            elif verdict == "dead":
+                dead.append(item)
+            else:
+                unknown.append(item)
+
+    print(f"[+] 预检通过 {len(passed)} | 超时/QUIC 待全测 {len(unknown)} | 确定性死亡 {len(dead)}")
+    if os.environ.get("PREFILTER_DROP", "1").strip() == "0":
+        print(f"[*] PREFILTER_DROP=0 → 确定性死亡节点仍保留全测 ({len(dead)})")
+        return passed + unknown + dead
+    if dead:
+        print(f"[*] 连接被拒/主机不可达 → 提前淘汰 {len(dead)} 个 (省去满额 12s+4s 层探测)")
+    # 预检通过者优先, 其余排后面 — 真实生死一律由阶段B sing-box 裁决
+    return passed + unknown
 
 
 # ═══════════════════════════════════════════N═══════════════════════
@@ -1192,22 +1231,19 @@ def print_once(key: str, msg: str):
         print(msg)
 
 
-def test_single_node(item, keep_alive_check=True):
-    """返回 dict 或 None; 含: 活性/延迟/出口IP/国家/ASN/ISP/速度/MITM"""
+def test_single_node(item, chain_relay: dict = None):
+    """返回 dict 或 None; 含: 活性/延迟/出口IP/国家/ASN/ISP/速度/MITM
+
+    chain_relay: 已验证存活的 sing-box outbound dict, 作为双跳前置注入 (家宽链式复测用)。
+        ★ 旧实现经环境变量 CHAIN_RELAY_OUT 隐式传递 —— 全局可变状态、非线程安全,
+          且一旦残留会让后续所有调用都被套上双跳。改为显式参数。
+    """
     raw, outbound, server, port, proto = item
     socks_port = _alloc_socks_port()
     task_id = uuid.uuid4().hex[:10]
     cfg_path = os.path.join(RUNTIME_DIR, f"sb_{task_id}.json")
 
-    # ★ 链式前置 (chain relay): 注入已验证存活节点作前置 (chain_retest 用, 模拟 v2rayN 链式)
-    chain_out = None
-    chain_json = os.environ.get("CHAIN_RELAY_OUT", "").strip()
-    if chain_json:
-        try:
-            chain_out = json.loads(chain_json)
-        except Exception:
-            chain_out = None
-    config = build_test_config(outbound, socks_port, chain_relay=chain_out)
+    config = build_test_config(outbound, socks_port, chain_relay=chain_relay)
     with open(cfg_path, "w", encoding="utf-8") as f:
         json.dump(config, f)
 
@@ -1251,9 +1287,13 @@ def test_single_node(item, keep_alive_check=True):
 
         # --- 1) 活性探测: 分层超时重试 (首击宽 12s 容慢节点保准确率; 重试窄 4s 快速放弃死节点) ---
         alive_hits, latency_ms = 0, 99999
-        t0 = time.time()
         for i, url in enumerate(LIVENESS_URLS):
             timeout = PROBE_TIMEOUT if i == 0 else PROBE_RETRY_TIMEOUT
+            # ★ 每次探测独立计时: t0 必须在循环内。
+            #   旧代码把 t0 放在循环外, 一旦第 1 个 URL 超时(12s)后才在第 2 个 URL 成功,
+            #   latency 会把这段失败耗时算进去 (虚高 8~16s)。而 classify_and_export 的三处
+            #   排序全部依赖 latency_ms —— 受影响的偏偏是本来就慢的节点, 等于二次惩罚。
+            t0 = time.time()
             try:
                 r = PROBE_SESSION.get(url, proxies=proxies, timeout=timeout, allow_redirects=False)
                 if r.status_code in (204, 200):
@@ -1360,6 +1400,9 @@ def test_single_node(item, keep_alive_check=True):
 
         result = {
             "raw": raw,
+            # ★ 带出已解析的 outbound: 下游 chain_retest / classify_and_export 不必再
+            #   parse_node_uri 各重解一遍 (旧代码每个节点多解析 2 次, 纯浪费)
+            "outbound": outbound,
             "server": server,
             "port": port,
             "proto": proto,
@@ -1421,7 +1464,7 @@ def run_liveness_test(candidates: list) -> list:
 # 阶段 B2: 家宽链式复测 (chain relay retest)
 # ════════════════════════════════════════════════════════════════════
 
-def chain_retest(test_results: list) -> list:
+def chain_retest(test_results: list, ip_api_info: dict = None) -> list:
     """家宽链式复测: 模拟用户 v2rayN 链式 (前置 → 家宽节点 → 目标)
 
     实测背景: 用户反馈家宽节点在 v2rayN 链式代理下仅 ~50% 可用。
@@ -1432,17 +1475,22 @@ def chain_retest(test_results: list) -> list:
     流程: 先跑一遍轻量分类拿到家宽候选 → 取最快存活节点做 relay →
     家宽候选逐个双跳复测 → 双跳也活的保留, 双跳死的降级普通区。
     返回: 更新 net_type 后的 test_results (原对象原地修改)。
+
+    ip_api_info: 若调用方已查过 ip-api 批量情报则传入复用 —— 旧实现这里会
+        自己再全量查一遍, 而 classify_and_export 随后又查一遍同样的 IP,
+        双倍耗时且双倍消耗 15req/min 免费配额 (更容易撞 429)。
     """
     # 1) 轻量分类拿家宽候选 (复用 classify_and_export 的候选判定, 但不导出)
     #    家宽候选 = ip-api/mmdb 六信号判 residential/mobile 的节点
-    ip_api_info = {}
-    all_exit_ips = list({r["exit_ip"] for r in test_results if r.get("exit_ip")})
-    if all_exit_ips:
-        try:
-            ip_api_info = ip_api_batch_lookup(all_exit_ips)
-        except Exception as e:
-            print(f"[!] 链式复测: ip-api 批量失败 ({e}), 跳过链式复测")
-            return test_results
+    if ip_api_info is None:
+        ip_api_info = {}
+        all_exit_ips = list({r["exit_ip"] for r in test_results if r.get("exit_ip")})
+        if all_exit_ips:
+            try:
+                ip_api_info = ip_api_batch_lookup(all_exit_ips)
+            except Exception as e:
+                print(f"[!] 链式复测: ip-api 批量失败 ({e}), 跳过链式复测")
+                return test_results
 
     res_candidates = {}
     for r in test_results:
@@ -1487,23 +1535,19 @@ def chain_retest(test_results: list) -> list:
     print(f"[*] 链式 relay: {relay_result['proto']} {relay_result['server']}:{relay_result['port']} "
           f"(延迟 {relay_result['latency_ms']}ms)")
 
-    # 3) 家宽候选逐个双跳复测 (注入 CHAIN_RELAY_OUT, test_single_node 自动加 detour)
-    os.environ["CHAIN_RELAY_OUT"] = json.dumps(relay_out)
+    # 3) 家宽候选逐个双跳复测 (relay 显式传参, 不再经环境变量)
     chain_alive, chain_dead = [], []
-    try:
-        for key, r in res_candidates.items():
-            item = (r["raw"], r.get("outbound") or (parse_node_uri(r["raw"]) or [None])[0],
-                    r["server"], r["port"], r["proto"])
-            if not item[1]:
-                chain_dead.append(r)
-                continue
-            recheck = test_single_node(item)
-            if recheck and recheck.get("alive") and not recheck.get("is_stalled"):
-                chain_alive.append(r)
-            else:
-                chain_dead.append(r)
-    finally:
-        os.environ.pop("CHAIN_RELAY_OUT", None)
+    for key, r in res_candidates.items():
+        item = (r["raw"], r.get("outbound") or (parse_node_uri(r["raw"]) or [None])[0],
+                r["server"], r["port"], r["proto"])
+        if not item[1]:
+            chain_dead.append(r)
+            continue
+        recheck = test_single_node(item, chain_relay=relay_out)
+        if recheck and recheck.get("alive") and not recheck.get("is_stalled"):
+            chain_alive.append(r)
+        else:
+            chain_dead.append(r)
 
     # 4) 双跳失败的 → 降级普通区 (不从订阅删除, 用户直连场景仍可能可用)
     for r in chain_dead:
@@ -1997,7 +2041,9 @@ def ipapi_is_verify(ip: str) -> dict:
         return {}
 
 
-def classify_and_export(test_results: list):
+def classify_and_export(test_results: list, ip_api_info: dict = None):
+    """ip_api_info: 由 main() 统一查询后传入复用 (旧代码此处会再全量查一遍 ip-api,
+    chain_retest 也各查一遍 → 同一批 IP 查两次, 双倍耗时 + 双倍 15req/min 配额消耗)"""
     print("[*] 出口 IP 情报与分类 ...")
     # 收集全部出口 IP
     all_exit_ips = []
@@ -2009,16 +2055,18 @@ def classify_and_export(test_results: list):
             all_exit_ips.append(r["exit_ip"])
     print(f"[*] 待查询出口 IP: {len(all_exit_ips)} 个 (ip-api.com 批量 {len(test_results)} 节点)")
 
-    ip_api_info = {}
     scam_scores = {}
-    if all_exit_ips:
-        try:
-            est_batches = (len(all_exit_ips) + IP_API_BATCH_SIZE - 1) // IP_API_BATCH_SIZE
-            print(f"[*] ip-api 批量: {est_batches} 批 × ~4.2s ≈ {est_batches * 4.2:.0f}s (免费限 15 req/min, 请耐心) ...")
-            ip_api_info = ip_api_batch_lookup(all_exit_ips)
-            print(f"[+] ip-api.com 批量情报: {len(ip_api_info)}/{len(all_exit_ips)}")
-        except Exception as e:
-            print(f"[!] ip-api 批量失败, 将全量走离线: {e}")
+    if ip_api_info is None:
+        ip_api_info = {}
+        if all_exit_ips:
+            try:
+                est_batches = (len(all_exit_ips) + IP_API_BATCH_SIZE - 1) // IP_API_BATCH_SIZE
+                print(f"[*] ip-api 批量: {est_batches} 批 × ~4.2s ≈ {est_batches * 4.2:.0f}s (免费限 15 req/min, 请耐心) ...")
+                ip_api_info = ip_api_batch_lookup(all_exit_ips)
+            except Exception as e:
+                print(f"[!] ip-api 批量失败, 将全量走离线: {e}")
+    else:
+        print(f"[+] 复用链路上已查询的 ip-api 情报: {len(ip_api_info)}/{len(all_exit_ips)} (本次不再重复请求)")
 
     country_reader = asn_reader = None
     try:
@@ -2194,11 +2242,14 @@ def classify_and_export(test_results: list):
     if len(unique_nodes) < before_total:
         print(f"[*] 极高危节点 (fraud≥90) 剔除: {before_total - len(unique_nodes)} 个")
 
-    non_residential = [n for n in unique_nodes if n not in residential]
+    # ★ 用 id() 集合做成员判断: 列表元素是大 dict (含嵌套 outbound), `n in residential`
+    #   走的是逐键相等比较, O(n×m) 且家宽一多就退化。改用对象身份即可语义等价且 O(1)。
+    res_ids = {id(n) for n in residential}
+    non_residential = [n for n in unique_nodes if id(n) not in res_ids]
     print(f"[*] 家宽/移动网络节点: {len(residential)} | 普通(机房/CDN): {len(non_residential)}")
 
     # 排序: 家宽在前, 延迟升序
-    unique_nodes.sort(key=lambda x: (0 if x in residential else 1, x["latency_ms"]))
+    unique_nodes.sort(key=lambda x: (0 if id(x) in res_ids else 1, x["latency_ms"]))
     residential.sort(key=lambda x: x["latency_ms"])
     non_residential.sort(key=lambda x: x["latency_ms"])
     # ★ 链式复测双跳失败的家宽 → 降级普通区 (v2rayN 链式场景不可靠)
@@ -2338,13 +2389,13 @@ def export_singbox_json(sb_nodes, filepath):
 # ═══════════════════════════════════════════N═══════════════════════
 
 def update_readme(total_count, res_count):
-    repo_name = os.environ.get("GITHUB_REPOSITORY", "hezhanleiok/freesub").strip()
+    repo_name = os.environ.get("GITHUB_REPOSITORY", DEFAULT_REPO).strip()
     cache_bust = ""
     # 私有化部署 Worker 脚本里的仓库参数 (默认值兜底)
     try:
         owner, repo = repo_name.split("/", 1)
     except ValueError:
-        owner, repo = "hezhanleiok", "freesub"
+        owner, repo = DEFAULT_REPO.split("/", 1)
 
     def count_file(path):
         if not os.path.exists(path):
@@ -2483,8 +2534,10 @@ export default {{
 
 ## 🛠️ 项目使用说明
 1. **自动更新机制**：GitHub Actions 每 6 小时全自动运行并刷新上述全部订阅与数据。
-2. **测活标准**：节点必须通过 ① 端口预检 ② sing-box 实际隧道 3 个 generate_204 探测 ③ 真实出口 IP 穿透获取 ④ Cloudflare 5MB 限时下载 (吞吐 ≥ 70KB/s) ⑤ TLS 证书校验非 MITM, 方可入库。
+2. **测活标准**：节点必须通过 ① 端口预检 (TCP 被 RST 拒绝/不可达等确定性死亡直接淘汰, 超时类一律保留全测) ② sing-box 实际隧道 + generate_204 探测 (首击 12s / 重试 4s 分层超时) ③ 真实出口 IP 穿透获取 ④ Cloudflare 2.5MB 限时下载 (吞吐 ≥ 70KB/s) ⑤ TLS 证书校验非 MITM, 方可入库。
 3. **多客户端兼容**：Clash / v2rayN / sing-box 全格式订阅。
+4. **定时触发**：GitHub Actions 每 6 小时 (UTC 00:23 / 06:23 / 12:23 / 18:23) 自动运行一轮。
+   ⚠️ 若本仓库为 fork, GitHub 默认禁用其定时任务 —— 需在 **Actions → 本 workflow → Enable workflow** 手动开启一次。
 """
     with open(os.path.join(BASEDIR, "README.md"), "w", encoding="utf-8") as f:
         f.write(readme)
@@ -2574,21 +2627,23 @@ def main():
     # 4. 真实测活 (只测去重后的代表节点)
     test_results = run_liveness_test(candidates)
 
-    # 4.5 ★ 重复节点结果回填: 同 凭据+目标 的重复 URI 继承测活结果 (凭据相同 → 服务端表现一致)
+    # 4.5 ★ 重复节点结果回填: 同 (目标+协议+凭据指纹) 的重复 URI 继承代表节点测活结果
+    #     ★ 必须用四元组索引。旧代码只用 (server, port, proto) 三元组: 同一目标下存在两套
+    #       不同凭据时会各自独立测活, 但回填索引只留最后写入的那一条 → 死凭据组可能继承
+    #       活凭据组的 alive/exit_ip 结果而错误出库。凭据不同, 服务端行为就可能不同。
+    #     DEDUP_MAP 的 key 本身就是 (server_lower, port, proto, fingerprint) 四元组, 直接索引。
     if DEDUP_MAP:
         result_by_key = {}
         for r in test_results:
-            key = ((r["server"] or "").lower(), r["port"], r["proto"])
-            result_by_key[key] = r
+            ob = r.get("outbound") or {}
+            result_by_key[((r["server"] or "").lower(), r["port"], r["proto"],
+                           cred_fingerprint(ob, r["proto"]))] = r
         expanded = list(test_results)
         backfilled = 0
-        # 反向索引: server:port:proto → 原始 fingerprint (从 DEDUP_MAP 的 key 直接继承)
         for key, uris in DEDUP_MAP.items():
             if len(uris) <= 1:
                 continue
-            # 用 key 的前三段 (server, port, proto) 找测活结果
-            lookup = (key[0], key[1], key[2])
-            r = result_by_key.get(lookup)
+            r = result_by_key.get(key)
             if not r or not r.get("alive"):
                 continue
             for extra_uri in uris[1:]:
@@ -2597,42 +2652,70 @@ def main():
                 expanded.append(clone)
                 backfilled += 1
         if backfilled:
-            print(f"[+] 重复节点回填: +{backfilled} (继承代表测活结果)")
+            print(f"[+] 重复节点回填: +{backfilled} (继承同凭据代表的测活结果)")
         test_results = expanded
+
+    # 4.6 ★ 出口 IP 情报只查一次, 供 chain_retest 与 classify_and_export 共用
+    #       (旧代码这两处各自全量查一遍同一批 IP — 双倍耗时 + 双倍 ip-api 15req/min 配额)
+    exit_ip_info = {}
+    all_exit_ips = sorted({r["exit_ip"] for r in test_results if r.get("exit_ip")})
+    if all_exit_ips:
+        try:
+            est_batches = (len(all_exit_ips) + IP_API_BATCH_SIZE - 1) // IP_API_BATCH_SIZE
+            print(f"[*] ip-api 批量: {len(all_exit_ips)} IP / {est_batches} 批 × ~4.2s "
+                  f"≈ {est_batches * 4.2:.0f}s (免费限 15 req/min, 请耐心) ...")
+            exit_ip_info = ip_api_batch_lookup(all_exit_ips)
+            print(f"[+] ip-api.com 批量情报: {len(exit_ip_info)}/{len(all_exit_ips)}")
+        except Exception as e:
+            print(f"[!] ip-api 批量失败, 将全量走离线: {e}")
 
     # 5. ★ 家宽链式复测: 用最快存活节点做前置双跳复测家宽候选
     #    (模拟用户 v2rayN 链式场景, 双跳失败的家宽降级普通区 — 提高链式可用率)
-    test_results = chain_retest(test_results)
+    #    注: 传 `exit_ip_info or None` —— 查到就复用(省一次全量请求); 若本次查询整体失败
+    #        则传 None, 让两个函数各自按旧逻辑重试一次, 保留原有的降级韧性。
+    test_results = chain_retest(test_results, ip_api_info=(exit_ip_info or None))
 
     # 6. 分类 + 导出 (无真活节点时保留上次 output, 不写空订阅覆盖线上数据)
     if not test_results:
         print("[!] 全部节点测活失败 — 保留上次 output, 不覆盖订阅文件")
         return
-    unique_nodes, residential, non_residential = classify_and_export(test_results)
+    unique_nodes, residential, non_residential = classify_and_export(
+        test_results, ip_api_info=(exit_ip_info or None))
     if not unique_nodes:
         print("[!] 分类后无存活节点 — 保留上次 output")
         return
     total, res = export_all(unique_nodes, residential, non_residential)
     update_readme(total, res)
 
-
-    # 统计报告
+    # 统计报告 (同时落盘为 e2e_test_report.json — CI 以 artifact 上传, 便于回溯每轮质量)
     elapsed = time.time() - t_start
-    print("\n===== 运行报告 =====")
-    print(f"总耗时: {elapsed:.0f}s | 抓取 {len(raw_nodes)} → 解析成功 {len(candidates)} → 真活 {len(test_results)} → 去重后 {len(unique_nodes)} → 家宽 {len(residential)}")
-    by_type = {}
+    by_type, by_proto, by_country = {}, {}, {}
     for n in unique_nodes:
         by_type[n["net_type"]] = by_type.get(n["net_type"], 0) + 1
-    print(f"节点类型分布: {by_type}")
-    by_proto = {}
-    for n in unique_nodes:
         by_proto[n["proto"]] = by_proto.get(n["proto"], 0) + 1
-    print(f"协议分布(出库): {by_proto}")
-    by_country = {}
-    for n in unique_nodes:
         by_country[n["country"]] = by_country.get(n["country"], 0) + 1
-    top_c = sorted(by_country.items(), key=lambda x: -x[1])[:10]
-    print(f"国家 Top10: {top_c}")
+    try:
+        with open(os.path.join(OUTPUT_DIR, "e2e_test_report.json"), "w", encoding="utf-8") as f:
+            json.dump({
+                "generated_at": datetime.now(timezone.utc).isoformat(),
+                "elapsed_sec": round(elapsed, 1),
+                "fetched_raw": len(raw_nodes),
+                "tested": len(test_results),
+                "unique_out": len(unique_nodes),
+                "residential": len(residential),
+                "by_net_type": by_type,
+                "by_proto": by_proto,
+                "by_country": dict(sorted(by_country.items(), key=lambda x: -x[1])),
+            }, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"[!] 运行报告写入失败: {e}")
+
+    print("\n===== 运行报告 =====")
+    print(f"总耗时: {elapsed:.0f}s | 抓取 {len(raw_nodes)} → 去重后待测 {len(candidates)} → "
+          f"产出 {len(test_results)} → 去重后 {len(unique_nodes)} → 家宽 {len(residential)}")
+    print(f"节点类型分布: {by_type}")
+    print(f"协议分布(出库): {by_proto}")
+    print(f"国家 Top10: {sorted(by_country.items(), key=lambda x: -x[1])[:10]}")
 
 
 if __name__ == "__main__":

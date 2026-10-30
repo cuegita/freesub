@@ -92,3 +92,46 @@
 | 13 | 家宽总量偏少（8 个） | ① 旧版 4 协议引擎时代 hy2/tuic 家宽全灭 ② 严判据（Scamalytics ≥75 降级 + fraud ≥90 剔除 + ipapi.is 否决）宁缺毋滥，免费池里真家宽本来就稀缺 | 属**预期行为**：真家宽在免费节点池是稀缺资源；本次修复误判（#11）后，假家宽不再挤占真家宽名额 |
 
 > 关键结论：**免费节点池里"家宽"大多数是伪装的**（机房收购家宽 IP 段、rDNS 带.dsl/.pppoe 关键词、ip-api proxy 标志）。本版用四道闸门过滤：ip-api hosting/proxy 字段 → ASN 黑白名单 → ipapi.is 交叉源 → Scamalytics 欺诈分。
+
+---
+
+## 八、代码审查 + 优化轮 (2026-10-31)
+
+> 本轮不改算法判据，只修**已定位的精度缺陷**、**重复/无效开销**和**文档与实现漂移**。仓库已 fork 到 `cuegita/freesub`，README/CDN/Raw 全部链接改为本仓库。
+
+### 8.1 修复
+
+| # | 问题 | 根因（行号取证，改动前） | 修复 |
+|---|---|---|---|
+| 14 | 部分节点延迟虚高 8~16s，直接把本就慢的节点排到队尾 | `t0 = time.time()` 在三个 liveness URL 循环**外**取一次；首个 URL 超时（12s）后才在第 2 个 URL 成功时，这段失败耗时被计入 `latency_ms`。而 `classify_and_export` 三处排序全依赖该值 | `t0` 移入循环内，每次探测独立计时 |
+| 15 | 同一 server:port:proto 下两套不同凭据的测活结果互相覆盖，死凭据组可能越过活凭据组的 `alive` 结果出库 | 去重键是 `(server, port, proto, 凭据指纹)` 四元组，回填索引却只用 `(server, port, proto)` 三元组，同目标多凭据只会保留最后写入的一条 | 回填改用四元组索引（直接复用 `DEDUP_MAP` 的 key） |
+| 16 | 测活结果的 `outbound` 丢失，下游重复解析 | `test_single_node` 返回值里没有 `outbound`，导致 `chain_retest` 与 `classify_and_export` 各自 `parse_node_uri` 一遍（每节点多解析 2 次） | 返回值带出 `outbound`，下游直接用 |
+| 17 | `CHAIN_RELAY_OUT` 用环境变量给函数传参 | 全局可变状态、非线程安全；残留时会让后续所有调用被误套双跳 | 改为 `test_single_node(item, chain_relay=...)` 显式参数 |
+| 18 | `n not in residential` 是 O(n×m) 逐键 dict 相等比较 | 列表元素是含嵌套 `outbound` 的大 dict，`in` 走值比较；家宽一多即退化 | 改用 `id()` 集合，语义等价且 O(1) |
+
+### 8.2 性能优化（CI 耗时）
+
+| # | 项 | 改动前 | 改动后 |
+|---|---|---|---|
+| 19 | ip-api 批量情报 | `chain_retest` 与 `classify_and_export` **各自全量查一遍同一批出口 IP**，双倍耗时且双倍消耗 15 req/min 免费配额（更容易撞 429） | `main()` 统一查一次后透传；查询失败时传 `None`，两函数仍按旧逻辑各自兜底重试一次（韧性不降） |
+| 20 | 端口预检 | `prefilter_candidates` 最后 `return passed + deferred` **一个都没淘汰** —— 对所有候选白跑一遍 DoH + TCP 握手，而 liveness 一次性提交全部 future，排序对总耗时几乎无影响 | 改为三态裁决：仅淘汰 `ECONNREFUSED/EHOSTUNREACH/ENETUNREACH` 这类**与观测点无关的确定性死亡**；超时、域名未解出、QUIC 一律保留交阶段B 裁决（守住"宁可多测，不可误杀"）。可用 `PREFILTER_DROP=0` 退回全量测活 |
+| 21 | 单测未进 CI | `scripts/test_parsers.py` 从不执行，而 #3~#7 全是解析器/导出回归 | 工作流新增 `Run Unit Tests` 步骤，回归即失败、不污染线上订阅 |
+| 22 | 上传 artifact 步骤空跑 | 工作流上传 `output/e2e_test_report.json`，但代码从未生成该文件 | `main()` 末尾落盘运行报告（耗时/各阶段数量/类型·协议·国家分布），该步骤由空跑变为真实遥测 |
+
+### 8.3 仓库归属与定时
+
+| # | 项 | 说明 |
+|---|---|---|
+| 23 | 仓库不再写死上游 | 新增 `DEFAULT_REPO = "cuegita/freesub"`，README 全部 CDN/Raw 链接与私有化部署 Worker 脚本参数均由 `GITHUB_REPOSITORY` 派生（本地兜底用该常量） |
+| 24 | 补齐定时触发 | README 一直承诺"每 6 小时自动运行"，而工作流**只有 `workflow_dispatch`**。现加 `cron: "23 0,6,12,18 * * *"`（避开整点调度高峰） |
+| 25 | ⚠️ fork 定时任务需手动开启 | **本仓库是 `hezhanleiok/freesub` 的 fork**（GitHub API 返回 `fork: true`）。GitHub 对 fork **默认禁用定时任务**，加完 cron 必须去 Actions → 本 workflow → **Enable workflow** 手动开一次，否则 `event=schedule` 永远为 0 条。另：公共仓库连续 60 天无活动也会被自动停用定时调度（本仓库每轮会自动提交，时钟会被持续重置） |
+| 26 | jsDelivr purge 修正 | 之前 `${GITHUB_REPOSITORY}` 与实际对外发布的 README 仓库不一致，purge 打在非目标仓库上；现在两者同源 |
+
+### 8.4 文档漂移修正
+
+README 原写"Cloudflare **5MB** 限时下载"→实际 `SPEED_TEST_BYTES = 2_500_000`；原写"**3 个** generate_204 探测"→实际首成功即 `break`，通常只探 1 个。均已按代码实际行为订正。
+
+### 8.5 本轮验证
+
+本地桩掉 `requests`/`maxminddb` 后导入 `main_v2`，跑通：静态符号清理检查、`knock_port` 三态（监听/未监听/QUIC/域名未解出）、`prefilter_candidates` 只淘汰确定性死亡且 `PREFILTER_DROP=0` 可回退、凭据指纹四元组区分度、**19/19 协议样本解析通过**、**5/5 家宽分类样本符合预期**。
+未覆盖：`test_single_node` 的 sing-box 真实隧道测活（需内核二进制），由 CI 全流程验证。
