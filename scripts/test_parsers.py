@@ -1,15 +1,40 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """单元自测: 全协议解析器 + sing-box check 配置合法性 + 分类逻辑"""
-import os, sys, json
+import os, sys, json, shutil
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import main_v2 as mv
 
 BASEDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SB = os.path.join(BASEDIR, "runtime", "sing-box.exe")  # 与 main_v2 运行时同一内核
-if not os.path.exists(SB):
-    SB = os.path.join(BASEDIR, ".sb-probe", "sing-box.exe")
+
+_SB_CACHE = {"checked": False, "path": None}
+
+
+def _find_singbox():
+    """定位 sing-box 内核可执行文件 (结果缓存, 只查一次)。
+
+    两个必须处理的坑 (2026-10-31 踩过):
+      ① Windows/Linux 后缀不同 —— 旧代码硬编码 "sing-box.exe", 在 ubuntu-latest 上
+         永远找不到 → subprocess 抛 FileNotFoundError → 整个单测以非零码崩溃。
+      ② runtime/ 由 main_v2.setup_environment() 在线下载, 且被 .gitignore 排除、
+         不随仓库分发。单测若在 main 之前跑, 目录根本还不存在。
+    因此: 返回 None 时调用方应**优雅跳过** sing-box check 阶段, 而不是让 CI 崩掉。
+    """
+    if _SB_CACHE["checked"]:
+        return _SB_CACHE["path"]
+    _SB_CACHE["checked"] = True
+    suffix = ".exe" if os.name == "nt" else ""
+    candidates = [
+        mv.SINGBOX_BIN + suffix,                                    # 与 main_v2 运行时同一内核
+        os.path.join(BASEDIR, ".sb-probe", "sing-box" + suffix),    # 本地旧调试目录
+        shutil.which("sing-box") or "",                             # PATH 兜底
+    ]
+    for c in candidates:
+        if c and os.path.isfile(c) and os.path.getsize(c) > 1024:
+            _SB_CACHE["path"] = c
+            break
+    return _SB_CACHE["path"]
 
 # ══════════ 测试样本 (覆盖用户全部协议) ══════════
 SAMPLES = {
@@ -103,27 +128,38 @@ def run_test():
     print("=" * 70)
     print(f"阶段2: sing-box check 配置合法性 ({len(outbounds)} 个 outbound)")
     print("=" * 70)
-    import subprocess, tempfile
-    for name, ob in outbounds.items():
-        cfg = mv.build_test_config(ob, 53000 + (hash(name) % 500))
-        # 清理测试用多余字段 (domain_strategy 等不存在)
-        try:
-            with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as f:
-                json.dump(cfg, f)
-                path = f.name
-            r = subprocess.run([SB, "check", "-c", path], capture_output=True, text=True, timeout=15)
-            if r.returncode == 0:
-                print(f"  ✅ {name}: check PASS")
-            else:
-                err = (r.stderr or r.stdout or "").strip().splitlines()
-                err_short = err[-1][:100] if err else "?"
-                FAIL.append(f"[CHECK-FAIL] {name}: {err_short}")
-                print(f"  ❌ {name}: check FAIL → {err_short}")
-        finally:
+    sb = _find_singbox()
+    if sb:
+        print(f"  内核: {sb}")
+    else:
+        # 无内核时降级跳过, 而不是崩溃 —— 否则 CI 会卡死在这一步, 整轮零产出
+        # (2026-10-31: 旧代码在此处对不存在的 .exe 路径直接 subprocess.run,
+        #  ubuntu-latest 上必抛 FileNotFoundError → 单测步骤失败 → 整轮不发布)
+        print("  ⚠️  未找到 sing-box 内核 → 跳过本阶段")
+        print("      (CI 中请确保本步骤之前已执行 Prepare runtime; "
+              "本地可先跑一次 python scripts/main_v2.py 下载内核)")
+
+    if sb:
+        import subprocess, tempfile
+        for name, ob in outbounds.items():
+            cfg = mv.build_test_config(ob, 53000 + (hash(name) % 500))
             try:
-                os.remove(path)
-            except Exception:
-                pass
+                with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as f:
+                    json.dump(cfg, f)
+                    path = f.name
+                r = subprocess.run([sb, "check", "-c", path], capture_output=True, text=True, timeout=15)
+                if r.returncode == 0:
+                    print(f"  ✅ {name}: check PASS")
+                else:
+                    err = (r.stderr or r.stdout or "").strip().splitlines()
+                    err_short = err[-1][:100] if err else "?"
+                    FAIL.append(f"[CHECK-FAIL] {name}: {err_short}")
+                    print(f"  ❌ {name}: check FAIL → {err_short}")
+            finally:
+                try:
+                    os.remove(path)
+                except Exception:
+                    pass
 
     print()
     print("=" * 70)

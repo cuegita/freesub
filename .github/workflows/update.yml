@@ -14,7 +14,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 50
+    # ★ 原为 50 分钟。候选池规模随订阅源波动, 单次跑满 45 分钟仍未完成的情况已实际发生过;
+    #   被中断时后续 commit/push 永不执行, 整轮一个节点都发不出去。
+    #   改为 180 分钟 (远低于公共仓库单 job 6 小时上限), 并让 main_v2.py 自带
+    #   MAX_RUNTIME_SEC=6600s (110 分钟) 的内部预算 —— 正常情况下自己会提前收敛并发布,
+    #   这里的 180 分钟只是兜住最后一道。
+    timeout-minutes: 180
     permissions:
       contents: write
 
@@ -32,6 +37,15 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install -r scripts/requirements.txt
+
+      - name: Prepare runtime (sing-box 内核 + GeoLite 数据库)
+        # ★ 必须排在单元测试之前: 单测阶段2 要用 sing-box 校验配置合法性。
+        #   旧流水线没有这一步, 而 runtime/ 由 main_v2.setup_environment() 在线下载且被
+        #   .gitignore 排除 —— 单测跑在 main 之前时内核根本不存在, Linux 上又硬编码 .exe
+        #   后缀 → FileNotFoundError → 单测步骤失败 → 整轮不发布。
+        #   这里提前下载后, main_v2 启动时会检测到已存在而直接复用, 不额外耗时。
+        run: |
+          python -c "import sys; sys.path.insert(0,'scripts'); import main_v2; main_v2.setup_environment()"
 
       - name: Run Unit Tests (解析器 / 配置合法性 / 分类)
         # CHANGES.md 里 #3~#7 全是"导出丢参数"类回归, 解析器最容易坏且坏得最隐蔽
@@ -56,6 +70,10 @@ jobs:
           if-no-files-found: ignore
 
       - name: Commit and Push Results
+        # ★ always(): 探活步骤一旦失败/被中断, 后续步骤就永远不执行 → 整轮零产出。
+        #   即使这轮没跑完, 也应先把手上已有的结果发布出去, 而不是白跑一次
+        #   (output 无变化时 git 会判定无 diff 自动跳过, 不会写空订阅)
+        if: always()
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -68,7 +86,7 @@ jobs:
           fi
 
       - name: Purge jsDelivr CDN (post-push)
-        if: success()
+        if: always()
         run: |
           REPO="${GITHUB_REPOSITORY}"
           p() { curl -s -o /dev/null "https://purge.jsdelivr.net/gh/${REPO}@main/$1" || true; }

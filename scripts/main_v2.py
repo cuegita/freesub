@@ -39,7 +39,7 @@ import ipaddress
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed, wait, FIRST_COMPLETED
 
 try:
     import requests
@@ -152,6 +152,15 @@ TRACE_URL = "https://www.cloudflare.com/cdn-cgi/trace"      # warp=on 检测套�
 MAX_WORKERS_TEST    = 48            # 同时 sing-box 实测节点数 (Azure 2C7G 实测 24→48 稳定; sing-box 单实例 < 30MB)
 MAX_WORKERS_FETCH   = 8
 MAX_WORKERS_CLASSIFY = 32
+
+# ★ 探活阶段总时间预算 (秒) — 到点即停止派新任务, 拿已有结果继续完成分类与导出。
+#   存在的理由: 候选池规模随订阅源波动, 而单次总耗时 = O(候选数 × 死节点探测耗时 / 并发),
+#   没有预算约束就会无限膨胀 (2026-10-30 那轮跑到 45 分钟仍未完成)。更糟的是探活一旦被中断,
+#   后续 commit/push 步骤永远不会执行 —— **整轮一个节点都发不出去**。
+#   有预算后: 即使本轮测不完, 也一定会用已测完的结果完成导出与发布, 只是数量少一些。
+#   默认值须明显小于 workflow 的 timeout-minutes, 给分类 (ip-api) + 导出 + purge 留足余量。
+#   可用环境变量 MAX_RUNTIME_SEC 覆盖。
+MAX_RUNTIME_SEC = int(os.environ.get("MAX_RUNTIME_SEC", "6600"))   # 6600s = 110 分钟
 
 # ip-api.com 免费批量: 15 req/min, 每 req ≤100 IP (仅 HTTP)
 IP_API_BATCH_URL = "http://ip-api.com/batch?fields=status,countryCode,isp,org,as,asname,reverse,mobile,proxy,hosting,query"
@@ -1436,22 +1445,52 @@ def test_single_node(item, chain_relay: dict = None):
 
 
 def run_liveness_test(candidates: list) -> list:
-    print(f"[*] sing-box 全协议真实测活: {len(candidates)} 节点 (并发 {MAX_WORKERS_TEST}) ...")
+    """全并发启动, 但受 MAX_RUNTIME_SEC 总预算约束:
+
+    预算到点 → 取消所有尚未启动的任务, 用已返回结果继续后续流程 (保证本轮一定出结果)。
+    已在跑的任务无法真正中断, 但它们自身都有硬超时 (≤ ~40s), 所以实际收尾 ≈ 预算 + 几十秒。
+    """
+    budget = MAX_RUNTIME_SEC
+    deadline = time.time() + budget
+    print(f"[*] sing-box 全协议真实测活: {len(candidates)} 节点 (并发 {MAX_WORKERS_TEST}, "
+          f"时间预算 {budget}s = {budget/60:.0f}分钟) ...")
     results = []
     done_count = [0]
+    truncated = False
 
     def _work(item):
         return test_single_node(item)
 
+    pending = set()
     with ThreadPoolExecutor(max_workers=MAX_WORKERS_TEST) as ex:
-        futs = {ex.submit(_work, it): it for it in candidates}
-        for fut in as_completed(futs):
-            done_count[0] += 1
-            r = fut.result()
-            if r:
-                results.append(r)
+        # 一次性提交全部分片任务: submit 本身几乎不耗时, 真正受控的是下面 wait 的节奏
+        fut_map = {ex.submit(_work, it): it for it in candidates}
+        pending = set(fut_map)
+        while pending:
+            remain = deadline - time.time()
+            if remain <= 0:
+                cancelled = sum(1 for f in pending if f.cancel())
+                print(f"[!] 探活预算 ({budget}s) 耗尽 → 取消未启动任务 {cancelled} 个, "
+                      f"继续处理已完成的 {len(results)} 个结果")
+                truncated = True
+                break
+            done, pending = wait(pending, timeout=min(remain, 10),
+                                 return_when=FIRST_COMPLETED)
+            for fut in done:
+                done_count[0] += 1
+                try:
+                    r = fut.result()
+                except Exception:
+                    r = None
+                if r:
+                    results.append(r)
             if done_count[0] % 40 == 0:
-                print(f"[*] 测活进度: {done_count[0]}/{len(candidates)}, 通过 {len(results)}")
+                left = max(0.0, deadline - time.time())
+                print(f"[*] 测活进度: {done_count[0]}/{len(candidates)}, 通过 {len(results)}, "
+                      f"剩余预算 {left/60:.1f} 分钟")
+        # 退出 with 会等待仍在运行的线程, 但它们各自有硬超时
+    if truncated:
+        print(f"[*] 本轮为预算受限的不完整测活: 已处理 {done_count[0]}/{len(candidates)} 个候选")
 
     alive = [r for r in results if r["alive"] and not r["is_stalled"]]
     mitm = sum(1 for r in results if r["mitm_risk"])
