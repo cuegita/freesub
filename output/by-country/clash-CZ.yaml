@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 195.123.245.241
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
-    short-id: 23d0950d60bc0d5b
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 212.102.38.25
   port: 443
   udp: true
@@ -30,32 +17,7 @@ proxies:
     short-id: e90360ec7cc61b20
   servername: udemy.com
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 31.77.13.22
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
-  server: 193.124.17.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6dfc9149-1ff9-41c3-8563-0ef284381731
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 1374bddeb25d
-  servername: www.tradingview.com
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 104.19.235.15
   port: 443
   udp: true
@@ -70,6 +32,44 @@ proxies:
     path: /019bcbad-3813-7cce-8786-3ac0e418f128
     headers:
       Host: n.bitpulse.me
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: 193.124.17.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 73a9e631a09b
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1896c6c9-a941-4688-a865-29027bf7f8e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 6c825bc79850
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
+  server: 31.77.13.22
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
