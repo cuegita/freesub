@@ -6,3 +6,6 @@ runtime/
 .test/
 .sb-probe/
 output/e2e_test_report.json
+
+# 本地工具产生的元数据/工作日志（非项目内容，跨仓库统一忽略）
+.workbuddy/
