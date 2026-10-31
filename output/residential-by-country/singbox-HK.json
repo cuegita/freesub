@@ -19,11 +19,8 @@
       "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "images.ctfassets.net",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ]
+        "server_name": "654968169.df6h451rh.xin",
+        "insecure": true
       }
     },
     {
@@ -35,10 +32,7 @@
       "tls": {
         "enabled": true,
         "server_name": "images.ctfassets.net",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ]
+        "insecure": true
       }
     },
     {

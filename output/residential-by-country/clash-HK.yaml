@@ -18,7 +18,7 @@ proxies:
   udp: true
   type: anytls
   password: 0324fbc29561
-  sni: images.ctfassets.net
+  sni: 654968169.df6h451rh.xin
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
   server: 56481.df6h451rh.xin
