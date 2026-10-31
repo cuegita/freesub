@@ -27,27 +27,6 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
-      "server": "45.43.79.92",
-      "server_port": 443,
-      "uuid": "042b12d8-bac4-4b3a-b661-79e333f08e4e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "vikt659.isgood.host",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "M4Y9h339sntl5wEpiCa7f4IKhJ_8JLzPnAz2IzKlngM",
-          "short_id": "af4ca5d16438c938"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -57,7 +36,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -68,28 +47,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
-      "server": "195.123.208.32",
-      "server_port": 443,
-      "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
+      "server": "45.38.143.210",
+      "server_port": 30584,
+      "uuid": "cebc5f19-18d9-48e6-9029-fb4b04caf393",
       "tls": {
         "enabled": true,
-        "server_name": "gateway.icloud.com",
+        "server_name": "m.vk.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk",
-          "short_id": "757b9e1ef18e60f0"
+          "public_key": "2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y",
+          "short_id": "67ece882d65d0f1a"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
       "server": "31.58.171.53",
       "server_port": 443,
       "uuid": "4d259556-57f7-4e5a-9a4a-48868787fb38",
@@ -110,42 +88,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe",
-      "server": "45.38.143.210",
-      "server_port": 30584,
-      "uuid": "cebc5f19-18d9-48e6-9029-fb4b04caf393",
-      "tls": {
-        "enabled": true,
-        "server_name": "m.vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y",
-          "short_id": "67ece882d65d0f1a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe",
-      "server": "109.248.148.140",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
+      "server": "195.123.208.32",
       "server_port": 443,
-      "uuid": "28e7f9e1-006c-4c38-822d-2d2903477444",
+      "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "RFZXfsd3WfxOKRcdO4Q7RoElfE8JbMpR6bG3jYLV_Uc",
-          "short_id": ""
+          "public_key": "ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk",
+          "short_id": "757b9e1ef18e60f0"
         }
       }
     },
@@ -158,9 +116,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe"
       ]
     },
     {
@@ -171,9 +127,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

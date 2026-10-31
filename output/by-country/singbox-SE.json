@@ -4,38 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "50.7.38.243",
-      "server_port": 443,
-      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
-      "tls": {
-        "enabled": true,
-        "server_name": "promo.betust.net",
-        "insecure": false
-      }
+      "server": "177.3.215.199",
+      "server_port": 1125,
+      "uuid": "78c8ab17-814e-4c10-a642-f616c9be979d",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+      "server": "31.76.81.137",
+      "server_port": 1114,
+      "uuid": "78c8ab17-814e-4c10-a642-f616c9be979d",
+      "security": "auto"
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
       "server": "192.142.23.46",
       "server_port": 443,
       "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
       "tls": {
         "enabled": true,
         "server_name": "diffoscope.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "70.34.207.14",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
         "insecure": false
       }
     },
@@ -54,41 +46,28 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-      "server": "31.172.65.4",
-      "server_port": 8443,
-      "uuid": "9c6e83fc-b755-4ad4-9b0a-14b610153d8f",
-      "flow": "xtls-rprx-vision",
+      "server": "70.34.207.14",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wRvUAKwcHc4pBNVouIcVjQkVD9aCRR-AmtcFyBV36lU",
-          "short_id": "0e7741edc378622f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-      "server": "179.253.179.109",
-      "server_port": 54083,
-      "uuid": "0ef03752-c8bf-4482-8710-e563ca4808f9",
-      "tls": {
-        "enabled": true,
-        "server_name": "177.3.215.54",
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "selector",
