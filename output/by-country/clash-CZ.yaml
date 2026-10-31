@@ -31,21 +31,6 @@ proxies:
   servername: udemy.com
   client-fingerprint: ios
 - name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 104.19.235.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  tls: true
-  servername: n.bitpulse.me
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128
-    headers:
-      Host: n.bitpulse.me
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
   server: 193.124.17.190
   port: 443
   udp: true
@@ -58,8 +43,8 @@ proxies:
     short-id: 1374bddeb25d
   servername: www.tradingview.com
   client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
-  server: cz-prg.dontblockmepls.com
+- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+  server: 31.77.13.22
   port: 2063
   udp: true
   type: vless
@@ -69,19 +54,6 @@ proxies:
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 06 - xiaohe
-  server: server.slavkiti.monster
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: ee1716767f9b
-  servername: www.tradingview.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -92,8 +64,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
   - 🇨🇿 捷克 (Czech) 04 - xiaohe
-  - 🇨🇿 捷克 (Czech) 05 - xiaohe
-  - 🇨🇿 捷克 (Czech) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -103,7 +73,5 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
   - 🇨🇿 捷克 (Czech) 04 - xiaohe
-  - 🇨🇿 捷克 (Czech) 05 - xiaohe
-  - 🇨🇿 捷克 (Czech) 06 - xiaohe
 rules:
 - MATCH,PROXIES

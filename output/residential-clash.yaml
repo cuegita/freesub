@@ -4,16 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 155.117.19.17
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - xiaohe
   server: zfd-hkv2.kunlun01dns.com
   port: 16115
@@ -22,30 +19,53 @@ proxies:
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - xiaohe
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16114
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   server: 112.169.175.199
   port: 31157
   udp: true
   type: vless
   uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  server: 654968169.df6h451rh.xin
+- name: 🇮🇳 印度 (India) 05 (家宽) - xiaohe
+  server: 122.176.216.52
+  port: 443
+  udp: true
+  type: vless
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  tls: true
+  servername: app-6ada5023.deploy.meerasolution.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    headers:
+      Host: app-6ada5023.deploy.meerasolution.com
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
+  server: 56481.df6h451rh.xin
   port: 443
   udp: true
   type: anytls
   password: 0324fbc29561
-  sni: 654968169.df6h451rh.xin
+  sni: images.ctfassets.net
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  server: er8u54dh.df6h451rh.xin
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  server: 684616s4.df6h451rh.xin
   port: 443
   udp: true
   type: anytls
   password: 0324fbc29561
   sni: px.ads.linkedin.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
-  server: 684616s4.df6h451rh.xin
+- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
+  server: er8u54dh.df6h451rh.xin
   port: 443
   udp: true
   type: anytls
@@ -57,22 +77,26 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇮🇳 印度 (India) 05 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇮🇳 印度 (India) 05 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
