@@ -4,17 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇳 CN 01 - xiaohe",
-      "server": "103.115.17.8",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "jXKHLkRBTeMXJkmf"
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇳 CN 02 - xiaohe",
-      "server": "8.35.211.242",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "188.114.98.0",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
@@ -32,8 +24,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇳 CN 03 - xiaohe",
-      "server": "vpn.cintaku.qzz.io",
+      "tag": "🇨🇳 CN 02 - xiaohe",
+      "server": "104.17.108.213",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
@@ -47,7 +39,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vlessws"
+        "path": "/vlessws",
+        "headers": {
+          "Host": "vpn.cintaku.qzz.io"
+        }
       }
     },
     {
@@ -56,8 +51,7 @@
       "outbounds": [
         "auto",
         "🇨🇳 CN 01 - xiaohe",
-        "🇨🇳 CN 02 - xiaohe",
-        "🇨🇳 CN 03 - xiaohe"
+        "🇨🇳 CN 02 - xiaohe"
       ]
     },
     {
@@ -65,8 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇳 CN 01 - xiaohe",
-        "🇨🇳 CN 02 - xiaohe",
-        "🇨🇳 CN 03 - xiaohe"
+        "🇨🇳 CN 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
