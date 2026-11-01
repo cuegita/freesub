@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - netmix",
       "server": "104.17.3.81",
       "server_port": 443,
       "uuid": "dffb7646-1656-427a-8187-9c056a6a5fd5",
@@ -28,7 +28,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇩 印尼 (Indonesia) 02 - xiaohe",
+      "tag": "🇮🇩 印尼 (Indonesia) 02 - netmix",
       "server": "az-1.linkaa.xyz",
       "server_port": 55386,
       "uuid": "6E571484-4166-4699-8F58-B34A1823691F",
@@ -43,7 +43,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 03 - xiaohe",
+      "tag": "🇮🇩 印尼 (Indonesia) 03 - netmix",
       "server": "130.94.95.198",
       "server_port": 57353,
       "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
@@ -62,18 +62,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-        "🇮🇩 印尼 (Indonesia) 02 - xiaohe",
-        "🇮🇩 印尼 (Indonesia) 03 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - netmix",
+        "🇮🇩 印尼 (Indonesia) 02 - netmix",
+        "🇮🇩 印尼 (Indonesia) 03 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-        "🇮🇩 印尼 (Indonesia) 02 - xiaohe",
-        "🇮🇩 印尼 (Indonesia) 03 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - netmix",
+        "🇮🇩 印尼 (Indonesia) 02 - netmix",
+        "🇮🇩 印尼 (Indonesia) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

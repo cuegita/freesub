@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇳 CN 01 - xiaohe",
+      "tag": "🇨🇳 CN 01 - netmix",
       "server": "104.17.11.191",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
@@ -28,7 +28,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇳 CN 02 - xiaohe",
+      "tag": "🇨🇳 CN 02 - netmix",
       "server": "vpn.cintaku.qzz.io",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
@@ -51,16 +51,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - xiaohe",
-        "🇨🇳 CN 02 - xiaohe"
+        "🇨🇳 CN 01 - netmix",
+        "🇨🇳 CN 02 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - xiaohe",
-        "🇨🇳 CN 02 - xiaohe"
+        "🇨🇳 CN 01 - netmix",
+        "🇨🇳 CN 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

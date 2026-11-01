@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
+- name: 🇹🇭 泰国 (Thailand) 01 - netmix
   server: 119.46.51.45
   port: 37515
   udp: true
@@ -12,7 +12,7 @@ proxies:
   uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
   alterId: 0
   cipher: auto
-- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
+- name: 🇹🇭 泰国 (Thailand) 02 - netmix
   server: th001.zestapp778.com
   port: 33079
   udp: true
@@ -20,7 +20,7 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: th001.zestapp778.com
   skip-cert-verify: true
-- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
+- name: 🇹🇭 泰国 (Thailand) 03 - netmix
   server: 45.154.26.63
   port: 443
   udp: true
@@ -38,16 +38,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 01 - netmix
+  - 🇹🇭 泰国 (Thailand) 02 - netmix
+  - 🇹🇭 泰国 (Thailand) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 01 - netmix
+  - 🇹🇭 泰国 (Thailand) 02 - netmix
+  - 🇹🇭 泰国 (Thailand) 03 - netmix
 rules:
 - MATCH,PROXIES

@@ -4,21 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 01 - netmix
   server: 68.183.235.240
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 02 - netmix
   server: 68.183.227.236
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 03 - netmix
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -26,7 +26,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 04 - netmix
   server: 149.88.23.207
   port: 18000
   udp: true
@@ -34,14 +34,14 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 05 - netmix
   server: 68.183.235.122
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 06 - netmix
   server: 206.206.76.75
   port: 443
   udp: true
@@ -54,14 +54,14 @@ proxies:
     short-id: a775360a48ef5cfb
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 07 - netmix
   server: 128.199.172.224
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 08 - netmix
   server: 139.180.146.200
   port: 8886
   udp: true
@@ -69,7 +69,7 @@ proxies:
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   sni: 139.180.146.200
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 09 - netmix
   server: 206.206.78.36
   port: 443
   udp: true
@@ -82,7 +82,7 @@ proxies:
     short-id: 133a3f10a1581047
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 10 - netmix
   server: 138.2.73.238
   port: 50160
   udp: true
@@ -90,14 +90,14 @@ proxies:
   password: f87376e17da040ed04c9665ce8972930
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 11 - netmix
   server: 68.183.227.4
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 12 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 12 - netmix
   server: 134.185.81.5
   port: 47881
   udp: true
@@ -110,7 +110,7 @@ proxies:
     short-id: 38d72071
   servername: www.tesla.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 13 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 13 - netmix
   server: 149.28.130.108
   port: 443
   udp: true
@@ -118,7 +118,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: searchcreativejobsandshowcaseyourartistictalents.com
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 14 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 14 - netmix
   server: 138.2.89.249
   port: 443
   udp: true
@@ -128,7 +128,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 309502c4a8df10b46fb976d4a8c43f42
-- name: 🇸🇬 新加坡 (Singapore) 15 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 15 - netmix
   server: 3.0.111.82
   port: 17623
   udp: true
@@ -141,7 +141,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: ios
-- name: 🇸🇬 新加坡 (Singapore) 16 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 16 - netmix
   server: 172.237.88.103
   port: 443
   udp: true
@@ -154,14 +154,14 @@ proxies:
     short-id: 5a42dbd7e26a0415
   servername: zoom.us
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 17 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 17 - netmix
   server: 128.1.186.73
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 18 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 18 - netmix
   server: 5.34.177.164
   port: 443
   udp: true
@@ -174,7 +174,7 @@ proxies:
     short-id: b2efed6d157e7bb0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 19 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 19 - netmix
   server: 140.235.11.243
   port: 56984
   udp: true
@@ -184,7 +184,7 @@ proxies:
   servername: sg1.zestapp778.com
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 20 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 20 - netmix
   server: 54.251.9.130
   port: 24146
   udp: true
@@ -197,7 +197,7 @@ proxies:
     short-id: 7205d9079521832c
   servername: www.intel.com
   client-fingerprint: qq
-- name: 🇸🇬 新加坡 (Singapore) 21 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 21 - netmix
   server: 3.0.111.82
   port: 12972
   udp: true
@@ -210,7 +210,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 22 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 22 - netmix
   server: 54.169.200.246
   port: 41688
   udp: true
@@ -223,7 +223,7 @@ proxies:
     short-id: 7f342137c20387
   servername: www.intel.com
   client-fingerprint: ios
-- name: 🇸🇬 新加坡 (Singapore) 23 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 23 - netmix
   server: az-1.linkaa.xyz
   port: 53437
   udp: true
@@ -236,14 +236,14 @@ proxies:
     path: /game/resources
     headers:
       Host: az-1.linkaa.xyz
-- name: 🇸🇬 新加坡 (Singapore) 24 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 24 - netmix
   server: 128.1.186.132
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 25 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 25 - netmix
   server: 67.159.52.81
   port: 443
   udp: true
@@ -256,7 +256,7 @@ proxies:
     short-id: feedbacc
   servername: sg.fasti.win
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 26 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 26 - netmix
   server: 139.162.27.96
   port: 2096
   udp: true
@@ -271,7 +271,7 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 27 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 27 - netmix
   server: 3.0.111.82
   port: 10574
   udp: true
@@ -284,7 +284,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: ios
-- name: 🇸🇬 新加坡 (Singapore) 28 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 28 - netmix
   server: 172.237.88.103
   port: 447
   udp: true
@@ -297,7 +297,7 @@ proxies:
     short-id: 5a42dbd7e26a0415
   servername: netflix.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 29 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 29 - netmix
   server: mdk.mdmekjll.best
   port: 80
   udp: true
@@ -310,7 +310,7 @@ proxies:
     path: /game/resources
     headers:
       Host: mdk.mdmekjll.best
-- name: 🇸🇬 新加坡 (Singapore) 30 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 30 - netmix
   server: sg003.zestapp778.com
   port: 443
   udp: true
@@ -325,70 +325,70 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 11 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 12 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 13 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 14 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 15 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 16 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 17 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 18 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 19 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 20 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 21 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 22 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 23 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 24 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 25 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 26 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 27 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 28 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 29 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 30 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 01 - netmix
+  - 🇸🇬 新加坡 (Singapore) 02 - netmix
+  - 🇸🇬 新加坡 (Singapore) 03 - netmix
+  - 🇸🇬 新加坡 (Singapore) 04 - netmix
+  - 🇸🇬 新加坡 (Singapore) 05 - netmix
+  - 🇸🇬 新加坡 (Singapore) 06 - netmix
+  - 🇸🇬 新加坡 (Singapore) 07 - netmix
+  - 🇸🇬 新加坡 (Singapore) 08 - netmix
+  - 🇸🇬 新加坡 (Singapore) 09 - netmix
+  - 🇸🇬 新加坡 (Singapore) 10 - netmix
+  - 🇸🇬 新加坡 (Singapore) 11 - netmix
+  - 🇸🇬 新加坡 (Singapore) 12 - netmix
+  - 🇸🇬 新加坡 (Singapore) 13 - netmix
+  - 🇸🇬 新加坡 (Singapore) 14 - netmix
+  - 🇸🇬 新加坡 (Singapore) 15 - netmix
+  - 🇸🇬 新加坡 (Singapore) 16 - netmix
+  - 🇸🇬 新加坡 (Singapore) 17 - netmix
+  - 🇸🇬 新加坡 (Singapore) 18 - netmix
+  - 🇸🇬 新加坡 (Singapore) 19 - netmix
+  - 🇸🇬 新加坡 (Singapore) 20 - netmix
+  - 🇸🇬 新加坡 (Singapore) 21 - netmix
+  - 🇸🇬 新加坡 (Singapore) 22 - netmix
+  - 🇸🇬 新加坡 (Singapore) 23 - netmix
+  - 🇸🇬 新加坡 (Singapore) 24 - netmix
+  - 🇸🇬 新加坡 (Singapore) 25 - netmix
+  - 🇸🇬 新加坡 (Singapore) 26 - netmix
+  - 🇸🇬 新加坡 (Singapore) 27 - netmix
+  - 🇸🇬 新加坡 (Singapore) 28 - netmix
+  - 🇸🇬 新加坡 (Singapore) 29 - netmix
+  - 🇸🇬 新加坡 (Singapore) 30 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 11 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 12 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 13 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 14 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 15 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 16 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 17 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 18 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 19 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 20 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 21 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 22 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 23 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 24 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 25 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 26 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 27 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 28 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 29 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 30 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 01 - netmix
+  - 🇸🇬 新加坡 (Singapore) 02 - netmix
+  - 🇸🇬 新加坡 (Singapore) 03 - netmix
+  - 🇸🇬 新加坡 (Singapore) 04 - netmix
+  - 🇸🇬 新加坡 (Singapore) 05 - netmix
+  - 🇸🇬 新加坡 (Singapore) 06 - netmix
+  - 🇸🇬 新加坡 (Singapore) 07 - netmix
+  - 🇸🇬 新加坡 (Singapore) 08 - netmix
+  - 🇸🇬 新加坡 (Singapore) 09 - netmix
+  - 🇸🇬 新加坡 (Singapore) 10 - netmix
+  - 🇸🇬 新加坡 (Singapore) 11 - netmix
+  - 🇸🇬 新加坡 (Singapore) 12 - netmix
+  - 🇸🇬 新加坡 (Singapore) 13 - netmix
+  - 🇸🇬 新加坡 (Singapore) 14 - netmix
+  - 🇸🇬 新加坡 (Singapore) 15 - netmix
+  - 🇸🇬 新加坡 (Singapore) 16 - netmix
+  - 🇸🇬 新加坡 (Singapore) 17 - netmix
+  - 🇸🇬 新加坡 (Singapore) 18 - netmix
+  - 🇸🇬 新加坡 (Singapore) 19 - netmix
+  - 🇸🇬 新加坡 (Singapore) 20 - netmix
+  - 🇸🇬 新加坡 (Singapore) 21 - netmix
+  - 🇸🇬 新加坡 (Singapore) 22 - netmix
+  - 🇸🇬 新加坡 (Singapore) 23 - netmix
+  - 🇸🇬 新加坡 (Singapore) 24 - netmix
+  - 🇸🇬 新加坡 (Singapore) 25 - netmix
+  - 🇸🇬 新加坡 (Singapore) 26 - netmix
+  - 🇸🇬 新加坡 (Singapore) 27 - netmix
+  - 🇸🇬 新加坡 (Singapore) 28 - netmix
+  - 🇸🇬 新加坡 (Singapore) 29 - netmix
+  - 🇸🇬 新加坡 (Singapore) 30 - netmix
 rules:
 - MATCH,PROXIES

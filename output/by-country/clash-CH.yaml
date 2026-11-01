@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 01 - netmix
   server: 140.238.213.114
   port: 50160
   udp: true
@@ -12,7 +12,7 @@ proxies:
   password: 84a506ca5aca505696a454d828420b3f
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 02 - netmix
   server: 208.69.78.217
   port: 33025
   udp: true
@@ -22,7 +22,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 03 - netmix
   server: 208.69.78.217
   port: 33171
   udp: true
@@ -32,7 +32,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 04 - netmix
   server: 152.67.75.161
   port: 443
   udp: true
@@ -42,7 +42,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 05 - netmix
   server: 208.69.78.217
   port: 33174
   udp: true
@@ -52,7 +52,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 06 - netmix
   server: 208.69.78.217
   port: 8444
   udp: true
@@ -62,7 +62,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 07 - netmix
   server: 208.69.78.217
   port: 21054
   udp: true
@@ -72,7 +72,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 08 - netmix
   server: 208.69.78.217
   port: 33130
   udp: true
@@ -82,7 +82,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 09 - netmix
   server: 208.69.78.217
   port: 33117
   udp: true
@@ -92,7 +92,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 10 - netmix
   server: 208.69.78.217
   port: 21046
   udp: true
@@ -102,7 +102,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 11 - netmix
   server: 208.69.78.217
   port: 33152
   udp: true
@@ -112,7 +112,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 12 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 12 - netmix
   server: 208.69.78.217
   port: 33141
   udp: true
@@ -122,7 +122,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 13 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 13 - netmix
   server: 208.69.78.217
   port: 21086
   udp: true
@@ -132,7 +132,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 14 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 14 - netmix
   server: 208.69.78.217
   port: 21154
   udp: true
@@ -142,7 +142,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 15 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 15 - netmix
   server: 208.69.78.217
   port: 21158
   udp: true
@@ -152,7 +152,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 16 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 16 - netmix
   server: 208.69.78.217
   port: 2053
   udp: true
@@ -164,7 +164,7 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 17 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 17 - netmix
   server: 208.69.78.217
   port: 21021
   udp: true
@@ -174,7 +174,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 18 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 18 - netmix
   server: 208.69.78.217
   port: 33092
   udp: true
@@ -184,7 +184,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 19 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 19 - netmix
   server: 208.69.78.217
   port: 21147
   udp: true
@@ -194,7 +194,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 20 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 20 - netmix
   server: 208.69.78.217
   port: 21113
   udp: true
@@ -204,7 +204,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 21 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 21 - netmix
   server: 208.69.78.217
   port: 21161
   udp: true
@@ -214,7 +214,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 22 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 22 - netmix
   server: 208.69.78.217
   port: 33042
   udp: true
@@ -224,7 +224,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 23 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 23 - netmix
   server: 45.90.57.119
   port: 8443
   udp: true
@@ -237,7 +237,7 @@ proxies:
     short-id: 16036bbef04d0509
   servername: twitch.tv
   client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 24 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 24 - netmix
   server: 208.69.78.217
   port: 21080
   udp: true
@@ -247,7 +247,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 25 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 25 - netmix
   server: 208.69.78.217
   port: 33187
   udp: true
@@ -257,7 +257,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 26 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 26 - netmix
   server: 208.69.78.217
   port: 21084
   udp: true
@@ -267,7 +267,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 27 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 27 - netmix
   server: 208.69.78.217
   port: 33195
   udp: true
@@ -277,7 +277,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 28 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 28 - netmix
   server: 208.69.78.217
   port: 21067
   udp: true
@@ -287,7 +287,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 29 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 29 - netmix
   server: 208.69.78.217
   port: 21016
   udp: true
@@ -297,7 +297,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 30 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 30 - netmix
   server: 208.69.78.217
   port: 21000
   udp: true
@@ -308,7 +308,7 @@ proxies:
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   ports: 21000-21199,33000-33199
-- name: 🇨🇭 瑞士 (Switzerland) 31 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 31 - netmix
   server: 208.69.78.217
   port: 21090
   udp: true
@@ -318,7 +318,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 32 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 32 - netmix
   server: 208.69.78.217
   port: 33044
   udp: true
@@ -328,7 +328,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 33 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 33 - netmix
   server: 208.69.78.208
   port: 443
   udp: true
@@ -336,7 +336,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: resources.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 34 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 34 - netmix
   server: 208.69.78.222
   port: 443
   udp: true
@@ -344,7 +344,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 35 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 35 - netmix
   server: 45.90.59.15
   port: 443
   udp: true
@@ -357,7 +357,7 @@ proxies:
     short-id: 19253fae84102271
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 36 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 36 - netmix
   server: 208.69.78.217
   port: 33133
   udp: true
@@ -367,7 +367,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 37 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 37 - netmix
   server: 208.69.78.217
   port: 33013
   udp: true
@@ -377,7 +377,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 38 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 38 - netmix
   server: 208.69.78.217
   port: 21047
   udp: true
@@ -387,7 +387,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 39 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 39 - netmix
   server: 208.69.78.19
   port: 443
   udp: true
@@ -400,88 +400,88 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 12 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 13 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 14 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 15 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 16 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 17 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 18 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 19 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 20 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 21 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 22 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 23 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 24 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 25 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 26 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 27 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 28 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 29 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 30 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 31 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 32 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 33 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 34 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 35 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 36 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 37 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 38 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 39 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 01 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 02 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 03 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 04 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 05 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 06 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 07 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 08 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 09 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 10 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 11 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 12 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 13 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 14 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 15 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 16 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 17 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 18 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 19 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 20 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 21 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 22 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 23 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 24 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 25 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 26 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 27 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 28 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 29 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 30 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 31 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 32 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 33 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 34 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 35 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 36 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 37 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 38 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 39 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 12 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 13 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 14 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 15 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 16 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 17 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 18 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 19 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 20 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 21 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 22 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 23 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 24 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 25 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 26 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 27 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 28 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 29 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 30 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 31 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 32 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 33 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 34 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 35 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 36 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 37 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 38 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 39 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 01 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 02 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 03 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 04 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 05 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 06 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 07 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 08 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 09 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 10 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 11 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 12 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 13 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 14 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 15 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 16 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 17 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 18 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 19 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 20 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 21 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 22 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 23 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 24 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 25 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 26 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 27 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 28 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 29 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 30 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 31 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 32 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 33 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 34 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 35 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 36 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 37 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 38 - netmix
+  - 🇨🇭 瑞士 (Switzerland) 39 - netmix
 rules:
 - MATCH,PROXIES

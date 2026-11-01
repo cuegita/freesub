@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - netmix",
       "server": "177.3.215.199",
       "server_port": 1125,
       "uuid": "78c8ab17-814e-4c10-a642-f616c9be979d",
@@ -13,7 +13,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - netmix",
       "server": "31.76.81.137",
       "server_port": 1114,
       "uuid": "78c8ab17-814e-4c10-a642-f616c9be979d",
@@ -21,7 +21,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - netmix",
       "server": "192.142.23.46",
       "server_port": 443,
       "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
@@ -33,7 +33,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - netmix",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -47,7 +47,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - netmix",
       "server": "70.34.207.14",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -63,7 +63,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - netmix",
       "server": "70.34.212.124",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -74,24 +74,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - netmix",
+        "🇸🇪 瑞典 (Sweden) 02 - netmix",
+        "🇸🇪 瑞典 (Sweden) 03 - netmix",
+        "🇸🇪 瑞典 (Sweden) 04 - netmix",
+        "🇸🇪 瑞典 (Sweden) 05 - netmix",
+        "🇸🇪 瑞典 (Sweden) 06 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - netmix",
+        "🇸🇪 瑞典 (Sweden) 02 - netmix",
+        "🇸🇪 瑞典 (Sweden) 03 - netmix",
+        "🇸🇪 瑞典 (Sweden) 04 - netmix",
+        "🇸🇪 瑞典 (Sweden) 05 - netmix",
+        "🇸🇪 瑞典 (Sweden) 06 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

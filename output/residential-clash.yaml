@@ -4,14 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - netmix
   server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
   server: zfd-hkv1.kunlun01dns.com
   port: 16113
   udp: true
@@ -19,7 +19,7 @@ proxies:
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
   server: er8u54dh.df6h451rh.xin
   port: 443
   udp: true
@@ -27,7 +27,7 @@ proxies:
   password: 0324fbc29561
   sni: px.ads.linkedin.com
   skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 04 (家宽) - xiaohe
+- name: 🇮🇳 印度 (India) 04 (家宽) - netmix
   server: 122.176.216.52
   port: 443
   udp: true
@@ -42,7 +42,7 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
   server: 684616s4.df6h451rh.xin
   port: 443
   udp: true
@@ -50,7 +50,7 @@ proxies:
   password: 0324fbc29561
   sni: px.ads.linkedin.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix
   server: 56481.df6h451rh.xin
   port: 443
   udp: true
@@ -58,7 +58,7 @@ proxies:
   password: 0324fbc29561
   sni: images.ctfassets.net
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 07 (家宽) - xiaohe
+- name: 🇺🇸 美国 (United States) 07 (家宽) - netmix
   server: 155.117.19.17
   port: 443
   udp: true
@@ -73,24 +73,24 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇮🇳 印度 (India) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 07 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
+  - 🇮🇳 印度 (India) 04 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix
+  - 🇺🇸 美国 (United States) 07 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇮🇳 印度 (India) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 07 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
+  - 🇮🇳 印度 (India) 04 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix
+  - 🇺🇸 美国 (United States) 07 (家宽) - netmix
 rules:
 - MATCH,PROXIES

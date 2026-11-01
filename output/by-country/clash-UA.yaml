@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+- name: 🇺🇦 乌克兰 (Ukraine) 01 - netmix
   server: 31.222.235.81
   port: 443
   udp: true
@@ -16,7 +16,7 @@ proxies:
     short-id: d8b58872
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+- name: 🇺🇦 乌克兰 (Ukraine) 02 - netmix
   server: 83.147.18.75
   port: 443
   udp: true
@@ -29,7 +29,7 @@ proxies:
     short-id: 7f1e29593aa94ad1
   servername: www.bing.com
   client-fingerprint: qq
-- name: 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
+- name: 🇺🇦 乌克兰 (Ukraine) 03 - netmix
   server: staging.lastilhame.monster
   port: 443
   udp: true
@@ -47,16 +47,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - netmix
+  - 🇺🇦 乌克兰 (Ukraine) 02 - netmix
+  - 🇺🇦 乌克兰 (Ukraine) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - netmix
+  - 🇺🇦 乌克兰 (Ukraine) 02 - netmix
+  - 🇺🇦 乌克兰 (Ukraine) 03 - netmix
 rules:
 - MATCH,PROXIES

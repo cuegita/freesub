@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
+- name: 🌐 其他地区 (Other) 01 - netmix
   server: 172.67.156.121
   port: 443
   udp: true
@@ -20,7 +20,7 @@ proxies:
     path: /truth
     headers:
       Host: www.gptcloudai.com
-- name: 🌐 其他地区 (Other) 02 - xiaohe
+- name: 🌐 其他地区 (Other) 02 - netmix
   server: 172.67.156.121
   port: 443
   udp: true
@@ -41,14 +41,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
-  - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 01 - netmix
+  - 🌐 其他地区 (Other) 02 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
-  - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 01 - netmix
+  - 🌐 其他地区 (Other) 02 - netmix
 rules:
 - MATCH,PROXIES

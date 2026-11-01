@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - netmix",
       "server": "31.222.235.81",
       "server_port": 443,
       "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
@@ -25,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 02 - netmix",
       "server": "83.147.18.75",
       "server_port": 443,
       "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
@@ -46,7 +46,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 03 - netmix",
       "server": "staging.lastilhame.monster",
       "server_port": 443,
       "uuid": "ee39fb11-56a3-4ee7-9e7c-35a4235bd30e",
@@ -70,18 +70,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - netmix",
+        "🇺🇦 乌克兰 (Ukraine) 02 - netmix",
+        "🇺🇦 乌克兰 (Ukraine) 03 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 01 - netmix",
+        "🇺🇦 乌克兰 (Ukraine) 02 - netmix",
+        "🇺🇦 乌克兰 (Ukraine) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

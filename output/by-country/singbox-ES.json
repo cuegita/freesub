@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 01 - netmix",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -25,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - netmix",
       "server": "45.198.55.200",
       "server_port": 25152,
       "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
@@ -46,7 +46,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - netmix",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -67,7 +67,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - netmix",
       "server": "156.252.229.136",
       "server_port": 8443,
       "uuid": "3e21e3d3-6d26-4155-b851-764dd8e8c6b5",
@@ -87,7 +87,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - netmix",
       "server": "156.252.229.11",
       "server_port": 8443,
       "uuid": "3e21e3d3-6d26-4155-b851-764dd8e8c6b5",
@@ -107,7 +107,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - netmix",
       "server": "66.163.118.166",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -119,7 +119,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - netmix",
       "server": "45.198.55.200",
       "server_port": 25150,
       "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
@@ -139,7 +139,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 08 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 08 - netmix",
       "server": "156.252.229.159",
       "server_port": 8443,
       "uuid": "3e21e3d3-6d26-4155-b851-764dd8e8c6b5",
@@ -159,7 +159,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 09 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 09 - netmix",
       "server": "66.163.118.131",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -174,30 +174,30 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 07 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 08 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 09 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - netmix",
+        "🇪🇸 西班牙 (Spain) 02 - netmix",
+        "🇪🇸 西班牙 (Spain) 03 - netmix",
+        "🇪🇸 西班牙 (Spain) 04 - netmix",
+        "🇪🇸 西班牙 (Spain) 05 - netmix",
+        "🇪🇸 西班牙 (Spain) 06 - netmix",
+        "🇪🇸 西班牙 (Spain) 07 - netmix",
+        "🇪🇸 西班牙 (Spain) 08 - netmix",
+        "🇪🇸 西班牙 (Spain) 09 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 07 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 08 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 09 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - netmix",
+        "🇪🇸 西班牙 (Spain) 02 - netmix",
+        "🇪🇸 西班牙 (Spain) 03 - netmix",
+        "🇪🇸 西班牙 (Spain) 04 - netmix",
+        "🇪🇸 西班牙 (Spain) 05 - netmix",
+        "🇪🇸 西班牙 (Spain) 06 - netmix",
+        "🇪🇸 西班牙 (Spain) 07 - netmix",
+        "🇪🇸 西班牙 (Spain) 08 - netmix",
+        "🇪🇸 西班牙 (Spain) 09 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

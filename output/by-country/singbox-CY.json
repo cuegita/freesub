@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - netmix",
       "server": "138.124.58.206",
       "server_port": 8443,
       "uuid": "a52fd54b-ba4d-4d11-8e00-301e2646cd66",
@@ -26,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - netmix",
       "server": "5.253.28.240",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
@@ -50,7 +50,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - netmix",
       "server": "45.86.60.102",
       "server_port": 8443,
       "uuid": "a52fd54b-ba4d-4d11-8e00-301e2646cd66",
@@ -71,7 +71,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - netmix",
       "server": "dorado.yokkastars.com",
       "server_port": 40443,
       "uuid": "af5eac96-e478-488a-bc8c-45269d7e8847",
@@ -95,20 +95,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - netmix",
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - netmix",
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - netmix",
+        "🇨🇾 塞浦路斯 (Cyprus) 04 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - netmix",
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - netmix",
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - netmix",
+        "🇨🇾 塞浦路斯 (Cyprus) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

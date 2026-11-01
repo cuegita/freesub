@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix
   server: 38.107.234.57
   port: 80
   udp: true
@@ -15,7 +15,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
   server: 95.56.251.12
   port: 47443
   udp: true
@@ -28,7 +28,7 @@ proxies:
     short-id: ae97223a8f799877
   servername: kz1.waspnest.space
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
   server: 46.8.43.125
   port: 443
   udp: true
@@ -39,7 +39,7 @@ proxies:
     public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
   servername: kz-central.v8x2b.lol
   client-fingerprint: firefox
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -51,7 +51,7 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix
   server: 3h-kazakhstan1.09vpn.com
   port: 8443
   udp: true
@@ -63,7 +63,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - netmix
   server: 178.236.16.98
   port: 35728
   udp: true
@@ -80,22 +80,22 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - netmix
 rules:
 - MATCH,PROXIES

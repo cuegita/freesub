@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - netmix
   server: 138.124.58.206
   port: 8443
   udp: true
@@ -17,7 +17,7 @@ proxies:
     short-id: 385cb18df0892069
   servername: fr1.vpngold.ru
   client-fingerprint: firefox
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - netmix
   server: 5.253.28.240
   port: 2443
   udp: true
@@ -32,7 +32,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - netmix
   server: 45.86.60.102
   port: 8443
   udp: true
@@ -45,7 +45,7 @@ proxies:
     short-id: 385cb18df0892069
   servername: ee1.vpngold.ru
   client-fingerprint: firefox
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - netmix
   server: dorado.yokkastars.com
   port: 40443
   udp: true
@@ -63,18 +63,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - netmix
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - netmix
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - netmix
+  - 🇨🇾 塞浦路斯 (Cyprus) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - netmix
+  - 🇨🇾 塞浦路斯 (Cyprus) 02 - netmix
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - netmix
+  - 🇨🇾 塞浦路斯 (Cyprus) 04 - netmix
 rules:
 - MATCH,PROXIES

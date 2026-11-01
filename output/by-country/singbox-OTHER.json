@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "tag": "🌐 其他地区 (Other) 01 - netmix",
       "server": "172.67.156.121",
       "server_port": 443,
       "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
@@ -25,7 +25,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 02 - xiaohe",
+      "tag": "🌐 其他地区 (Other) 02 - netmix",
       "server": "172.67.156.121",
       "server_port": 443,
       "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
@@ -48,16 +48,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe"
+        "🌐 其他地区 (Other) 01 - netmix",
+        "🌐 其他地区 (Other) 02 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe"
+        "🌐 其他地区 (Other) 01 - netmix",
+        "🌐 其他地区 (Other) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

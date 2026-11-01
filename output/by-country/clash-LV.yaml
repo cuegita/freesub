@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - netmix
   server: 195.123.213.28
   port: 443
   udp: true
@@ -17,7 +17,7 @@ proxies:
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - netmix
   server: 138.124.180.137
   port: 443
   udp: true
@@ -30,7 +30,7 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
   server: 45.38.143.210
   port: 30584
   udp: true
@@ -42,7 +42,7 @@ proxies:
     short-id: 67ece882d65d0f1a
   servername: m.vk.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - netmix
   server: 31.58.171.53
   port: 443
   udp: true
@@ -55,7 +55,7 @@ proxies:
     short-id: f77f3068
   servername: dl.google.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - netmix
   server: 195.123.208.32
   port: 443
   udp: true
@@ -73,20 +73,20 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - netmix
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - netmix
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - netmix
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - netmix
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - netmix
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - netmix
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - netmix
 rules:
 - MATCH,PROXIES

@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 01 - netmix
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -16,7 +16,7 @@ proxies:
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 02 - netmix
   server: 45.198.55.200
   port: 25152
   udp: true
@@ -29,7 +29,7 @@ proxies:
     short-id: 08c379434f36cdbe
   servername: www.samsung.com
   client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 03 - netmix
   server: 46.28.71.247
   port: 443
   udp: true
@@ -42,7 +42,7 @@ proxies:
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 04 - netmix
   server: 156.252.229.136
   port: 8443
   udp: true
@@ -54,7 +54,7 @@ proxies:
     short-id: 974f7f8f
   servername: play.googleapis.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 05 - netmix
   server: 156.252.229.11
   port: 8443
   udp: true
@@ -66,7 +66,7 @@ proxies:
     short-id: 974f7f8f
   servername: play.googleapis.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 06 - netmix
   server: 66.163.118.166
   port: 443
   udp: true
@@ -74,7 +74,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: learn.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 07 - netmix
   server: 45.198.55.200
   port: 25150
   udp: true
@@ -86,7 +86,7 @@ proxies:
     short-id: 4301a484cc762aa6
   servername: www.samsung.com
   client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 08 - netmix
   server: 156.252.229.159
   port: 8443
   udp: true
@@ -98,7 +98,7 @@ proxies:
     short-id: 974f7f8f
   servername: play.googleapis.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 09 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 09 - netmix
   server: 66.163.118.131
   port: 443
   udp: true
@@ -111,28 +111,28 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 08 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 09 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 01 - netmix
+  - 🇪🇸 西班牙 (Spain) 02 - netmix
+  - 🇪🇸 西班牙 (Spain) 03 - netmix
+  - 🇪🇸 西班牙 (Spain) 04 - netmix
+  - 🇪🇸 西班牙 (Spain) 05 - netmix
+  - 🇪🇸 西班牙 (Spain) 06 - netmix
+  - 🇪🇸 西班牙 (Spain) 07 - netmix
+  - 🇪🇸 西班牙 (Spain) 08 - netmix
+  - 🇪🇸 西班牙 (Spain) 09 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 08 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 09 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 01 - netmix
+  - 🇪🇸 西班牙 (Spain) 02 - netmix
+  - 🇪🇸 西班牙 (Spain) 03 - netmix
+  - 🇪🇸 西班牙 (Spain) 04 - netmix
+  - 🇪🇸 西班牙 (Spain) 05 - netmix
+  - 🇪🇸 西班牙 (Spain) 06 - netmix
+  - 🇪🇸 西班牙 (Spain) 07 - netmix
+  - 🇪🇸 西班牙 (Spain) 08 - netmix
+  - 🇪🇸 西班牙 (Spain) 09 - netmix
 rules:
 - MATCH,PROXIES

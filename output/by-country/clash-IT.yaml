@@ -4,49 +4,49 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇹 意大利 (Italy) 01 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 01 - netmix
   server: 202.50.253.36
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 02 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 02 - netmix
   server: 66.245.207.70
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: qMvJmCbMduKUoeHq
-- name: 🇮🇹 意大利 (Italy) 03 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 03 - netmix
   server: 185.164.175.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 04 - netmix
   server: 91.201.65.122
   port: 9059
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9XwYyZsK8SNzQDtY
-- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 05 - netmix
   server: 91.201.65.122
   port: 9097
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: Sn5B7jTqr76aCJT8
-- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 06 - netmix
   server: 202.50.253.27
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 07 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 07 - netmix
   server: 82.118.16.187
   port: 443
   udp: true
@@ -59,28 +59,28 @@ proxies:
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 08 - netmix
   server: 91.201.65.122
   port: 9074
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: p5wSkb2uM3pKSS3j
-- name: 🇮🇹 意大利 (Italy) 09 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 09 - netmix
   server: 91.201.65.122
   port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
-- name: 🇮🇹 意大利 (Italy) 10 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 10 - netmix
   server: 202.50.253.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 11 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 11 - netmix
   server: 57.131.38.163
   port: 2053
   udp: true
@@ -92,28 +92,28 @@ proxies:
     short-id: 5b8a942318178e7b
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇮🇹 意大利 (Italy) 12 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 12 - netmix
   server: 202.50.253.45
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 13 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 13 - netmix
   server: 202.50.253.18
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 14 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 14 - netmix
   server: 202.50.253.54
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 15 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 15 - netmix
   server: 82.118.16.189
   port: 443
   udp: true
@@ -126,28 +126,28 @@ proxies:
     short-id: 37fbf155c7a9f3ff
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 16 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 16 - netmix
   server: 202.50.253.90
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 17 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 17 - netmix
   server: 202.50.253.99
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 18 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 18 - netmix
   server: 202.50.253.63
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 19 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 19 - netmix
   server: 202.50.253.72
   port: 19999
   udp: true
@@ -159,48 +159,48 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇹 意大利 (Italy) 01 - xiaohe
-  - 🇮🇹 意大利 (Italy) 02 - xiaohe
-  - 🇮🇹 意大利 (Italy) 03 - xiaohe
-  - 🇮🇹 意大利 (Italy) 04 - xiaohe
-  - 🇮🇹 意大利 (Italy) 05 - xiaohe
-  - 🇮🇹 意大利 (Italy) 06 - xiaohe
-  - 🇮🇹 意大利 (Italy) 07 - xiaohe
-  - 🇮🇹 意大利 (Italy) 08 - xiaohe
-  - 🇮🇹 意大利 (Italy) 09 - xiaohe
-  - 🇮🇹 意大利 (Italy) 10 - xiaohe
-  - 🇮🇹 意大利 (Italy) 11 - xiaohe
-  - 🇮🇹 意大利 (Italy) 12 - xiaohe
-  - 🇮🇹 意大利 (Italy) 13 - xiaohe
-  - 🇮🇹 意大利 (Italy) 14 - xiaohe
-  - 🇮🇹 意大利 (Italy) 15 - xiaohe
-  - 🇮🇹 意大利 (Italy) 16 - xiaohe
-  - 🇮🇹 意大利 (Italy) 17 - xiaohe
-  - 🇮🇹 意大利 (Italy) 18 - xiaohe
-  - 🇮🇹 意大利 (Italy) 19 - xiaohe
+  - 🇮🇹 意大利 (Italy) 01 - netmix
+  - 🇮🇹 意大利 (Italy) 02 - netmix
+  - 🇮🇹 意大利 (Italy) 03 - netmix
+  - 🇮🇹 意大利 (Italy) 04 - netmix
+  - 🇮🇹 意大利 (Italy) 05 - netmix
+  - 🇮🇹 意大利 (Italy) 06 - netmix
+  - 🇮🇹 意大利 (Italy) 07 - netmix
+  - 🇮🇹 意大利 (Italy) 08 - netmix
+  - 🇮🇹 意大利 (Italy) 09 - netmix
+  - 🇮🇹 意大利 (Italy) 10 - netmix
+  - 🇮🇹 意大利 (Italy) 11 - netmix
+  - 🇮🇹 意大利 (Italy) 12 - netmix
+  - 🇮🇹 意大利 (Italy) 13 - netmix
+  - 🇮🇹 意大利 (Italy) 14 - netmix
+  - 🇮🇹 意大利 (Italy) 15 - netmix
+  - 🇮🇹 意大利 (Italy) 16 - netmix
+  - 🇮🇹 意大利 (Italy) 17 - netmix
+  - 🇮🇹 意大利 (Italy) 18 - netmix
+  - 🇮🇹 意大利 (Italy) 19 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 (Italy) 01 - xiaohe
-  - 🇮🇹 意大利 (Italy) 02 - xiaohe
-  - 🇮🇹 意大利 (Italy) 03 - xiaohe
-  - 🇮🇹 意大利 (Italy) 04 - xiaohe
-  - 🇮🇹 意大利 (Italy) 05 - xiaohe
-  - 🇮🇹 意大利 (Italy) 06 - xiaohe
-  - 🇮🇹 意大利 (Italy) 07 - xiaohe
-  - 🇮🇹 意大利 (Italy) 08 - xiaohe
-  - 🇮🇹 意大利 (Italy) 09 - xiaohe
-  - 🇮🇹 意大利 (Italy) 10 - xiaohe
-  - 🇮🇹 意大利 (Italy) 11 - xiaohe
-  - 🇮🇹 意大利 (Italy) 12 - xiaohe
-  - 🇮🇹 意大利 (Italy) 13 - xiaohe
-  - 🇮🇹 意大利 (Italy) 14 - xiaohe
-  - 🇮🇹 意大利 (Italy) 15 - xiaohe
-  - 🇮🇹 意大利 (Italy) 16 - xiaohe
-  - 🇮🇹 意大利 (Italy) 17 - xiaohe
-  - 🇮🇹 意大利 (Italy) 18 - xiaohe
-  - 🇮🇹 意大利 (Italy) 19 - xiaohe
+  - 🇮🇹 意大利 (Italy) 01 - netmix
+  - 🇮🇹 意大利 (Italy) 02 - netmix
+  - 🇮🇹 意大利 (Italy) 03 - netmix
+  - 🇮🇹 意大利 (Italy) 04 - netmix
+  - 🇮🇹 意大利 (Italy) 05 - netmix
+  - 🇮🇹 意大利 (Italy) 06 - netmix
+  - 🇮🇹 意大利 (Italy) 07 - netmix
+  - 🇮🇹 意大利 (Italy) 08 - netmix
+  - 🇮🇹 意大利 (Italy) 09 - netmix
+  - 🇮🇹 意大利 (Italy) 10 - netmix
+  - 🇮🇹 意大利 (Italy) 11 - netmix
+  - 🇮🇹 意大利 (Italy) 12 - netmix
+  - 🇮🇹 意大利 (Italy) 13 - netmix
+  - 🇮🇹 意大利 (Italy) 14 - netmix
+  - 🇮🇹 意大利 (Italy) 15 - netmix
+  - 🇮🇹 意大利 (Italy) 16 - netmix
+  - 🇮🇹 意大利 (Italy) 17 - netmix
+  - 🇮🇹 意大利 (Italy) 18 - netmix
+  - 🇮🇹 意大利 (Italy) 19 - netmix
 rules:
 - MATCH,PROXIES

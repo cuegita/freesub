@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - netmix
   server: 170.114.46.6
   port: 8080
   udp: true
@@ -20,12 +20,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - netmix
 rules:
 - MATCH,PROXIES

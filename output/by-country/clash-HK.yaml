@@ -4,14 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 01 - netmix
   server: 103.36.91.32
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf
   password: asd123456
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
   server: 165.154.63.139
   port: 443
   udp: true
@@ -24,7 +24,7 @@ proxies:
     short-id: ca4aedd4
   servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -34,7 +34,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
   server: 31.57.248.176
   port: 50160
   udp: true
@@ -42,7 +42,7 @@ proxies:
   password: b0917015b656b3dd2286b5633af0c5c1
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
   server: 202.146.222.174
   port: 443
   udp: true
@@ -50,7 +50,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
   server: 202.146.222.89
   port: 443
   udp: true
@@ -58,7 +58,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vk.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - netmix
   server: 202.146.222.29
   port: 443
   udp: true
@@ -66,7 +66,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
   server: az-1.linkaa.xyz
   port: 53617
   udp: true
@@ -79,7 +79,7 @@ proxies:
     path: /game/resources
     headers:
       Host: az-1.linkaa.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - netmix
   server: 152.175.6.229
   port: 31884
   udp: true
@@ -89,7 +89,7 @@ proxies:
   servername: hk010.zestapp778.com
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
   server: vah4urdzl3jdx5r2.v.3dns.vip
   port: 443
   udp: true
@@ -105,7 +105,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: VAH4URdZL3jDX5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - netmix
   server: 8.217.254.88
   port: 443
   udp: true
@@ -121,7 +121,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 2b9hwY8oCx7Q74NM.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - netmix
   server: 8.217.186.60
   port: 443
   udp: true
@@ -137,7 +137,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: euu1yalfmcqvljex.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - netmix
   server: 8.217.13.103
   port: 443
   udp: true
@@ -153,7 +153,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: qtkdr8jxe3wefxjm.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - netmix
   server: az-1.linkaa.xyz
   port: 53110
   udp: true
@@ -166,7 +166,7 @@ proxies:
     path: /game/resources
     headers:
       Host: az-1.linkaa.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - netmix
   server: rhHiErkwRf6fHs2H.v.3dns.vip
   port: 443
   udp: true
@@ -182,7 +182,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: rhHiErkwRf6fHs2H.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - netmix
   server: 8.218.195.61
   port: 443
   udp: true
@@ -198,7 +198,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: EX1oGt73NzPQKAc2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 17 - netmix
   server: i2psm3knof5qjjix.v.3dns.vip
   port: 443
   udp: true
@@ -214,7 +214,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: I2PSm3Knof5qjjix.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - netmix
   server: 8.210.24.181
   port: 443
   udp: true
@@ -230,7 +230,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6jdvarazgu3qqr6q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 19 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 19 - netmix
   server: 195.58.144.56
   port: 11907
   udp: true
@@ -240,7 +240,7 @@ proxies:
   servername: 195.58.144.56
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 20 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 20 - netmix
   server: 189.24.79.229
   port: 443
   udp: true
@@ -258,50 +258,50 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 16 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 17 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 18 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 19 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 20 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 02 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 03 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 04 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 05 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 06 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 07 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 12 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 13 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 14 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 15 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 16 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 17 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 18 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 19 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 20 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 16 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 17 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 18 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 19 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 20 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 02 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 03 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 04 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 05 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 06 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 07 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 12 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 13 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 14 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 15 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 16 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 17 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 18 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 19 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 20 - netmix
 rules:
 - MATCH,PROXIES

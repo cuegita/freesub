@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇷 法国 (France) 01 - xiaohe
+- name: 🇫🇷 法国 (France) 01 - netmix
   server: 51.75.118.5
   port: 20222
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: lF3nRjH58koKTe-_VtABbg
-- name: 🇫🇷 法国 (France) 02 - xiaohe
+- name: 🇫🇷 法国 (France) 02 - netmix
   server: 45.92.218.120
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: QqFA4xtnfv6GpaC5gy5LW27nCHh9U9qK
-- name: 🇫🇷 法国 (France) 03 - xiaohe
+- name: 🇫🇷 法国 (France) 03 - netmix
   server: pl140.vpnbook.com
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 6heexyz
-- name: 🇫🇷 法国 (France) 04 - xiaohe
+- name: 🇫🇷 法国 (France) 04 - netmix
   server: 51.77.217.70
   port: 33128
   udp: true
@@ -35,7 +35,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: ChY5QQQT3ZtUdNT8
-- name: 🇫🇷 法国 (France) 05 - xiaohe
+- name: 🇫🇷 法国 (France) 05 - netmix
   server: 51.77.217.70
   port: 21000
   udp: true
@@ -46,7 +46,7 @@ proxies:
   obfs: salamander
   obfs-password: ChY5QQQT3ZtUdNT8
   ports: 21000-21199,33000-33199
-- name: 🇫🇷 法国 (France) 06 - xiaohe
+- name: 🇫🇷 法国 (France) 06 - netmix
   server: 62.210.147.2
   port: 43115
   udp: true
@@ -54,7 +54,7 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 07 - xiaohe
+- name: 🇫🇷 法国 (France) 07 - netmix
   server: 51.77.217.70
   port: 8446
   udp: true
@@ -64,7 +64,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: ChY5QQQT3ZtUdNT8
-- name: 🇫🇷 法国 (France) 08 - xiaohe
+- name: 🇫🇷 法国 (France) 08 - netmix
   server: 51.77.217.70
   port: 21182
   udp: true
@@ -74,7 +74,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: ChY5QQQT3ZtUdNT8
-- name: 🇫🇷 法国 (France) 09 - xiaohe
+- name: 🇫🇷 法国 (France) 09 - netmix
   server: 51.77.217.70
   port: 21169
   udp: true
@@ -84,7 +84,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: ChY5QQQT3ZtUdNT8
-- name: 🇫🇷 法国 (France) 10 - xiaohe
+- name: 🇫🇷 法国 (France) 10 - netmix
   server: 51.77.217.70
   port: 8447
   udp: true
@@ -94,7 +94,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: ChY5QQQT3ZtUdNT8
-- name: 🇫🇷 法国 (France) 11 - xiaohe
+- name: 🇫🇷 法国 (France) 11 - netmix
   server: 62.210.7.139
   port: 60111
   udp: true
@@ -102,7 +102,7 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 12 - xiaohe
+- name: 🇫🇷 法国 (France) 12 - netmix
   server: 13.36.234.11
   port: 443
   udp: true
@@ -110,7 +110,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-fr-001.fastervpn.world
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 13 - xiaohe
+- name: 🇫🇷 法国 (France) 13 - netmix
   server: 51.77.217.70
   port: 8445
   udp: true
@@ -120,7 +120,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: ChY5QQQT3ZtUdNT8
-- name: 🇫🇷 法国 (France) 14 - xiaohe
+- name: 🇫🇷 法国 (France) 14 - netmix
   server: 173.212.201.85
   port: 443
   udp: true
@@ -128,7 +128,7 @@ proxies:
   password: gf1:gfhysteria2024
   sni: www.docker.com
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 15 - xiaohe
+- name: 🇫🇷 法国 (France) 15 - netmix
   server: 45.130.125.75
   port: 443
   udp: true
@@ -139,7 +139,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 16 - xiaohe
+- name: 🇫🇷 法国 (France) 16 - netmix
   server: 62.210.91.10
   port: 23576
   udp: true
@@ -152,7 +152,7 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 17 - xiaohe
+- name: 🇫🇷 法国 (France) 17 - netmix
   server: 152.228.139.33
   port: 35108
   udp: true
@@ -167,14 +167,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-common3
-- name: 🇫🇷 法国 (France) 18 - xiaohe
+- name: 🇫🇷 法国 (France) 18 - netmix
   server: 51.83.192.80
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: 🇫🇷 法国 (France) 19 - xiaohe
+- name: 🇫🇷 法国 (France) 19 - netmix
   server: 152.228.162.19
   port: 80
   udp: true
@@ -183,7 +183,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless/
-- name: 🇫🇷 法国 (France) 20 - xiaohe
+- name: 🇫🇷 法国 (France) 20 - netmix
   server: 62.210.124.146
   port: 22000
   udp: true
@@ -191,7 +191,7 @@ proxies:
   password: dongtaiwang.com
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 21 - xiaohe
+- name: 🇫🇷 法国 (France) 21 - netmix
   server: 145.223.68.58
   port: 443
   udp: true
@@ -204,7 +204,7 @@ proxies:
     short-id: a44ff7d2e80213c2
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 22 - xiaohe
+- name: 🇫🇷 法国 (France) 22 - netmix
   server: 138.124.70.41
   port: 14430
   udp: true
@@ -215,7 +215,7 @@ proxies:
     path: /vless
     headers:
       Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 23 - xiaohe
+- name: 🇫🇷 法国 (France) 23 - netmix
   server: para.kiavoosh.online
   port: 116
   udp: true
@@ -223,7 +223,7 @@ proxies:
   uuid: 78c8ab17-814e-4c10-a642-f616c9be979d
   alterId: 0
   cipher: auto
-- name: 🇫🇷 法国 (France) 24 - xiaohe
+- name: 🇫🇷 法国 (France) 24 - netmix
   server: w.geogame.ir
   port: 2053
   udp: true
@@ -233,7 +233,7 @@ proxies:
   servername: w.geogame.ir
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 25 - xiaohe
+- name: 🇫🇷 法国 (France) 25 - netmix
   server: 161.97.66.16
   port: 443
   udp: true
@@ -245,7 +245,7 @@ proxies:
     short-id: 086bf957
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 26 - xiaohe
+- name: 🇫🇷 法国 (France) 26 - netmix
   server: 145.239.55.210
   port: 80
   udp: true
@@ -258,7 +258,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 27 - xiaohe
+- name: 🇫🇷 法国 (France) 27 - netmix
   server: 185.225.68.232
   port: 443
   udp: true
@@ -269,7 +269,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 28 - xiaohe
+- name: 🇫🇷 法国 (France) 28 - netmix
   server: 212.227.90.142
   port: 443
   udp: true
@@ -280,7 +280,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 29 - xiaohe
+- name: 🇫🇷 法国 (France) 29 - netmix
   server: 199.232.78.160
   port: 443
   udp: true
@@ -295,7 +295,7 @@ proxies:
     path: /
     headers:
       Host: Appxdn.global.ssl.fastly.net
-- name: 🇫🇷 法国 (France) 30 - xiaohe
+- name: 🇫🇷 法国 (France) 30 - netmix
   server: 155.103.71.142
   port: 443
   udp: true
@@ -306,7 +306,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 31 - xiaohe
+- name: 🇫🇷 法国 (France) 31 - netmix
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -319,7 +319,7 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 32 - xiaohe
+- name: 🇫🇷 法国 (France) 32 - netmix
   server: ai.smrtai.top
   port: 443
   udp: true
@@ -331,7 +331,7 @@ proxies:
     short-id: 086bf957
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 33 - xiaohe
+- name: 🇫🇷 法国 (France) 33 - netmix
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -346,7 +346,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
-- name: 🇫🇷 法国 (France) 34 - xiaohe
+- name: 🇫🇷 法国 (France) 34 - netmix
   server: 81.22.132.136
   port: 443
   udp: true
@@ -357,7 +357,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 35 - xiaohe
+- name: 🇫🇷 法国 (France) 35 - netmix
   server: 54.37.136.194
   port: 2053
   udp: true
@@ -369,7 +369,7 @@ proxies:
     short-id: 50ba05992b05c1c3
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 36 - xiaohe
+- name: 🇫🇷 法国 (France) 36 - netmix
   server: 5.44.46.142
   port: 443
   udp: true
@@ -380,7 +380,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 37 - xiaohe
+- name: 🇫🇷 法国 (France) 37 - netmix
   server: 137.74.16.237
   port: 443
   udp: true
@@ -393,7 +393,7 @@ proxies:
     short-id: b390e0a721d242b0
   servername: www.icloud.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 38 - xiaohe
+- name: 🇫🇷 法国 (France) 38 - netmix
   server: 108.61.177.57
   port: 16778
   udp: true
@@ -401,7 +401,7 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: fr001.zestapp778.com
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 39 - xiaohe
+- name: 🇫🇷 法国 (France) 39 - netmix
   server: 51.83.6.5
   port: 20250
   udp: true
@@ -414,88 +414,88 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇫🇷 法国 (France) 01 - xiaohe
-  - 🇫🇷 法国 (France) 02 - xiaohe
-  - 🇫🇷 法国 (France) 03 - xiaohe
-  - 🇫🇷 法国 (France) 04 - xiaohe
-  - 🇫🇷 法国 (France) 05 - xiaohe
-  - 🇫🇷 法国 (France) 06 - xiaohe
-  - 🇫🇷 法国 (France) 07 - xiaohe
-  - 🇫🇷 法国 (France) 08 - xiaohe
-  - 🇫🇷 法国 (France) 09 - xiaohe
-  - 🇫🇷 法国 (France) 10 - xiaohe
-  - 🇫🇷 法国 (France) 11 - xiaohe
-  - 🇫🇷 法国 (France) 12 - xiaohe
-  - 🇫🇷 法国 (France) 13 - xiaohe
-  - 🇫🇷 法国 (France) 14 - xiaohe
-  - 🇫🇷 法国 (France) 15 - xiaohe
-  - 🇫🇷 法国 (France) 16 - xiaohe
-  - 🇫🇷 法国 (France) 17 - xiaohe
-  - 🇫🇷 法国 (France) 18 - xiaohe
-  - 🇫🇷 法国 (France) 19 - xiaohe
-  - 🇫🇷 法国 (France) 20 - xiaohe
-  - 🇫🇷 法国 (France) 21 - xiaohe
-  - 🇫🇷 法国 (France) 22 - xiaohe
-  - 🇫🇷 法国 (France) 23 - xiaohe
-  - 🇫🇷 法国 (France) 24 - xiaohe
-  - 🇫🇷 法国 (France) 25 - xiaohe
-  - 🇫🇷 法国 (France) 26 - xiaohe
-  - 🇫🇷 法国 (France) 27 - xiaohe
-  - 🇫🇷 法国 (France) 28 - xiaohe
-  - 🇫🇷 法国 (France) 29 - xiaohe
-  - 🇫🇷 法国 (France) 30 - xiaohe
-  - 🇫🇷 法国 (France) 31 - xiaohe
-  - 🇫🇷 法国 (France) 32 - xiaohe
-  - 🇫🇷 法国 (France) 33 - xiaohe
-  - 🇫🇷 法国 (France) 34 - xiaohe
-  - 🇫🇷 法国 (France) 35 - xiaohe
-  - 🇫🇷 法国 (France) 36 - xiaohe
-  - 🇫🇷 法国 (France) 37 - xiaohe
-  - 🇫🇷 法国 (France) 38 - xiaohe
-  - 🇫🇷 法国 (France) 39 - xiaohe
+  - 🇫🇷 法国 (France) 01 - netmix
+  - 🇫🇷 法国 (France) 02 - netmix
+  - 🇫🇷 法国 (France) 03 - netmix
+  - 🇫🇷 法国 (France) 04 - netmix
+  - 🇫🇷 法国 (France) 05 - netmix
+  - 🇫🇷 法国 (France) 06 - netmix
+  - 🇫🇷 法国 (France) 07 - netmix
+  - 🇫🇷 法国 (France) 08 - netmix
+  - 🇫🇷 法国 (France) 09 - netmix
+  - 🇫🇷 法国 (France) 10 - netmix
+  - 🇫🇷 法国 (France) 11 - netmix
+  - 🇫🇷 法国 (France) 12 - netmix
+  - 🇫🇷 法国 (France) 13 - netmix
+  - 🇫🇷 法国 (France) 14 - netmix
+  - 🇫🇷 法国 (France) 15 - netmix
+  - 🇫🇷 法国 (France) 16 - netmix
+  - 🇫🇷 法国 (France) 17 - netmix
+  - 🇫🇷 法国 (France) 18 - netmix
+  - 🇫🇷 法国 (France) 19 - netmix
+  - 🇫🇷 法国 (France) 20 - netmix
+  - 🇫🇷 法国 (France) 21 - netmix
+  - 🇫🇷 法国 (France) 22 - netmix
+  - 🇫🇷 法国 (France) 23 - netmix
+  - 🇫🇷 法国 (France) 24 - netmix
+  - 🇫🇷 法国 (France) 25 - netmix
+  - 🇫🇷 法国 (France) 26 - netmix
+  - 🇫🇷 法国 (France) 27 - netmix
+  - 🇫🇷 法国 (France) 28 - netmix
+  - 🇫🇷 法国 (France) 29 - netmix
+  - 🇫🇷 法国 (France) 30 - netmix
+  - 🇫🇷 法国 (France) 31 - netmix
+  - 🇫🇷 法国 (France) 32 - netmix
+  - 🇫🇷 法国 (France) 33 - netmix
+  - 🇫🇷 法国 (France) 34 - netmix
+  - 🇫🇷 法国 (France) 35 - netmix
+  - 🇫🇷 法国 (France) 36 - netmix
+  - 🇫🇷 法国 (France) 37 - netmix
+  - 🇫🇷 法国 (France) 38 - netmix
+  - 🇫🇷 法国 (France) 39 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 (France) 01 - xiaohe
-  - 🇫🇷 法国 (France) 02 - xiaohe
-  - 🇫🇷 法国 (France) 03 - xiaohe
-  - 🇫🇷 法国 (France) 04 - xiaohe
-  - 🇫🇷 法国 (France) 05 - xiaohe
-  - 🇫🇷 法国 (France) 06 - xiaohe
-  - 🇫🇷 法国 (France) 07 - xiaohe
-  - 🇫🇷 法国 (France) 08 - xiaohe
-  - 🇫🇷 法国 (France) 09 - xiaohe
-  - 🇫🇷 法国 (France) 10 - xiaohe
-  - 🇫🇷 法国 (France) 11 - xiaohe
-  - 🇫🇷 法国 (France) 12 - xiaohe
-  - 🇫🇷 法国 (France) 13 - xiaohe
-  - 🇫🇷 法国 (France) 14 - xiaohe
-  - 🇫🇷 法国 (France) 15 - xiaohe
-  - 🇫🇷 法国 (France) 16 - xiaohe
-  - 🇫🇷 法国 (France) 17 - xiaohe
-  - 🇫🇷 法国 (France) 18 - xiaohe
-  - 🇫🇷 法国 (France) 19 - xiaohe
-  - 🇫🇷 法国 (France) 20 - xiaohe
-  - 🇫🇷 法国 (France) 21 - xiaohe
-  - 🇫🇷 法国 (France) 22 - xiaohe
-  - 🇫🇷 法国 (France) 23 - xiaohe
-  - 🇫🇷 法国 (France) 24 - xiaohe
-  - 🇫🇷 法国 (France) 25 - xiaohe
-  - 🇫🇷 法国 (France) 26 - xiaohe
-  - 🇫🇷 法国 (France) 27 - xiaohe
-  - 🇫🇷 法国 (France) 28 - xiaohe
-  - 🇫🇷 法国 (France) 29 - xiaohe
-  - 🇫🇷 法国 (France) 30 - xiaohe
-  - 🇫🇷 法国 (France) 31 - xiaohe
-  - 🇫🇷 法国 (France) 32 - xiaohe
-  - 🇫🇷 法国 (France) 33 - xiaohe
-  - 🇫🇷 法国 (France) 34 - xiaohe
-  - 🇫🇷 法国 (France) 35 - xiaohe
-  - 🇫🇷 法国 (France) 36 - xiaohe
-  - 🇫🇷 法国 (France) 37 - xiaohe
-  - 🇫🇷 法国 (France) 38 - xiaohe
-  - 🇫🇷 法国 (France) 39 - xiaohe
+  - 🇫🇷 法国 (France) 01 - netmix
+  - 🇫🇷 法国 (France) 02 - netmix
+  - 🇫🇷 法国 (France) 03 - netmix
+  - 🇫🇷 法国 (France) 04 - netmix
+  - 🇫🇷 法国 (France) 05 - netmix
+  - 🇫🇷 法国 (France) 06 - netmix
+  - 🇫🇷 法国 (France) 07 - netmix
+  - 🇫🇷 法国 (France) 08 - netmix
+  - 🇫🇷 法国 (France) 09 - netmix
+  - 🇫🇷 法国 (France) 10 - netmix
+  - 🇫🇷 法国 (France) 11 - netmix
+  - 🇫🇷 法国 (France) 12 - netmix
+  - 🇫🇷 法国 (France) 13 - netmix
+  - 🇫🇷 法国 (France) 14 - netmix
+  - 🇫🇷 法国 (France) 15 - netmix
+  - 🇫🇷 法国 (France) 16 - netmix
+  - 🇫🇷 法国 (France) 17 - netmix
+  - 🇫🇷 法国 (France) 18 - netmix
+  - 🇫🇷 法国 (France) 19 - netmix
+  - 🇫🇷 法国 (France) 20 - netmix
+  - 🇫🇷 法国 (France) 21 - netmix
+  - 🇫🇷 法国 (France) 22 - netmix
+  - 🇫🇷 法国 (France) 23 - netmix
+  - 🇫🇷 法国 (France) 24 - netmix
+  - 🇫🇷 法国 (France) 25 - netmix
+  - 🇫🇷 法国 (France) 26 - netmix
+  - 🇫🇷 法国 (France) 27 - netmix
+  - 🇫🇷 法国 (France) 28 - netmix
+  - 🇫🇷 法国 (France) 29 - netmix
+  - 🇫🇷 法国 (France) 30 - netmix
+  - 🇫🇷 法国 (France) 31 - netmix
+  - 🇫🇷 法国 (France) 32 - netmix
+  - 🇫🇷 法国 (France) 33 - netmix
+  - 🇫🇷 法国 (France) 34 - netmix
+  - 🇫🇷 法国 (France) 35 - netmix
+  - 🇫🇷 法国 (France) 36 - netmix
+  - 🇫🇷 法国 (France) 37 - netmix
+  - 🇫🇷 法国 (France) 38 - netmix
+  - 🇫🇷 法国 (France) 39 - netmix
 rules:
 - MATCH,PROXIES

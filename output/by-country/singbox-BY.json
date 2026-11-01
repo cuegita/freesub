@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - netmix",
       "server": "178.172.227.228",
       "server_port": 14430,
       "uuid": "b6e5dc56-836f-48c1-9163-b0b0b43b647d",
@@ -19,7 +19,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 02 - netmix",
       "server": "178.172.227.228",
       "server_port": 10444,
       "uuid": "b6e5dc56-836f-48c1-9163-b0b0b43b647d",
@@ -40,7 +40,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 03 - xiaohe",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 03 - netmix",
       "server": "178.172.227.124",
       "server_port": 14430,
       "uuid": "1af36694-b548-4b18-89a0-bc076eab4ed7",
@@ -54,7 +54,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 04 - xiaohe",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 04 - netmix",
       "server": "95.128.71.79",
       "server_port": 10444,
       "uuid": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
@@ -75,14 +75,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 05 - xiaohe",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 05 - netmix",
       "server": "178.172.227.124",
       "server_port": 10443,
       "uuid": "1af36694-b548-4b18-89a0-bc076eab4ed7"
     },
     {
       "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 06 - xiaohe",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 06 - netmix",
       "server": "178.172.227.124",
       "server_port": 10444,
       "uuid": "1af36694-b548-4b18-89a0-bc076eab4ed7",
@@ -106,24 +106,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
-        "🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe",
-        "🇧🇾 白俄罗斯 (Belarus) 03 - xiaohe",
-        "🇧🇾 白俄罗斯 (Belarus) 04 - xiaohe",
-        "🇧🇾 白俄罗斯 (Belarus) 05 - xiaohe",
-        "🇧🇾 白俄罗斯 (Belarus) 06 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - netmix",
+        "🇧🇾 白俄罗斯 (Belarus) 02 - netmix",
+        "🇧🇾 白俄罗斯 (Belarus) 03 - netmix",
+        "🇧🇾 白俄罗斯 (Belarus) 04 - netmix",
+        "🇧🇾 白俄罗斯 (Belarus) 05 - netmix",
+        "🇧🇾 白俄罗斯 (Belarus) 06 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
-        "🇧🇾 白俄罗斯 (Belarus) 02 - xiaohe",
-        "🇧🇾 白俄罗斯 (Belarus) 03 - xiaohe",
-        "🇧🇾 白俄罗斯 (Belarus) 04 - xiaohe",
-        "🇧🇾 白俄罗斯 (Belarus) 05 - xiaohe",
-        "🇧🇾 白俄罗斯 (Belarus) 06 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - netmix",
+        "🇧🇾 白俄罗斯 (Belarus) 02 - netmix",
+        "🇧🇾 白俄罗斯 (Belarus) 03 - netmix",
+        "🇧🇾 白俄罗斯 (Belarus) 04 - netmix",
+        "🇧🇾 白俄罗斯 (Belarus) 05 - netmix",
+        "🇧🇾 白俄罗斯 (Belarus) 06 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

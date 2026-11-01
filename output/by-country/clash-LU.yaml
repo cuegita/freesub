@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+- name: 🇱🇺 卢森堡 (Luxembourg) 01 - netmix
   server: 107.189.7.176
   port: 32752
   udp: true
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - netmix
 rules:
 - MATCH,PROXIES

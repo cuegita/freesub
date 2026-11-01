@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "tag": "🇨🇿 捷克 (Czech) 01 - netmix",
       "server": "212.102.38.25",
       "server_port": 443,
       "uuid": "b34a52cb-cd52-49a8-9362-b8e97c151d49",
@@ -26,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
+      "tag": "🇨🇿 捷克 (Czech) 02 - netmix",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -47,7 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
+      "tag": "🇨🇿 捷克 (Czech) 03 - netmix",
       "server": "104.18.51.110",
       "server_port": 443,
       "uuid": "f27b6f65-6e59-4f89-b929-afa397ca587f",
@@ -66,7 +66,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - xiaohe",
+      "tag": "🇨🇿 捷克 (Czech) 04 - netmix",
       "server": "server.slavkiti.monster",
       "server_port": 443,
       "uuid": "ed042cf7-efe0-49bd-848b-8d7e655111ff",
@@ -87,7 +87,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 05 - xiaohe",
+      "tag": "🇨🇿 捷克 (Czech) 05 - netmix",
       "server": "cz-prg.dontblockmepls.com",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
@@ -111,22 +111,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe",
-        "🇨🇿 捷克 (Czech) 04 - xiaohe",
-        "🇨🇿 捷克 (Czech) 05 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - netmix",
+        "🇨🇿 捷克 (Czech) 02 - netmix",
+        "🇨🇿 捷克 (Czech) 03 - netmix",
+        "🇨🇿 捷克 (Czech) 04 - netmix",
+        "🇨🇿 捷克 (Czech) 05 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe",
-        "🇨🇿 捷克 (Czech) 04 - xiaohe",
-        "🇨🇿 捷克 (Czech) 05 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - netmix",
+        "🇨🇿 捷克 (Czech) 02 - netmix",
+        "🇨🇿 捷克 (Czech) 03 - netmix",
+        "🇨🇿 捷克 (Czech) 04 - netmix",
+        "🇨🇿 捷克 (Czech) 05 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
