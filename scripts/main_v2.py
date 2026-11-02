@@ -69,44 +69,36 @@ except ImportError as e:
 # ]
 
 SOURCE_URLS = [
-    "https://shadowmere.akiel.dev/api/b64sub/",
-    "https://www.ermao.net/sub/v2ray/ermao.net",
+    "https://www.ermao.net/sub/v2ray/ermao.net
     "https://check.banyunxiaoxi.icu/sub/sub-base64.txt",
     "https://raw.githubusercontent.com/freefq/free/master/v2",
     "https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml",
+    "https://raw.githubusercontent.com/free-nodes/v2rayfree/main/sub",
     "https://raw.githubusercontent.com/acymz/AutoVPN/main/data/V2.txt",
     "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash",
     "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml",
     "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all",
     "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml",
     "https://raw.githubusercontent.com/xiaoji235/airport-free/main/v2ray.txt",
-    "https://raw.githubusercontent.com/anonymouskeys/Vpn/main/subscription.txt",
-    "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/wenode.txt",
-    "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/ndnode.txt",
     "https://raw.githubusercontent.com/Pawdroid/Free-servers/refs/heads/main/sub",
     "https://raw.githubusercontent.com/actionsfz/v2ray/refs/heads/master/all.yaml",
-    "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/nodefree.txt",
     "https://raw.githubusercontent.com/10ium/HiN-VPN/main/subscription/base64/mix",
-    "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.txt",
     "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt",
-    "https://raw.githubusercontent.com/aiboboxx/v2rayfree/refs/heads/main/README.md",
-    "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/v2rayshare.txt",
+    "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.txt",
     "https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/all_configs.txt",
     "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
     "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml",
     "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
     "https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/refs/heads/main/Z.txt",
-    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt",
     "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",
     "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/nodes.meta.yml",
     "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/security/tls",
     "https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_yaml.yml",
     "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/protocols/hysteria",
     "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
-    "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
     "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/refs/heads/main/all/configs.txt",
-    "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",
+    "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt"
 ]
 
 OUTPUT_DIR = "output"
