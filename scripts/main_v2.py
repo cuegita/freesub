@@ -9,7 +9,7 @@
      (vless/vmess/trojan/ss/hysteria2/tuic/anytls + reality + 全部传输层)
   2. 真实测活（sing-box v1.14 内核，逐节点 SOCKS 入站 + 节点出站）:
      - 阶段A 端口预检: TCP/QUIC 直连握手, 快速丢弃死端口 (削减 90% 无效工作)
-     - 阶段B 真实探测: 多 URL 探测 (gstatic 204 / cloudflare trace) 
+     - 阶段B 真实探测: 多 URL 探测 (gstatic 204 / cloudflare trace)
        + 经代理取真实出口 IP (api.ip.sb/geoip → 一次拿 country+asn+isp)
        + Cloudflare 限时下载测速 → 断流节点识别 (吞吐量不足)
        + cloudflare trace tls=VERIFIED → MITM/劫持节点识别
@@ -69,11 +69,10 @@ except ImportError as e:
 # ]
 
 SOURCE_URLS = [
-    "https://www.ermao.net/sub/v2ray/ermao.net
+    "https://www.ermao.net/sub/v2ray/ermao.net",
     "https://check.banyunxiaoxi.icu/sub/sub-base64.txt",
     "https://raw.githubusercontent.com/freefq/free/master/v2",
     "https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml",
-    "https://raw.githubusercontent.com/free-nodes/v2rayfree/main/sub",
     "https://raw.githubusercontent.com/acymz/AutoVPN/main/data/V2.txt",
     "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash",
     "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml",
@@ -241,7 +240,7 @@ RESIDENTIAL_ASNS = {
     # Softbank/NTT Communications/KDDI/IIJ/Sony/Plala/@nifty/JCN
     4766, 3786, 17816, 9357,
     # 韩国
-    4713, 9318, 17816, 9357, 4766,  # KT/LG/SK  
+    4713, 9318, 17816, 9357, 4766,  # KT/LG/SK
     # 美国
     701, 7018, 7922, 20115, 22773, 10796, 20057, 11427, 10507, 6128,
     33363, 21928, 10777, 33660, 33661, 33662, 36466, 53417, 55136,
@@ -1745,7 +1744,7 @@ def outbound_to_clash(node: dict, name: str) -> dict:
     t = node.get("type")
     server = node.get("server")
     port = node.get("server_port")
-    
+
     # 安全处理：防止 hy2 端口跳跃节点缺少 server_port 导致崩溃
     if not server:
         return None
@@ -1755,7 +1754,7 @@ def outbound_to_clash(node: dict, name: str) -> dict:
             port = int(str(node["server_ports"][0]).split(":")[0])
         else:
             return None
-            
+
     proxy = {"name": name, "server": server, "port": port, "udp": True}
 
     if t == "vless":
