@@ -5,15 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - netmix
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16298
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇮🇩 印尼 (Indonesia) 02 - netmix
-  server: in001.zestapp778.com
+  server: 130.94.95.198
   port: 57353
   udp: true
   type: vless
@@ -21,20 +13,17 @@ proxies:
   tls: true
   servername: in001.zestapp778.com
   skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇩 印尼 (Indonesia) 01 - netmix
-  - 🇮🇩 印尼 (Indonesia) 02 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇩 印尼 (Indonesia) 01 - netmix
-  - 🇮🇩 印尼 (Indonesia) 02 - netmix
 rules:
 - MATCH,PROXIES

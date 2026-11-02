@@ -15,7 +15,7 @@ proxies:
     public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
-  client-fingerprint: ''
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - netmix
   server: 45.144.234.157
   port: 14430
@@ -27,37 +27,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 03 - netmix
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - netmix
-  server: 172.67.118.45
-  port: 2053
-  udp: true
-  type: trojan
-  password: gHQP0D7D15
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇮 芬兰 (Finland) 05 - netmix
-  server: dns22.m3hrzd.ir
-  port: 1346
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,9 +34,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - netmix
   - 🇫🇮 芬兰 (Finland) 02 - netmix
-  - 🇫🇮 芬兰 (Finland) 03 - netmix
-  - 🇫🇮 芬兰 (Finland) 04 - netmix
-  - 🇫🇮 芬兰 (Finland) 05 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,8 +41,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - netmix
   - 🇫🇮 芬兰 (Finland) 02 - netmix
-  - 🇫🇮 芬兰 (Finland) 03 - netmix
-  - 🇫🇮 芬兰 (Finland) 04 - netmix
-  - 🇫🇮 芬兰 (Finland) 05 - netmix
 rules:
 - MATCH,PROXIES

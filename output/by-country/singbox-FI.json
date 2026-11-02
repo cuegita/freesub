@@ -14,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -38,63 +38,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - netmix",
-      "server": "31.77.199.147",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.unsplash.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A",
-          "short_id": "7da2eae792187ab9"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
-      "server": "172.67.118.45",
-      "server_port": 2053,
-      "password": "gHQP0D7D15",
-      "tls": {
-        "enabled": true,
-        "server_name": "marvdasht.phonecomparisonblog.org",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "marvdasht.phonecomparisonblog.org"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
-      "server": "dns22.m3hrzd.ir",
-      "server_port": 1346,
-      "method": "chacha20-ietf-poly1305",
-      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - netmix",
-        "🇫🇮 芬兰 (Finland) 02 - netmix",
-        "🇫🇮 芬兰 (Finland) 03 - netmix",
-        "🇫🇮 芬兰 (Finland) 04 - netmix",
-        "🇫🇮 芬兰 (Finland) 05 - netmix"
+        "🇫🇮 芬兰 (Finland) 02 - netmix"
       ]
     },
     {
@@ -102,10 +51,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - netmix",
-        "🇫🇮 芬兰 (Finland) 02 - netmix",
-        "🇫🇮 芬兰 (Finland) 03 - netmix",
-        "🇫🇮 芬兰 (Finland) 04 - netmix",
-        "🇫🇮 芬兰 (Finland) 05 - netmix"
+        "🇫🇮 芬兰 (Finland) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

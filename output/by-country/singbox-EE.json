@@ -39,46 +39,21 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - netmix",
-      "server": "5.129.202.80",
-      "server_port": 443,
-      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
-      "flow": "xtls-rprx-vision",
+      "server": "ee.h1cloud.net",
+      "server_port": 25895,
+      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
       "tls": {
         "enabled": true,
-        "server_name": "mirror-50.topp-con.xyz",
+        "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8",
-          "short_id": "2ef2b10d5143d798"
+          "public_key": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
+          "short_id": "a73f0410d728c823"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - netmix",
-      "server": "qqmrkr71metydlthes8.dnetsolutions.ru",
-      "server_port": 443,
-      "uuid": "4b091976-0936-44ac-9a90-6a265d2b619f",
-      "tls": {
-        "enabled": true,
-        "server_name": "max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uuD0VJNMH1jZKPjiI5qhbiMVabQFkocWy0LUjh-3HEQ",
-          "short_id": "bc35"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-65"
       }
     },
     {
@@ -88,8 +63,7 @@
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - netmix",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - netmix",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - netmix",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - netmix"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - netmix"
       ]
     },
     {
@@ -98,8 +72,7 @@
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - netmix",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - netmix",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - netmix",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - netmix"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -16,29 +16,32 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - netmix
-  server: fguuouj849.gadawebi.ir
-  port: 5072
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: DPpk3OhbcFpFOpTnKnlGsi5kWH7BJTDv
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
-  server: 212.43.152.62
-  port: 8444
+  server: 195.123.213.28
+  port: 443
   udp: true
   type: vless
-  uuid: a8321cfe-39a2-48a0-a918-f01f7d9006ed
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
   tls: true
-  servername: us1.meshbeat.online
-  skip-cert-verify: false
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
+  server: 72.56.52.248
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2614a96d-e39f-4cca-a9c7-467a178c2c0a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: lv.dexlen.cc
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/v1/devices/3ec9e2ef7b/telemetry
-    headers:
-      Host: us1.meshbeat.online
 proxy-groups:
 - name: PROXIES
   type: select

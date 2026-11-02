@@ -12,25 +12,31 @@
       "tls": {
         "enabled": true,
         "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - netmix",
-      "server": "192.142.23.46",
-      "server_port": 443,
-      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
-      "tls": {
-        "enabled": true,
-        "server_name": "diffoscope.com",
-        "insecure": false
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - netmix",
-      "server": "194.104.94.141",
+      "server": "se3.shtil.io",
       "server_port": 443,
       "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
       "tls": {
@@ -48,17 +54,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 04 - netmix",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
+      "server": "192.142.23.46",
+      "server_port": 443,
+      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
+      "tls": {
+        "enabled": true,
+        "server_name": "diffoscope.com",
+        "insecure": false
       }
     },
     {
@@ -84,7 +88,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 06 - netmix",
-      "server": "201.58.177.107",
+      "server": "swidenafterlanzerotte.space",
       "server_port": 443,
       "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
       "flow": "xtls-rprx-vision",
@@ -93,7 +97,7 @@
         "server_name": "swidenafterlanzerotte.space",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
