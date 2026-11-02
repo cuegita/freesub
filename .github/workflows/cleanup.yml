@@ -1,0 +1,42 @@
+name: Cleanup Error Run
+
+on:
+  schedule:
+    # 每天北京时间 09:39（UTC 01:39）
+    - cron: '39 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write # 删除 workflow runs 需要
+
+concurrency:
+  group: cleanup
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🧹 清理已取消/失败的运行（保留 24 小时内的供排查）
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          # 由 jq 自行计算 24 小时前的时间戳，无需 shell 变量，
+          # 从而彻底避开 --jq 表达式里的引号/变量展开问题。
+          # 注：gh run list 的 --jq 不支持 --arg（那是 gh api 的参数）。
+          ids=$(gh run list --limit 1000 --json databaseId,conclusion,createdAt \
+            --jq '.[] | select((.conclusion=="failure" or .conclusion=="cancelled") and .createdAt < (now - 86400 | strftime("%Y-%m-%dT%H:%M:%SZ"))) | .databaseId')
+          if [ -z "$ids" ]; then
+            echo "无可清理的运行"
+            exit 0
+          fi
+          count=0
+          for id in $ids; do
+            if gh api -X DELETE "repos/$GH_REPO/actions/runs/$id"; then
+              count=$((count+1))
+            else
+              echo "⚠️ 删除运行 $id 失败（跳过）"
+            fi
+          done
+          echo "✅ 已删除 $count 个失败/取消的运行"
