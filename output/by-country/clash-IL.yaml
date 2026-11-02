@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 02 - netmix
   server: 64.176.163.182
   port: 443
@@ -26,14 +26,6 @@ proxies:
   sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
   skip-cert-verify: true
 - name: 🇮🇱 以色列 (Israel) 03 - netmix
-  server: 129.159.156.109
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇮🇱 以色列 (Israel) 04 - netmix
   server: 77.91.69.169
   port: 19226
   udp: true
@@ -46,6 +38,14 @@ proxies:
     short-id: 7c
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇮🇱 以色列 (Israel) 04 - netmix
+  server: 129.159.156.109
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f25f19f29ce3fb53a35bf1b35b452a43
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

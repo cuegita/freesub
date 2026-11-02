@@ -4,41 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇮🇩 印尼 (Indonesia) 01 - netmix",
-      "server": "104.17.3.81",
-      "server_port": 443,
-      "uuid": "dffb7646-1656-427a-8187-9c056a6a5fd5",
-      "tls": {
-        "enabled": true,
-        "server_name": "vff67.eu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/id-dnva",
-        "headers": {
-          "Host": "vff67.eu.cc"
-        }
-      }
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16298,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "vless",
       "tag": "🇮🇩 印尼 (Indonesia) 02 - netmix",
-      "server": "130.94.95.198",
+      "server": "in001.zestapp778.com",
       "server_port": 57353,
       "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
       "tls": {
         "enabled": true,
         "server_name": "in001.zestapp778.com",
-        "insecure": true,
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       }
     },

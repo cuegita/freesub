@@ -4,46 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 01 - netmix",
-      "server": "104.26.0.1",
-      "server_port": 443,
-      "uuid": "e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ezaccess-project-f62c30.pages.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
-        "headers": {
-          "Host": "ezaccess-project-f62c30.pages.dev"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - netmix",
-      "server": "217.60.73.56",
+      "tag": "🇦🇪 阿联酋 (UAE) 01 - netmix",
+      "server": "130.49.161.70",
       "server_port": 443,
-      "password": "69e41e64-a832-471a-b740-94577ca85520",
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
-        "server_name": "forshynewh.duckdns.org",
+        "server_name": "hy2.aspidnet.xyz",
         "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - netmix",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - netmix",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
@@ -56,17 +34,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - netmix",
-      "server": "84.235.244.108",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
-        }
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - netmix",
+      "server": "217.60.73.56",
+      "server_port": 443,
+      "password": "69e41e64-a832-471a-b740-94577ca85520",
+      "tls": {
+        "enabled": true,
+        "server_name": "forshynewh.duckdns.org",
+        "insecure": true
       }
     },
     {
@@ -76,8 +52,7 @@
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - netmix",
         "🇦🇪 阿联酋 (UAE) 02 - netmix",
-        "🇦🇪 阿联酋 (UAE) 03 - netmix",
-        "🇦🇪 阿联酋 (UAE) 04 - netmix"
+        "🇦🇪 阿联酋 (UAE) 03 - netmix"
       ]
     },
     {
@@ -86,8 +61,7 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - netmix",
         "🇦🇪 阿联酋 (UAE) 02 - netmix",
-        "🇦🇪 阿联酋 (UAE) 03 - netmix",
-        "🇦🇪 阿联酋 (UAE) 04 - netmix"
+        "🇦🇪 阿联酋 (UAE) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

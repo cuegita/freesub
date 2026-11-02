@@ -5,29 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - netmix
-  server: 104.26.0.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
-  tls: true
-  servername: ezaccess-project-f62c30.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: ezaccess-project-f62c30.pages.dev
-- name: 🇦🇪 阿联酋 (UAE) 02 - netmix
-  server: 217.60.73.56
+  server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  sni: forshynewh.duckdns.org
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 03 - netmix
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 02 - netmix
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -38,17 +25,14 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 04 - netmix
-  server: 84.235.244.108
-  port: 22573
+- name: 🇦🇪 阿联酋 (UAE) 03 - netmix
+  server: 217.60.73.56
+  port: 443
   udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  type: hysteria2
+  password: 69e41e64-a832-471a-b740-94577ca85520
+  sni: forshynewh.duckdns.org
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,7 +41,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - netmix
   - 🇦🇪 阿联酋 (UAE) 02 - netmix
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
-  - 🇦🇪 阿联酋 (UAE) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,6 +49,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - netmix
   - 🇦🇪 阿联酋 (UAE) 02 - netmix
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
-  - 🇦🇪 阿联酋 (UAE) 04 - netmix
 rules:
 - MATCH,PROXIES

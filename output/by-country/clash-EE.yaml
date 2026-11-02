@@ -25,6 +25,34 @@ proxies:
     short-id: 2e82d7ac
   servername: addons.mozilla.org
   client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - netmix
+  server: 5.129.202.80
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
+    short-id: 2ef2b10d5143d798
+  servername: mirror-50.topp-con.xyz
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - netmix
+  server: qqmrkr71metydlthes8.dnetsolutions.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4b091976-0936-44ac-9a90-6a265d2b619f
+  tls: true
+  reality-opts:
+    public-key: uuD0VJNMH1jZKPjiI5qhbiMVabQFkocWy0LUjh-3HEQ
+    short-id: bc35
+  servername: max.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-65
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +60,8 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - netmix
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - netmix
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - netmix
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +69,7 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - netmix
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - netmix
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - netmix
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - netmix
 rules:
 - MATCH,PROXIES

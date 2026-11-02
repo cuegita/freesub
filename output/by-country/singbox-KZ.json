@@ -12,10 +12,7 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "viber.com"
-        }
+        "path": "/vmess/"
       }
     },
     {
