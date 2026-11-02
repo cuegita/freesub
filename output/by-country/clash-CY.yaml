@@ -18,6 +18,19 @@ proxies:
   servername: fr1.vpngold.ru
   client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - netmix
+  server: ee1.vpngold.ru
+  port: 8443
+  udp: true
+  type: vless
+  uuid: a52fd54b-ba4d-4d11-8e00-301e2646cd66
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8
+    short-id: 385cb18df0892069
+  servername: ee1.vpngold.ru
+  client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - netmix
   server: 5.253.28.240
   port: 2443
   udp: true
@@ -32,32 +45,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - netmix
-  server: 45.86.60.102
-  port: 8443
-  udp: true
-  type: vless
-  uuid: a52fd54b-ba4d-4d11-8e00-301e2646cd66
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8
-    short-id: 385cb18df0892069
-  servername: ee1.vpngold.ru
-  client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 04 - netmix
-  server: dorado.yokkastars.com
+  server: hydra.yokkastars.com
   port: 40443
   udp: true
   type: vless
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

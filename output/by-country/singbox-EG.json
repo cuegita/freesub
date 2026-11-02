@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - netmix",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "tag": "🇪🇬 埃及 (Egypt) 01 - netmix",
+      "server": "38.54.59.102",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "pKEW8JPByTVTLtM"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - netmix"
+        "🇪🇬 埃及 (Egypt) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - netmix"
+        "🇪🇬 埃及 (Egypt) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

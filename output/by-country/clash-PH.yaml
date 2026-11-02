@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇭 菲律宾 (Philippines) 01 - netmix
+  server: 149.104.109.252
+  port: 8882
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇵🇭 菲律宾 (Philippines) 02 - netmix
   server: ph001.zestapp778.com
   port: 46298
   udp: true
@@ -18,11 +25,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇭 菲律宾 (Philippines) 01 - netmix
+  - 🇵🇭 菲律宾 (Philippines) 02 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇭 菲律宾 (Philippines) 01 - netmix
+  - 🇵🇭 菲律宾 (Philippines) 02 - netmix
 rules:
 - MATCH,PROXIES

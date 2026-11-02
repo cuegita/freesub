@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - netmix",
-      "server": "177.3.215.199",
-      "server_port": 1125,
-      "uuid": "78c8ab17-814e-4c10-a642-f616c9be979d",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - netmix",
-      "server": "31.76.81.137",
-      "server_port": 1114,
-      "uuid": "78c8ab17-814e-4c10-a642-f616c9be979d",
-      "security": "auto"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - netmix",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - netmix",
       "server": "192.142.23.46",
       "server_port": 443,
       "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
@@ -33,7 +17,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - netmix",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - netmix",
+      "server": "89.125.37.1",
+      "server_port": 443,
+      "uuid": "518079db-d88d-4035-bbf4-ddd1f9cf1e5f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.frgcdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q",
+          "short_id": "2d6d073dc88f22a8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - netmix",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -47,27 +52,56 @@
     },
     {
       "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - netmix",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - netmix",
       "server": "70.34.207.14",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
         "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - netmix",
+      "server": "194.104.94.141",
+      "server_port": 443,
+      "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
+      "tls": {
+        "enabled": true,
+        "server_name": "se3.shtil.io",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 06 - netmix",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "server": "swidenafterlanzerotte.space",
+      "server_port": 443,
+      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swidenafterlanzerotte.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
+          "short_id": ""
+        }
+      }
     },
     {
       "type": "selector",

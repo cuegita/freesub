@@ -5,34 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - netmix
-  server: 104.17.3.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: dffb7646-1656-427a-8187-9c056a6a5fd5
-  tls: true
-  servername: vff67.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /id-dnva
-    headers:
-      Host: vff67.eu.cc
-- name: 🇮🇩 印尼 (Indonesia) 02 - netmix
-  server: az-1.linkaa.xyz
-  port: 55386
-  udp: true
-  type: vmess
-  uuid: 6E571484-4166-4699-8F58-B34A1823691F
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /game/resources
-    headers:
-      Host: az-1.linkaa.xyz
-- name: 🇮🇩 印尼 (Indonesia) 03 - netmix
   server: 130.94.95.198
   port: 57353
   udp: true
@@ -40,7 +12,7 @@ proxies:
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
   servername: in001.zestapp778.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -48,15 +20,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇩 印尼 (Indonesia) 01 - netmix
-  - 🇮🇩 印尼 (Indonesia) 02 - netmix
-  - 🇮🇩 印尼 (Indonesia) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇩 印尼 (Indonesia) 01 - netmix
-  - 🇮🇩 印尼 (Indonesia) 02 - netmix
-  - 🇮🇩 印尼 (Indonesia) 03 - netmix
 rules:
 - MATCH,PROXIES

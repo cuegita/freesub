@@ -27,6 +27,27 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - netmix",
+      "server": "ee1.vpngold.ru",
+      "server_port": 8443,
+      "uuid": "a52fd54b-ba4d-4d11-8e00-301e2646cd66",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ee1.vpngold.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8",
+          "short_id": "385cb18df0892069"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - netmix",
       "server": "5.253.28.240",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
@@ -50,43 +71,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - netmix",
-      "server": "45.86.60.102",
-      "server_port": 8443,
-      "uuid": "a52fd54b-ba4d-4d11-8e00-301e2646cd66",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee1.vpngold.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8",
-          "short_id": "385cb18df0892069"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - netmix",
-      "server": "dorado.yokkastars.com",
+      "server": "hydra.yokkastars.com",
       "server_port": 40443,
-      "uuid": "af5eac96-e478-488a-bc8c-45269d7e8847",
+      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw",
-          "short_id": "68a8"
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
         }
       }
     },

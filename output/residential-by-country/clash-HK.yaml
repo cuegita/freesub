@@ -5,14 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16113
+  server: dog-hk.kunlun01dns.com
+  port: 21041
   udp: true
   type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
+  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix
+  server: dog-hk.kunlun01dns.com
+  port: 21022
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
+  server: ench-snet-app.w-ctrip.cn
+  port: 53004
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: ench-snet-app.w-ctrip.cn
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix
+  server: ufcaxsoooxez3p6h.5273ef7a.e.yuetong.online
+  port: 19310
+  udp: true
+  type: hysteria2
+  password: 171a4d7a-a1f0-499c-9fc5-3915c8b1f47b
+  sni: srv-l7o.yuetong.online
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 4mcqiPwfROfrKkIKx1WO32Va
+  ports: 19310-19821,19310-19310
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix
   server: 56481.df6h451rh.xin
   port: 443
   udp: true
@@ -27,6 +62,10 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +73,9 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix
 rules:
 - MATCH,PROXIES
