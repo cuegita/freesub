@@ -6,6 +6,29 @@
     {
       "type": "vless",
       "tag": "🇮🇩 印尼 (Indonesia) 01 - netmix",
+      "server": "104.17.3.81",
+      "server_port": 443,
+      "uuid": "dffb7646-1656-427a-8187-9c056a6a5fd5",
+      "tls": {
+        "enabled": true,
+        "server_name": "vff67.eu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/id-dnva",
+        "headers": {
+          "Host": "vff67.eu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇩 印尼 (Indonesia) 02 - netmix",
       "server": "130.94.95.198",
       "server_port": 57353,
       "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
@@ -24,14 +47,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - netmix"
+        "🇮🇩 印尼 (Indonesia) 01 - netmix",
+        "🇮🇩 印尼 (Indonesia) 02 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - netmix"
+        "🇮🇩 印尼 (Indonesia) 01 - netmix",
+        "🇮🇩 印尼 (Indonesia) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

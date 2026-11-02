@@ -4,28 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - netmix",
-      "server": "119.46.51.45",
-      "server_port": 37515,
-      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
-      "security": "auto"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - netmix",
-      "server": "th001.zestapp778.com",
-      "server_port": 33079,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "th001.zestapp778.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - netmix",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - netmix",
       "server": "45.154.26.63",
       "server_port": 443,
       "uuid": "ff85e702-b605-4109-884d-2c1f065d0954",
@@ -43,6 +23,30 @@
           "short_id": "3c032a7e"
         }
       }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - netmix",
+      "server": "th001.zestapp778.com",
+      "server_port": 33079,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "th001.zestapp778.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - netmix",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
     },
     {
       "type": "selector",

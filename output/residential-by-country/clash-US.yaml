@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (移动家宽) - netmix
-  server: us001.zestapp778.com
-  port: 57277
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us001.zestapp778.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 02 (移动家宽) - netmix
   server: 130.94.19.95
   port: 57277
   udp: true
@@ -20,6 +12,22 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: us001.zestapp778.com
   skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 02 (移动家宽) - netmix
+  server: us001.zestapp778.com
+  port: 57277
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 03 (家宽) - netmix
+  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
+  port: 13209
+  udp: true
+  type: trojan
+  password: fac593ac-d6aa-4523-bea9-b3eb2a2b3da3
+  sni: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +35,7 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (移动家宽) - netmix
   - 🇺🇸 美国 (United States) 02 (移动家宽) - netmix
+  - 🇺🇸 美国 (United States) 03 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +43,6 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (移动家宽) - netmix
   - 🇺🇸 美国 (United States) 02 (移动家宽) - netmix
+  - 🇺🇸 美国 (United States) 03 (家宽) - netmix
 rules:
 - MATCH,PROXIES

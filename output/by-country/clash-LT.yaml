@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - netmix
   server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - netmix
+  server: 195.238.126.20
   port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - netmix
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - netmix
   server: 195.238.126.20
   port: 9002
@@ -34,54 +34,32 @@ proxies:
   password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 05 - netmix
   server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - netmix
-  server: 195.238.126.20
   port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - netmix
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - netmix
   server: 195.238.126.20
-  port: 9011
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - netmix
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - netmix
   server: 195.238.126.84
   port: 9039
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qYEN5HX4JKeVCdEC
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - netmix
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - netmix
   server: 195.238.126.20
   port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 10 - netmix
-  server: 185.178.208.167
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
-  tls: true
-  servername: lorettmay.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /blog/posts
-    headers:
-      Host: lorettmay.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,8 +73,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 06 - netmix
   - 🇱🇹 立陶宛 (Lithuania) 07 - netmix
   - 🇱🇹 立陶宛 (Lithuania) 08 - netmix
-  - 🇱🇹 立陶宛 (Lithuania) 09 - netmix
-  - 🇱🇹 立陶宛 (Lithuania) 10 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,7 +86,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 06 - netmix
   - 🇱🇹 立陶宛 (Lithuania) 07 - netmix
   - 🇱🇹 立陶宛 (Lithuania) 08 - netmix
-  - 🇱🇹 立陶宛 (Lithuania) 09 - netmix
-  - 🇱🇹 立陶宛 (Lithuania) 10 - netmix
 rules:
 - MATCH,PROXIES

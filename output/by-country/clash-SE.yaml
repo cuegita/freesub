@@ -13,19 +13,37 @@ proxies:
   sni: diffoscope.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02 - netmix
-  server: 89.125.37.1
+  server: 144.31.129.174
   port: 443
   udp: true
   type: vless
-  uuid: 518079db-d88d-4035-bbf4-ddd1f9cf1e5f
+  uuid: 6f34a071-9a87-001e-b01a-4b5a5c95e552
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q
-    short-id: 2d6d073dc88f22a8
-  servername: se.frgcdn.xyz
-  client-fingerprint: chrome
+    public-key: GDlgvx8exl9BJ5dD2HSVqE2oUbZyZZOFX5EdnCn5j2M
+    short-id: 20ed7ee26095771b
+  servername: s3-fi-1.rucdn777.com
+  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03 - netmix
+  server: 70.34.207.14
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 04 - netmix
+  server: se3.shtil.io
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  tls: true
+  servername: se3.shtil.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 05 - netmix
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -36,25 +54,19 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 04 - netmix
-  server: 70.34.207.14
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 05 - netmix
-  server: 194.104.94.141
+- name: 🇸🇪 瑞典 (Sweden) 06 - netmix
+  server: 13.143.180.142
   port: 443
   udp: true
   type: vless
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  uuid: 2614a96d-e39f-02f0-a9c7-467a178c2c0a
+  flow: xtls-rprx-vision
   tls: true
-  servername: se3.shtil.io
-  skip-cert-verify: false
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: sw.lenvex.cc
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 06 - netmix
+- name: 🇸🇪 瑞典 (Sweden) 07 - netmix
   server: swidenafterlanzerotte.space
   port: 443
   udp: true
@@ -77,6 +89,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - netmix
   - 🇸🇪 瑞典 (Sweden) 05 - netmix
   - 🇸🇪 瑞典 (Sweden) 06 - netmix
+  - 🇸🇪 瑞典 (Sweden) 07 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,5 +101,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - netmix
   - 🇸🇪 瑞典 (Sweden) 05 - netmix
   - 🇸🇪 瑞典 (Sweden) 06 - netmix
+  - 🇸🇪 瑞典 (Sweden) 07 - netmix
 rules:
 - MATCH,PROXIES

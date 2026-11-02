@@ -5,16 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix
-  server: 125.227.86.45
+  server: er8u54dh.df6h451rh.xin
   port: 443
   udp: true
-  type: trojan
-  password: 0a9f1f5a397bd427
-  sni: TG.freecodes
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
   skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: db
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
   server: 60.248.219.78
   port: 443
@@ -30,14 +27,6 @@ proxies:
     headers:
       Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
-  server: er8u54dh.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
   server: 684616s4.df6h451rh.xin
   port: 443
   udp: true
@@ -53,7 +42,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +50,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
 rules:
 - MATCH,PROXIES

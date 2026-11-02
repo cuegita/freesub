@@ -18,31 +18,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - netmix
-  server: 195.123.213.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
-  server: 72.56.52.248
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2614a96d-e39f-4cca-a9c7-467a178c2c0a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: lv.dexlen.cc
-  client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - netmix
   server: 85.159.228.91
   port: 8443
   udp: true
@@ -55,20 +30,7 @@ proxies:
     short-id: 385cb18df0892069
   servername: lv1.vpngold.ru
   client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - netmix
-  server: 195.123.208.32
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
-    short-id: 757b9e1ef18e60f0
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - netmix
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
   server: 45.38.143.210
   port: 30584
   udp: true
@@ -80,6 +42,31 @@ proxies:
     short-id: 67ece882d65d0f1a
   servername: m.vk.com
   client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - netmix
+  server: 72.56.52.248
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2614a96d-e39f-4cca-a9c7-467a178c2c0a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: lv.dexlen.cc
+  client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - netmix
+  server: 195.123.213.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,7 +77,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
   - 🇱🇻 拉脱维亚 (Latvia) 04 - netmix
   - 🇱🇻 拉脱维亚 (Latvia) 05 - netmix
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,6 +87,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
   - 🇱🇻 拉脱维亚 (Latvia) 04 - netmix
   - 🇱🇻 拉脱维亚 (Latvia) 05 - netmix
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - netmix
 rules:
 - MATCH,PROXIES
