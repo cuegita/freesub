@@ -5,14 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - netmix
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16113
+  server: 202.146.222.89
+  port: 443
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: 127.0.0.1
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
   server: 31.57.248.176
   port: 50160
   udp: true
@@ -20,15 +30,23 @@ proxies:
   password: b0917015b656b3dd2286b5633af0c5c1
   sni: www.bing.com%23%e9%a6%83%e5%9a%9f%e9%a6%83%e5%9a%a2%7chk%7c%40wxgqlfx%7c147
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
-  server: 202.146.222.89
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
+  sni: 202.146.222.174
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2üá
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
   server: 210.0.244.227
   port: 443
   udp: true
@@ -39,24 +57,19 @@ proxies:
     public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
   servername: cloudflare.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - netmix
-  server: 154.83.87.6
+  server: 210.0.244.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: f3ff9bac-2904-4f38-bae1-54ab1a72891b
+  tls: true
+  reality-opts:
+    public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
+  servername: cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
+  server: 45.207.156.110
   port: 8443
   udp: true
   type: vless
@@ -67,65 +80,17 @@ proxies:
     short-id: 4ad2e4e660550e43
   servername: github.githubassets.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
-  server: 165.154.63.139
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - netmix
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16114
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - netmix
-  server: 101.32.142.168
-  port: 443
+  server: 38.76.180.144
+  port: 1443
   udp: true
   type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  tls: true
-  servername: xy1ej.stream-node-us.danfeng.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  uuid: d98b67d4-024a-4bba-91e2-e6ebece6df11
   network: ws
   ws-opts:
-    path: /danfeng?ed=2560
+    path: /vless-ws
     headers:
-      Host: xy1ej.stream-node-us.danfeng.qzz.io
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - netmix
-  server: 46.8.125.64
-  port: 443
-  udp: true
-  type: vless
-  uuid: dc413f44-7dce-4cc4-b2c7-878ef70ce464
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 9MgNwdrftjPf18DG8qYo6iHJw7IG7uSnULScDQ0WDy4
-    short-id: 0123456789abcdef
-  servername: dubai-cdn-keno.keno.su
-  client-fingerprint: chrome
+      Host: 38.76.180.144
 proxy-groups:
 - name: PROXIES
   type: select
@@ -140,9 +105,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 12 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -157,8 +119,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 12 - netmix
 rules:
 - MATCH,PROXIES

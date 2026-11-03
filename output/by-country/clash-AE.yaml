@@ -15,14 +15,6 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - netmix
-  server: 217.60.73.56
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  sni: forshynewh.duckdns.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 03 - netmix
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -31,8 +23,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 04 - netmix
-  server: 84.235.244.108
+- name: 🇦🇪 阿联酋 (UAE) 03 - netmix
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -50,7 +42,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - netmix
   - 🇦🇪 阿联酋 (UAE) 02 - netmix
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
-  - 🇦🇪 阿联酋 (UAE) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +50,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - netmix
   - 🇦🇪 阿联酋 (UAE) 02 - netmix
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
-  - 🇦🇪 阿联酋 (UAE) 04 - netmix
 rules:
 - MATCH,PROXIES

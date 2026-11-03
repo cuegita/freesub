@@ -6,22 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 01 - netmix",
-      "server": "66.245.207.70",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "qMvJmCbMduKUoeHq"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 02 - netmix",
-      "server": "202.50.253.90",
+      "server": "202.50.253.18",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 03 - netmix",
+      "tag": "🇮🇹 意大利 (Italy) 02 - netmix",
       "server": "185.164.175.81",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -29,23 +21,39 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 04 - netmix",
-      "server": "202.50.253.63",
+      "tag": "🇮🇹 意大利 (Italy) 03 - netmix",
+      "server": "202.50.253.90",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 04 - netmix",
+      "server": "91.201.65.122",
+      "server_port": 9065,
+      "method": "aes-256-cfb",
+      "password": "PeHSHm5SqEjBuEXE"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 05 - netmix",
-      "server": "202.50.253.81",
+      "server": "91.201.65.122",
+      "server_port": 9097,
+      "method": "aes-256-cfb",
+      "password": "Sn5B7jTqr76aCJT8"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 06 - netmix",
+      "server": "202.50.253.99",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 06 - netmix",
+      "tag": "🇮🇹 意大利 (Italy) 07 - netmix",
       "server": "82.118.16.187",
       "server_port": 443,
       "uuid": "dc2259c4-388e-4285-ba18-df619b6672b6",
@@ -65,40 +73,29 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 07 - netmix",
-      "server": "202.50.253.54",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 08 - netmix",
-      "server": "91.201.65.122",
-      "server_port": 9039,
-      "method": "aes-256-cfb",
-      "password": "qYEN5HX4JKeVCdEC"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 09 - netmix",
-      "server": "91.201.65.122",
-      "server_port": 9059,
-      "method": "aes-256-cfb",
-      "password": "9XwYyZsK8SNzQDtY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 10 - netmix",
-      "server": "202.50.253.45",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "server": "91.201.67.245",
+      "server_port": 443,
+      "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "files.porsche.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
+          "short_id": "1a2b3c4d"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 11 - netmix",
+      "tag": "🇮🇹 意大利 (Italy) 09 - netmix",
       "server": "57.131.38.163",
       "server_port": 2053,
       "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
@@ -107,7 +104,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -118,7 +115,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 12 - netmix",
+      "tag": "🇮🇹 意大利 (Italy) 10 - netmix",
       "server": "202.50.253.27",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -126,8 +123,24 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 11 - netmix",
+      "server": "dns24.m3hrzd.ir",
+      "server_port": 1349,
+      "method": "chacha20-ietf-poly1305",
+      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 12 - netmix",
+      "server": "202.50.253.63",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 13 - netmix",
-      "server": "202.50.253.99",
+      "server": "202.50.253.54",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -135,15 +148,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 14 - netmix",
-      "server": "202.50.253.36",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "server": "91.201.65.122",
+      "server_port": 9070,
+      "method": "aes-256-cfb",
+      "password": "bf7v334KKDV3YDhH"
     },
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 15 - netmix",
-      "server": "202.50.253.72",
+      "server": "202.50.253.81",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -151,7 +164,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 16 - netmix",
-      "server": "202.50.253.18",
+      "server": "202.50.253.45",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -159,10 +172,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 17 - netmix",
-      "server": "dns24.m3hrzd.ir",
-      "server_port": 1349,
-      "method": "chacha20-ietf-poly1305",
-      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
+      "server": "202.50.253.36",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 18 - netmix",
+      "server": "202.50.253.72",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "selector",
@@ -185,7 +206,8 @@
         "🇮🇹 意大利 (Italy) 14 - netmix",
         "🇮🇹 意大利 (Italy) 15 - netmix",
         "🇮🇹 意大利 (Italy) 16 - netmix",
-        "🇮🇹 意大利 (Italy) 17 - netmix"
+        "🇮🇹 意大利 (Italy) 17 - netmix",
+        "🇮🇹 意大利 (Italy) 18 - netmix"
       ]
     },
     {
@@ -208,7 +230,8 @@
         "🇮🇹 意大利 (Italy) 14 - netmix",
         "🇮🇹 意大利 (Italy) 15 - netmix",
         "🇮🇹 意大利 (Italy) 16 - netmix",
-        "🇮🇹 意大利 (Italy) 17 - netmix"
+        "🇮🇹 意大利 (Italy) 17 - netmix",
+        "🇮🇹 意大利 (Italy) 18 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
