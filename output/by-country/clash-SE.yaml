@@ -5,12 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - netmix
-  server: 70.34.212.124
-  port: 8388
+  server: 138.199.55.230
+  port: 1270
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02 - netmix
   server: 70.34.207.14
   port: 443
@@ -20,6 +24,16 @@ proxies:
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 03 - netmix
+  server: se3.shtil.io
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  tls: true
+  servername: se3.shtil.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 04 - netmix
   server: 193.25.216.31
   port: 443
   udp: true
@@ -32,39 +46,7 @@ proxies:
     short-id: a1037b25dcef6aa7
   servername: sw.golangwikito.cfd
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 04 - netmix
-  server: 138.199.55.230
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05 - netmix
-  server: 194.104.94.141
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  tls: true
-  servername: se3.shtil.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 06 - netmix
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 07 - netmix
   server: se.mimowhat.online
   port: 443
   udp: true
@@ -72,8 +54,8 @@ proxies:
   password: 769f34f0-1500-488f-b414-03bc90666502
   sni: se.mimowhat.online
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 08 - netmix
-  server: swidenafterlanzerotte.space
+- name: 🇸🇪 瑞典 (Sweden) 06 - netmix
+  server: 201.58.187.248
   port: 443
   udp: true
   type: vless
@@ -83,7 +65,7 @@ proxies:
   reality-opts:
     public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
   servername: swidenafterlanzerotte.space
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,8 +77,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - netmix
   - 🇸🇪 瑞典 (Sweden) 05 - netmix
   - 🇸🇪 瑞典 (Sweden) 06 - netmix
-  - 🇸🇪 瑞典 (Sweden) 07 - netmix
-  - 🇸🇪 瑞典 (Sweden) 08 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,7 +88,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - netmix
   - 🇸🇪 瑞典 (Sweden) 05 - netmix
   - 🇸🇪 瑞典 (Sweden) 06 - netmix
-  - 🇸🇪 瑞典 (Sweden) 07 - netmix
-  - 🇸🇪 瑞典 (Sweden) 08 - netmix
 rules:
 - MATCH,PROXIES

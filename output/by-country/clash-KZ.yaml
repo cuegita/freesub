@@ -5,19 +5,165 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix
-  server: 3h-kazakhstan1.09vpn.com
-  port: 8443
+  server: 38.107.234.57
+  port: 80
   udp: true
-  type: vless
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  tls: true
-  servername: 3h-kazakhstan1.09vpn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /vless/
+    path: /vmess/
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: viber.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 38.107.234.57
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - netmix
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - netmix
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - netmix
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - netmix
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: viber.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - netmix
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - netmix
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 12 - netmix
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 13 - netmix
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 14 - netmix
   server: 3h-kazakhstan1.09vpn.com
   port: 80
   udp: true
@@ -30,18 +176,17 @@ proxies:
     path: /vmess/
     headers:
       Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
-  server: 109.248.170.119
-  port: 13447
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 15 - netmix
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
   udp: true
-  type: vless
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
-  tls: true
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
-  servername: yahoo.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +195,18 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 12 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 13 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 14 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 15 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +215,17 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 12 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 13 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 14 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 15 - netmix
 rules:
 - MATCH,PROXIES
