@@ -15,9 +15,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - netmix",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9011,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "shadowsocks",
@@ -31,9 +31,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 04 - netmix",
       "server": "195.238.126.20",
-      "server_port": 9011,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
@@ -47,17 +47,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 06 - netmix",
       "server": "195.238.126.20",
-      "server_port": 9045,
+      "server_port": 9001,
       "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
+      "password": "UkXRsXvR6buDMG2Y"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 07 - netmix",
       "server": "195.238.126.20",
-      "server_port": 9001,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
@@ -71,20 +71,23 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 09 - netmix",
       "server": "195.238.126.20",
-      "server_port": 9086,
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "vless",
       "tag": "🇱🇹 立陶宛 (Lithuania) 10 - netmix",
-      "server": "185.178.208.167",
+      "server": "lorettmay.top",
       "server_port": 443,
       "uuid": "2232d904-8e6a-4202-8240-6efd8aec02e9",
       "tls": {
         "enabled": true,
         "server_name": "lorettmay.top",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"

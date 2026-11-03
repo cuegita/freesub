@@ -13,11 +13,11 @@ proxies:
   password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - netmix
   server: 195.238.126.20
-  port: 9012
+  port: 9011
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
+  password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - netmix
   server: 195.238.126.20
   port: 9008
@@ -27,11 +27,11 @@ proxies:
   password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - netmix
   server: 195.238.126.20
-  port: 9011
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇹 立陶宛 (Lithuania) 05 - netmix
   server: 195.238.126.20
   port: 9078
@@ -41,18 +41,18 @@ proxies:
   password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 06 - netmix
   server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - netmix
-  server: 195.238.126.20
   port: 9001
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: UkXRsXvR6buDMG2Y
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - netmix
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 (Lithuania) 08 - netmix
   server: 195.238.126.20
   port: 9002
@@ -62,13 +62,13 @@ proxies:
   password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 09 - netmix
   server: 195.238.126.20
-  port: 9086
+  port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
+  password: Lp27rqyJq72bZsqX
 - name: 🇱🇹 立陶宛 (Lithuania) 10 - netmix
-  server: 185.178.208.167
+  server: lorettmay.top
   port: 443
   udp: true
   type: vless

@@ -5,31 +5,86 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - netmix
-  server: n04.jinggai.online
-  port: 8443
+  server: 172.67.221.77
+  port: 443
   udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: n04.jinggai.online
+  servername: www.ubuntuupdates.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
+    path: /truth
     headers:
-      Host: n04.jinggai.online
+      Host: www.ubuntuupdates.com
+- name: 🌐 其他地区 (Other) 02 - netmix
+  server: 172.67.221.77
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🌐 其他地区 (Other) 03 - netmix
+  server: 172.67.221.77
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
+- name: 🌐 其他地区 (Other) 04 - netmix
+  server: 172.67.221.77
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.ubuntuupdates.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.ubuntuupdates.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - netmix
+  - 🌐 其他地区 (Other) 02 - netmix
+  - 🌐 其他地区 (Other) 03 - netmix
+  - 🌐 其他地区 (Other) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - netmix
+  - 🌐 其他地区 (Other) 02 - netmix
+  - 🌐 其他地区 (Other) 03 - netmix
+  - 🌐 其他地区 (Other) 04 - netmix
 rules:
 - MATCH,PROXIES

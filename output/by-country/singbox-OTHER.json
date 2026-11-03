@@ -4,25 +4,82 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - netmix",
-      "server": "n04.jinggai.online",
-      "server_port": 8443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "server": "172.67.221.77",
+      "server_port": 443,
+      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "n04.jinggai.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.ubuntuupdates.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
+        "path": "/truth",
         "headers": {
-          "Host": "n04.jinggai.online"
+          "Host": "www.ubuntuupdates.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 02 - netmix",
+      "server": "172.67.221.77",
+      "server_port": 443,
+      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ubuntuupdates.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/truth",
+        "headers": {
+          "Host": "www.ubuntuupdates.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 03 - netmix",
+      "server": "172.67.221.77",
+      "server_port": 443,
+      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ubuntuupdates.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/truth",
+        "headers": {
+          "Host": "www.ubuntuupdates.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 04 - netmix",
+      "server": "172.67.221.77",
+      "server_port": 443,
+      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ubuntuupdates.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/truth",
+        "headers": {
+          "Host": "www.ubuntuupdates.com"
         }
       }
     },
@@ -31,14 +88,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - netmix"
+        "🌐 其他地区 (Other) 01 - netmix",
+        "🌐 其他地区 (Other) 02 - netmix",
+        "🌐 其他地区 (Other) 03 - netmix",
+        "🌐 其他地区 (Other) 04 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - netmix"
+        "🌐 其他地区 (Other) 01 - netmix",
+        "🌐 其他地区 (Other) 02 - netmix",
+        "🌐 其他地区 (Other) 03 - netmix",
+        "🌐 其他地区 (Other) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

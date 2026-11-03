@@ -16,15 +16,23 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "45.207.159.71",
+      "server_port": 8443,
+      "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
-        "insecure": true
+        "server_name": "github.githubassets.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
+          "short_id": "4ad2e4e660550e43"
+        }
       }
     },
     {
@@ -49,34 +57,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
-      "server": "45.207.159.71",
-      "server_port": 8443,
-      "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.githubassets.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
-          "short_id": "4ad2e4e660550e43"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 04 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 03 - netmix"
       ]
     },
     {
@@ -85,8 +72,7 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 04 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -13,13 +13,17 @@ proxies:
   sni: 160.187.100.109
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - netmix
-  server: 103.115.109.49
-  port: 443
+  server: 45.207.159.71
+  port: 8443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
+  type: vless
+  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  tls: true
+  reality-opts:
+    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+    short-id: 4ad2e4e660550e43
+  servername: github.githubassets.com
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - netmix
   server: 152.32.167.33
   port: 443
@@ -33,18 +37,6 @@ proxies:
     short-id: cff998a4
   servername: www.amazon.com
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - netmix
-  server: 45.207.159.71
-  port: 8443
-  udp: true
-  type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  tls: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  servername: github.githubassets.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +45,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - netmix
   - 🇹🇼 中国台湾 (Taiwan) 02 - netmix
   - 🇹🇼 中国台湾 (Taiwan) 03 - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +53,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - netmix
   - 🇹🇼 中国台湾 (Taiwan) 02 - netmix
   - 🇹🇼 中国台湾 (Taiwan) 03 - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 04 - netmix
 rules:
 - MATCH,PROXIES
