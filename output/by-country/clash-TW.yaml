@@ -34,13 +34,17 @@ proxies:
   servername: www.amazon.com
   client-fingerprint: firefox
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - netmix
-  server: 47.129.112.129
-  port: 20000
+  server: 45.207.159.71
+  port: 8443
   udp: true
-  type: hysteria2
-  password: CQUPACy34t6Tjx8FdQdkCiYW
-  sni: sg-transit-3.nebulacloud.win
-  skip-cert-verify: true
+  type: vless
+  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  tls: true
+  reality-opts:
+    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+    short-id: 4ad2e4e660550e43
+  servername: github.githubassets.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

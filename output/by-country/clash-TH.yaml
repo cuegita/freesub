@@ -25,14 +25,6 @@ proxies:
     short-id: 3c032a7e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 03 - netmix
-  server: th001.zestapp778.com
-  port: 33079
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: th001.zestapp778.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - netmix
   - 🇹🇭 泰国 (Thailand) 02 - netmix
-  - 🇹🇭 泰国 (Thailand) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - netmix
   - 🇹🇭 泰国 (Thailand) 02 - netmix
-  - 🇹🇭 泰国 (Thailand) 03 - netmix
 rules:
 - MATCH,PROXIES

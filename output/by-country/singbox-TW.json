@@ -49,18 +49,23 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
-      "server": "47.129.112.129",
-      "server_port": 20000,
-      "password": "CQUPACy34t6Tjx8FdQdkCiYW",
+      "server": "45.207.159.71",
+      "server_port": 8443,
+      "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
       "tls": {
         "enabled": true,
-        "server_name": "sg-transit-3.nebulacloud.win",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "github.githubassets.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
+          "short_id": "4ad2e4e660550e43"
+        }
       }
     },
     {
