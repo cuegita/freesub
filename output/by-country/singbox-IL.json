@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,32 +25,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇱 以色列 (Israel) 02 - netmix",
-      "server": "31.57.185.203",
-      "server_port": 53799,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "ZV9gr1G1kn+MtegpmGMVOqXbSUwnCHtaS/8vuccEKJU=:xMZdXxFcqjAuzgiuGTBdveBqsh2zHIVZwxQbp/IrLmY="
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇱 以色列 (Israel) 03 - netmix",
-      "server": "64.176.163.182",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "exploreeducationsectoropportunitiestodayandadvancecareers.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇮🇱 以色列 (Israel) 04 - netmix",
+      "tag": "🇮🇱 以色列 (Israel) 02 - netmix",
       "server": "129.159.156.109",
       "server_port": 50160,
       "password": "f25f19f29ce3fb53a35bf1b35b452a43",
@@ -61,14 +37,25 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇮🇱 以色列 (Israel) 03 - netmix",
+      "server": "64.176.163.182",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "exploreeducationsectoropportunitiestodayandadvancecareers.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01 - netmix",
         "🇮🇱 以色列 (Israel) 02 - netmix",
-        "🇮🇱 以色列 (Israel) 03 - netmix",
-        "🇮🇱 以色列 (Israel) 04 - netmix"
+        "🇮🇱 以色列 (Israel) 03 - netmix"
       ]
     },
     {
@@ -77,8 +64,7 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - netmix",
         "🇮🇱 以色列 (Israel) 02 - netmix",
-        "🇮🇱 以色列 (Israel) 03 - netmix",
-        "🇮🇱 以色列 (Israel) 04 - netmix"
+        "🇮🇱 以色列 (Israel) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

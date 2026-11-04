@@ -11,25 +11,13 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "160.187.100.109",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "server_name": "vpn-tw-002.fastervpn.world",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
       "server": "152.32.167.33",
       "server_port": 443,
       "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
@@ -39,7 +27,7 @@
         "server_name": "www.amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -54,8 +42,7 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 03 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 02 - netmix"
       ]
     },
     {
@@ -63,8 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 03 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

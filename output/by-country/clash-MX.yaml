@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - netmix
-  server: 64.177.90.30
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
-- name: 🇲🇽 墨西哥 (Mexico) 02 - netmix
   server: 147.78.1.253
   port: 443
   udp: true
@@ -23,7 +16,7 @@ proxies:
     public-key: TefL2KtNcNLPmUY8TKlu5pA7ffipqgmbBN6gpyzyklk
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇲🇽 墨西哥 (Mexico) 03 - netmix
+- name: 🇲🇽 墨西哥 (Mexico) 02 - netmix
   server: 216.238.80.100
   port: 443
   udp: true
@@ -38,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇲🇽 墨西哥 (Mexico) 01 - netmix
   - 🇲🇽 墨西哥 (Mexico) 02 - netmix
-  - 🇲🇽 墨西哥 (Mexico) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇲🇽 墨西哥 (Mexico) 01 - netmix
   - 🇲🇽 墨西哥 (Mexico) 02 - netmix
-  - 🇲🇽 墨西哥 (Mexico) 03 - netmix
 rules:
 - MATCH,PROXIES

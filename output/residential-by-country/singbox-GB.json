@@ -5,15 +5,19 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - netmix",
-      "server": "185.72.11.43",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 (移动家宽) - netmix",
+      "server": "pah1.vethilis.ru",
       "server_port": 443,
-      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
+      "uuid": "5fb552a8-9c41-4031-86f5-ca10fc802da5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "rs8.speedtestinternet.link",
+        "server_name": "pah1.vethilis.ru",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -25,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 塞尔维亚 (Serbia) 01 - netmix"
+        "🇬🇧 英国 (United Kingdom) 01 (移动家宽) - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 塞尔维亚 (Serbia) 01 - netmix"
+        "🇬🇧 英国 (United Kingdom) 01 (移动家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

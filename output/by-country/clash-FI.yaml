@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - netmix
-  server: 185.4.115.149
-  port: 1346
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-- name: 🇫🇮 芬兰 (Finland) 02 - netmix
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -22,19 +15,8 @@ proxies:
     public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
-  client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 03 - netmix
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 04 - netmix
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 02 - netmix
   server: 89.144.53.4
   port: 8445
   udp: true
@@ -47,57 +29,22 @@ proxies:
     short-id: 1a2b3c4d
   servername: videos.porsche.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - netmix
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - netmix
-  server: 217.144.188.185
+- name: 🇫🇮 芬兰 (Finland) 03 - netmix
+  server: 146.103.118.189
   port: 443
   udp: true
   type: vless
-  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
-  flow: xtls-rprx-vision
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
   tls: true
-  reality-opts:
-    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
-  servername: www.nordea.fi
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - netmix
-  server: areal1.greewebservices.ir
-  port: 2425
-  udp: true
-  type: vless
-  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
-  tls: true
-  reality-opts:
-    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
-    short-id: 9b60d3
-  servername: play.googleapis.com
-  client-fingerprint: ios
-- name: 🇫🇮 芬兰 (Finland) 08 - netmix
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 67a4b4b1-6eed-4dbb-9984-3f86e7efa831
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 09 - netmix
+  servername: nl2.574ck.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
+- name: 🇫🇮 芬兰 (Finland) 04 - netmix
   server: 172.67.118.45
   port: 2053
   udp: true
@@ -108,6 +55,39 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇫🇮 芬兰 (Finland) 05 - netmix
+  server: goold.zovip2.ir
+  port: 443
+  udp: true
+  type: vless
+  uuid: d8dcb071-57db-4ed6-92af-bb4183a14168
+  tls: true
+  servername: goold.zovip2.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/v3/pulse
+    headers:
+      Host: goold.zovip2.ir
+- name: 🇫🇮 芬兰 (Finland) 06 - netmix
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 07 - netmix
+  server: 185.4.115.149
+  port: 1346
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
 proxy-groups:
 - name: PROXIES
   type: select
@@ -120,8 +100,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - netmix
   - 🇫🇮 芬兰 (Finland) 06 - netmix
   - 🇫🇮 芬兰 (Finland) 07 - netmix
-  - 🇫🇮 芬兰 (Finland) 08 - netmix
-  - 🇫🇮 芬兰 (Finland) 09 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -134,7 +112,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - netmix
   - 🇫🇮 芬兰 (Finland) 06 - netmix
   - 🇫🇮 芬兰 (Finland) 07 - netmix
-  - 🇫🇮 芬兰 (Finland) 08 - netmix
-  - 🇫🇮 芬兰 (Finland) 09 - netmix
 rules:
 - MATCH,PROXIES

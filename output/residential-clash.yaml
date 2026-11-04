@@ -4,15 +4,45 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
-  server: dog-hk.kunlun01dns.com
-  port: 21041
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix
+  server: 125.227.86.45
+  port: 443
   udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
+  type: trojan
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
+  server: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 367e233c-2f54-11ee-9ae1-f23c9164ca5d
+  sni: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
+  server: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 40639730-e027-11ea-87ad-f23c913c8d2b
+  sni: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 04 (移动家宽) - netmix
+  server: pah1.vethilis.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5fb552a8-9c41-4031-86f5-ca10fc802da5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pah1.vethilis.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - netmix
   server: dog-hk.kunlun01dns.com
   port: 21019
   udp: true
@@ -20,29 +50,6 @@ proxies:
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
-  server: fc05feb7-tmm5c0-tpv2b9-1o8ak.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 8bb68d04-6973-11ee-b518-f23c9164ca5d
-  sni: fc05feb7-tmm5c0-tpv2b9-1o8ak.hk3.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - netmix
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
-  server: er8u54dh.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
-  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
   server: terutrrj.d6f54hd1j.cc
   port: 443
@@ -59,27 +66,47 @@ proxies:
     path: /
     headers:
       Host: terutrrj.d6f54hd1j.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix
+  server: er8u54dh.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix
+  server: 684616s4.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
+  - 🇬🇧 英国 (United Kingdom) 04 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
+  - 🇬🇧 英国 (United Kingdom) 04 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix
 rules:
 - MATCH,PROXIES

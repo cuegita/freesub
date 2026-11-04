@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - netmix",
-      "server": "151.241.19.29",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - netmix",
       "server": "151.241.19.36",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -21,7 +13,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - netmix",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - netmix",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -36,85 +28,35 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - netmix",
+      "server": "151.241.19.29",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - netmix",
-      "server": "104.21.108.4",
-      "server_port": 443,
-      "uuid": "fa45096d-bed0-ad80-c773-23c300000018",
-      "tls": {
-        "enabled": true,
-        "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - netmix",
-      "server": "23.27.20.142",
-      "server_port": 48537,
-      "uuid": "ed79c2d4-5558-428f-87f5-af4abc97a16d",
-      "tls": {
-        "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - netmix",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "95.174.68.188"
-        }
+        "path": "/vless"
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - netmix",
-      "server": "142.91.101.39",
-      "server_port": 627,
-      "uuid": "d2bbe123-c4a6-40a7-ac21-8919d0ca2030",
-      "tls": {
-        "enabled": true,
-        "server_name": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - netmix",
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
         "type": "ws",
-        "path": "/@Marisa_kristi",
+        "path": "/",
         "headers": {
-          "Host": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
+          "Host": "uae.unixzone.us"
         }
       }
     },
@@ -127,9 +69,7 @@
         "🇦🇪 阿联酋 (UAE) 02 - netmix",
         "🇦🇪 阿联酋 (UAE) 03 - netmix",
         "🇦🇪 阿联酋 (UAE) 04 - netmix",
-        "🇦🇪 阿联酋 (UAE) 05 - netmix",
-        "🇦🇪 阿联酋 (UAE) 06 - netmix",
-        "🇦🇪 阿联酋 (UAE) 07 - netmix"
+        "🇦🇪 阿联酋 (UAE) 05 - netmix"
       ]
     },
     {
@@ -140,9 +80,7 @@
         "🇦🇪 阿联酋 (UAE) 02 - netmix",
         "🇦🇪 阿联酋 (UAE) 03 - netmix",
         "🇦🇪 阿联酋 (UAE) 04 - netmix",
-        "🇦🇪 阿联酋 (UAE) 05 - netmix",
-        "🇦🇪 阿联酋 (UAE) 06 - netmix",
-        "🇦🇪 阿联酋 (UAE) 07 - netmix"
+        "🇦🇪 阿联酋 (UAE) 05 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

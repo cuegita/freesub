@@ -5,48 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - netmix
-  server: 103.149.182.79
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
-  server: 103.149.182.79
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
-  server: 103.149.182.79
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
-  server: 152.32.254.68
-  port: 5010
+  server: 31.57.248.176
+  port: 50160
   udp: true
   type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
-  server: 210.0.244.157
-  port: 443
-  udp: true
-  type: vless
-  uuid: f3ff9bac-2904-4f38-bae1-54ab1a72891b
-  tls: true
-  reality-opts:
-    public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
-  servername: cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
+  password: b0917015b656b3dd2286b5633af0c5c1
+  sni: www.bing.com%23%e9%a6%83%e5%9a%9f%e9%a6%83%e5%9a%a2%7chk%7c%40wxgqlfx%7c147
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
   server: 154.83.87.6
   port: 8443
   udp: true
@@ -58,7 +24,15 @@ proxies:
     short-id: 4ad2e4e660550e43
   servername: github.githubassets.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - netmix
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/WangCai2🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
   server: 202.146.222.89
   port: 443
   udp: true
@@ -66,58 +40,22 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: t.me
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
-  server: 202.146.222.29
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
+  server: 45.144.174.183
+  port: 8388
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - netmix
-  server: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
-  sni: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  type: ss
+  cipher: aes-256-gcm
+  password: I0pPH99n18r05VWm
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - netmix
-  server: 31.57.248.176
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: b0917015b656b3dd2286b5633af0c5c1
-  sni: www.bing.com%23%e9%a6%83%e5%9a%9f%e9%a6%83%e5%9a%a2%7chk%7c%40wxgqlfx%7c147
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - netmix
-  server: vpn-hk-004.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - netmix
-  server: 210.0.244.227
-  port: 443
-  udp: true
-  type: vless
-  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
-  tls: true
-  reality-opts:
-    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
-  servername: cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - netmix
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - netmix
   server: 165.154.63.139
   port: 443
   udp: true
@@ -130,21 +68,46 @@ proxies:
     short-id: ca4aedd4
   servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - netmix
-  server: 103.247.28.203
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
+  server: 210.0.244.157
   port: 443
   udp: true
   type: vless
-  uuid: 64726966-0000-4000-8000-740000000000
+  uuid: f3ff9bac-2904-4f38-bae1-54ab1a72891b
   tls: true
-  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  reality-opts:
+    public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
+  servername: cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - netmix
+  server: 210.0.244.227
+  port: 443
+  udp: true
+  type: vless
+  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
+  tls: true
+  reality-opts:
+    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
+  servername: cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - netmix
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: 127.0.0.1
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select
@@ -161,10 +124,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 12 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 13 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 14 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 15 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -181,9 +140,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 12 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 13 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 14 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 15 - netmix
 rules:
 - MATCH,PROXIES

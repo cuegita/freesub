@@ -4,15 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "anytls",
+      "type": "trojan",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix",
-      "server": "er8u54dh.df6h451rh.xin",
+      "server": "125.227.86.45",
       "server_port": 443,
-      "password": "0324fbc29561",
+      "password": "0a9f1f5a397bd427",
       "tls": {
         "enabled": true,
-        "server_name": "px.ads.linkedin.com",
-        "insecure": true
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
       }
     },
     {
@@ -36,12 +43,41 @@
       }
     },
     {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix",
+      "server": "er8u54dh.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix",
+      "server": "684616s4.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix"
       ]
     },
     {
@@ -49,7 +85,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
