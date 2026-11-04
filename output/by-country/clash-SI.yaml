@@ -16,7 +16,7 @@ proxies:
     public-key: CTiiN_SriTUj-eBv0047HpCWgLtAzWzq-gwvIWN9KUI
     short-id: 7f0275a4db6068fb
   servername: node-slo03.rkitman.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

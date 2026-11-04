@@ -4,23 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - netmix",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "188.114.97.6",
+      "server_port": 80,
+      "uuid": "6faeb6a0-5055-4e4b-8fb1-ffd77e57aefa",
+      "transport": {
+        "type": "ws",
+        "path": "/au-do",
+        "headers": {
+          "Host": "somersby.pt.r3xxe.eu.cc"
+        }
+      }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - netmix",
-      "server": "45.63.30.142",
+      "server": "104.18.155.229",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "42026ed0-7d74-4585-8e46-0fe6aa4d665a",
       "tls": {
         "enabled": true,
-        "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": false
+        "server_name": "www.genflix.co.id.r3xxe.eu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/au-do",
+        "headers": {
+          "Host": "www.genflix.co.id.r3xxe.eu.cc"
+        }
       }
     },
     {
@@ -40,13 +57,30 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - netmix",
+      "server": "45.63.30.142",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "connectwithemployerstohireyouridealteam.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - netmix",
         "🇦🇺 澳大利亚 (Australia) 02 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 03 - netmix"
+        "🇦🇺 澳大利亚 (Australia) 03 - netmix",
+        "🇦🇺 澳大利亚 (Australia) 04 - netmix"
       ]
     },
     {
@@ -55,7 +89,8 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - netmix",
         "🇦🇺 澳大利亚 (Australia) 02 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 03 - netmix"
+        "🇦🇺 澳大利亚 (Australia) 03 - netmix",
+        "🇦🇺 澳大利亚 (Australia) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

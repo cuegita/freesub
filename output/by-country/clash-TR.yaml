@@ -15,6 +15,16 @@ proxies:
     grpc-service-name: vless
 - name: 🇹🇷 土耳其 (Turkey) 02 - netmix
   server: 153.56.210.134
+  port: 34121
+  udp: true
+  type: hysteria2
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+- name: 🇹🇷 土耳其 (Turkey) 03 - netmix
+  server: 153.56.210.134
   port: 38045
   udp: true
   type: hysteria2
@@ -23,7 +33,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
-- name: 🇹🇷 土耳其 (Turkey) 03 - netmix
+- name: 🇹🇷 土耳其 (Turkey) 04 - netmix
   server: 153.56.210.134
   port: 57251
   udp: true
@@ -33,27 +43,18 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
-- name: 🇹🇷 土耳其 (Turkey) 04 - netmix
-  server: 153.56.210.134
-  port: 34121
-  udp: true
-  type: hysteria2
-  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
 - name: 🇹🇷 土耳其 (Turkey) 05 - netmix
-  server: 151.241.226.201
-  port: 2053
+  server: 153.56.210.61
+  port: 443
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 06 - netmix
   server: 62.133.63.45
@@ -71,25 +72,40 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 07 - netmix
-  server: 153.56.210.61
+  server: 206.1.96.108
+  port: 7443
+  udp: true
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇹🇷 土耳其 (Turkey) 08 - netmix
+  server: 185.95.164.150
   port: 443
   udp: true
   type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  uuid: 53154bc7-0409-4f8c-9873-29adad85fab5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
+    public-key: LnisQq4C_Z-c2atyogsViBwBntRXH7LZhxC1RccGXH4
+    short-id: 1db18aa1
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 08 - netmix
-  server: pg2.rmastore.ir
-  port: 3044
+- name: 🇹🇷 土耳其 (Turkey) 09 - netmix
+  server: 151.241.226.201
+  port: 2053
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: c5PtLhylY5r3jJQ6XlzGiOdXeYYlhu-k
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,6 +119,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 06 - netmix
   - 🇹🇷 土耳其 (Turkey) 07 - netmix
   - 🇹🇷 土耳其 (Turkey) 08 - netmix
+  - 🇹🇷 土耳其 (Turkey) 09 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,5 +133,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 06 - netmix
   - 🇹🇷 土耳其 (Turkey) 07 - netmix
   - 🇹🇷 土耳其 (Turkey) 08 - netmix
+  - 🇹🇷 土耳其 (Turkey) 09 - netmix
 rules:
 - MATCH,PROXIES

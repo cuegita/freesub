@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -30,7 +30,7 @@
       "server": "31.57.185.203",
       "server_port": 53799,
       "method": "2022-blake3-aes-256-gcm",
-      "password": "ZV9gr1G1kn+MtegpmGMVOqXbSUwnCHtaS/8vuccEKJU=:/5JgcLzZPyhkuYysjWrFlg+/Be49fkgoQX+sIHmQT8k="
+      "password": "ZV9gr1G1kn+MtegpmGMVOqXbSUwnCHtaS/8vuccEKJU=:xMZdXxFcqjAuzgiuGTBdveBqsh2zHIVZwxQbp/IrLmY="
     },
     {
       "type": "trojan",
@@ -41,7 +41,11 @@
       "tls": {
         "enabled": true,
         "server_name": "exploreeducationsectoropportunitiestodayandadvancecareers.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {

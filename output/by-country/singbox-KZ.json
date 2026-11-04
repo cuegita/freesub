@@ -4,210 +4,39 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
+      "server": "3h-kazakhstan1.09vpn.com",
+      "server_port": 8443,
+      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
+      "tls": {
+        "enabled": true,
+        "server_name": "3h-kazakhstan1.09vpn.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/vmess/"
+        "path": "/vless/"
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "viber.com"
+      "server": "109.248.170.119",
+      "server_port": 13447,
+      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
+          "short_id": "83"
         }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "38.107.234.57"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "3h-kazakhstan1.09vpn.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "3h-kazakhstan1.09vpn.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - netmix",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - netmix",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - netmix",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - netmix",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "viber.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - netmix",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - netmix",
-      "server": "3h-kazakhstan1.09vpn.com",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 12 - netmix",
-      "server": "3h-kazakhstan1.09vpn.com",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 13 - netmix",
-      "server": "3h-kazakhstan1.09vpn.com",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 14 - netmix",
-      "server": "3h-kazakhstan1.09vpn.com",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "3h-kazakhstan1.09vpn.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 15 - netmix",
-      "server": "3h-kazakhstan1.09vpn.com",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/"
       }
     },
     {
@@ -216,20 +45,7 @@
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 12 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 13 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 14 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 15 - netmix"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix"
       ]
     },
     {
@@ -237,20 +53,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 12 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 13 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 14 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 15 - netmix"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
