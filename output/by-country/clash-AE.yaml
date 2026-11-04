@@ -5,30 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - netmix
-  server: 151.241.19.29
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 02 - netmix
   server: 151.241.19.36
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 03 - netmix
-  server: 130.49.161.70
-  port: 443
+- name: 🇦🇪 阿联酋 (UAE) 02 - netmix
+  server: 151.241.19.29
+  port: 19999
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - netmix
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇪 阿联酋 (UAE) 03 - netmix
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -39,16 +29,34 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 04 - netmix
+  server: Sclass-00.catcat321.com
+  port: 20123
+  udp: true
+  type: trojan
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  sni: hk.catxstar.com
+  skip-cert-verify: false
 - name: 🇦🇪 阿联酋 (UAE) 05 - netmix
+  server: hy2.aspidnet.xyz
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 06 - netmix
   server: Sclass-C1.catcat321.com
   port: 20086
   udp: true
   type: trojan
   password: d9064589-74af-432a-9390-5d8a9da281bf
   sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 06 - netmix
-  server: 84.235.244.108
+  skip-cert-verify: false
+- name: 🇦🇪 阿联酋 (UAE) 07 - netmix
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -69,6 +77,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
   - 🇦🇪 阿联酋 (UAE) 05 - netmix
   - 🇦🇪 阿联酋 (UAE) 06 - netmix
+  - 🇦🇪 阿联酋 (UAE) 07 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,5 +89,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
   - 🇦🇪 阿联酋 (UAE) 05 - netmix
   - 🇦🇪 阿联酋 (UAE) 06 - netmix
+  - 🇦🇪 阿联酋 (UAE) 07 - netmix
 rules:
 - MATCH,PROXIES

@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - netmix",
-      "server": "151.241.19.29",
+      "server": "151.241.19.36",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -14,30 +14,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - netmix",
-      "server": "151.241.19.36",
+      "server": "151.241.19.29",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - netmix",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - netmix",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - netmix",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
@@ -51,14 +35,46 @@
     },
     {
       "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - netmix",
+      "server": "Sclass-00.catcat321.com",
+      "server_port": 20123,
+      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.catxstar.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - netmix",
+      "server": "hy2.aspidnet.xyz",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - netmix",
       "server": "Sclass-C1.catcat321.com",
       "server_port": 20086,
       "password": "d9064589-74af-432a-9390-5d8a9da281bf",
       "tls": {
         "enabled": true,
         "server_name": "hk.catxstar.com",
-        "insecure": true,
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -67,8 +83,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - netmix",
-      "server": "84.235.244.108",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - netmix",
+      "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
@@ -89,7 +105,8 @@
         "🇦🇪 阿联酋 (UAE) 03 - netmix",
         "🇦🇪 阿联酋 (UAE) 04 - netmix",
         "🇦🇪 阿联酋 (UAE) 05 - netmix",
-        "🇦🇪 阿联酋 (UAE) 06 - netmix"
+        "🇦🇪 阿联酋 (UAE) 06 - netmix",
+        "🇦🇪 阿联酋 (UAE) 07 - netmix"
       ]
     },
     {
@@ -101,7 +118,8 @@
         "🇦🇪 阿联酋 (UAE) 03 - netmix",
         "🇦🇪 阿联酋 (UAE) 04 - netmix",
         "🇦🇪 阿联酋 (UAE) 05 - netmix",
-        "🇦🇪 阿联酋 (UAE) 06 - netmix"
+        "🇦🇪 阿联酋 (UAE) 06 - netmix",
+        "🇦🇪 阿联酋 (UAE) 07 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

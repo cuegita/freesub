@@ -30,22 +30,21 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - netmix",
-      "server": "de-2.ffpn.pro",
+      "server": "147.45.126.220",
       "server_port": 443,
-      "uuid": "727a9178-d7f0-4142-8205-b0d19959ded0",
-      "flow": "xtls-rprx-vision",
+      "uuid": "ede2f330-aab4-4a34-8b79-0df85ae3f6a9",
       "tls": {
         "enabled": true,
-        "server_name": "de-2.ffpn.pro",
+        "server_name": "pol.qikbro.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc",
-          "short_id": "681fc2dd643bc2f3"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "assets"
       }
     },
     {
@@ -72,8 +71,24 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - netmix",
+      "server": "185.22.153.192",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - netmix",
+      "server": "46.17.46.27",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - netmix",
       "server": "5.42.99.64",
       "server_port": 8443,
       "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
@@ -94,7 +109,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - netmix",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - netmix",
+      "server": "xsru2.freeddns.org",
+      "server_port": 443,
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "xsru2.freeddns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/wsru",
+        "headers": {
+          "Host": "xsru2.freeddns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - netmix",
       "server": "du-rov.secureservice.top",
       "server_port": 8443,
       "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
@@ -104,7 +142,7 @@
         "server_name": "du-rov.secureservice.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -115,43 +153,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - netmix",
-      "server": "104.171.135.229",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - netmix",
+      "server": "5.129.237.55",
       "server_port": 443,
-      "uuid": "Fluffy_VPN-Oth8rOq3",
+      "uuid": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "absolute-disaster.org",
+        "server_name": "www.asml.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "mpo4BIcoWiMXAQGt5a8IJ4MFkPJQyLC50dO_bXzC7z0",
-          "short_id": ""
+          "public_key": "LFbPIbtPbYVHinY8qVv9uGji-10AUbJRpiy2b1w35ls",
+          "short_id": "a623829279b6054a"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - netmix",
-      "server": "xsru1.ddnsfree.com",
-      "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
-      "tls": {
-        "enabled": true,
-        "server_name": "xsru1.ddnsfree.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-ru"
       }
     },
     {
@@ -165,7 +183,9 @@
         "🇷🇺 俄罗斯 (Russia) 04 - netmix",
         "🇷🇺 俄罗斯 (Russia) 05 - netmix",
         "🇷🇺 俄罗斯 (Russia) 06 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 07 - netmix"
+        "🇷🇺 俄罗斯 (Russia) 07 - netmix",
+        "🇷🇺 俄罗斯 (Russia) 08 - netmix",
+        "🇷🇺 俄罗斯 (Russia) 09 - netmix"
       ]
     },
     {
@@ -178,7 +198,9 @@
         "🇷🇺 俄罗斯 (Russia) 04 - netmix",
         "🇷🇺 俄罗斯 (Russia) 05 - netmix",
         "🇷🇺 俄罗斯 (Russia) 06 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 07 - netmix"
+        "🇷🇺 俄罗斯 (Russia) 07 - netmix",
+        "🇷🇺 俄罗斯 (Russia) 08 - netmix",
+        "🇷🇺 俄罗斯 (Russia) 09 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
