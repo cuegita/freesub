@@ -11,42 +11,24 @@
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
-        "insecure": false
+        "server_name": "216.238.104.154",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇧🇷 巴西 (Brazil) 02 - netmix",
-      "server": "177.3.193.43",
-      "server_port": 443,
-      "uuid": "5fb552a8-9c41-4031-86f5-ca10fc802da5",
-      "flow": "xtls-rprx-vision",
+      "server": "br001.zestapp778.com",
+      "server_port": 39533,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
-        "server_name": "debik1.vethilis.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 03 - netmix",
-      "server": "debik2.vethilis.ru",
-      "server_port": 443,
-      "uuid": "5fb552a8-9c41-4031-86f5-ca10fc802da5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "debik2.vethilis.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "br001.zestapp778.com",
+        "insecure": true
       }
     },
     {
@@ -55,8 +37,7 @@
       "outbounds": [
         "auto",
         "🇧🇷 巴西 (Brazil) 01 - netmix",
-        "🇧🇷 巴西 (Brazil) 02 - netmix",
-        "🇧🇷 巴西 (Brazil) 03 - netmix"
+        "🇧🇷 巴西 (Brazil) 02 - netmix"
       ]
     },
     {
@@ -64,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 - netmix",
-        "🇧🇷 巴西 (Brazil) 02 - netmix",
-        "🇧🇷 巴西 (Brazil) 03 - netmix"
+        "🇧🇷 巴西 (Brazil) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

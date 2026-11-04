@@ -12,6 +12,28 @@ proxies:
   cipher: aes-256-cfb
   password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 02 - netmix
+  server: 217.30.10.44
+  port: 9052
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 (Poland) 03 - netmix
+  server: 217.30.10.44
+  port: 9042
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+- name: 🇵🇱 波兰 (Poland) 04 - netmix
+  server: 70.34.252.255
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 05 - netmix
   server: 217.30.10.72
   port: 443
   udp: true
@@ -24,52 +46,18 @@ proxies:
     short-id: 1a2b3c4d
   servername: images.porsche.com
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 03 - netmix
-  server: 217.60.33.67
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2a66ad35-93ce-4fd2-831f-bcaa63cdac1e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -r5xcA3iTzAf63kkb0VIILrLHH1VUq550pFZ-M74Jlc
-    short-id: de
-  servername: go-obsh-auto-drun.keno.su
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 04 - netmix
-  server: 70.34.252.255
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 05 - netmix
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 06 - netmix
-  server: 94.249.180.86
+  server: 179.198.49.218
   port: 443
   udp: true
   type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
+    public-key: 9CKMhiYPXEIfQh_XFbbN1GoBxeLxJkaar2wg9FZKfBo
+    short-id: 75fe71d16ccae610
+  servername: assets-44.topp-con.xyz
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 07 - netmix
   server: 2.26.255.215
@@ -85,38 +73,6 @@ proxies:
   servername: cloudflare.com
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 08 - netmix
-  server: 2.26.231.218
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 09 - netmix
-  server: 217.30.10.44
-  port: 9042
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 (Poland) 10 - netmix
-  server: 179.198.49.218
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 9CKMhiYPXEIfQh_XFbbN1GoBxeLxJkaar2wg9FZKfBo
-    short-id: 75fe71d16ccae610
-  servername: assets-44.topp-con.xyz
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 11 - netmix
   server: 54.37.131.126
   port: 80
   udp: true
@@ -129,57 +85,33 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 12 - netmix
-  server: 45.144.48.35
+- name: 🇵🇱 波兰 (Poland) 09 - netmix
+  server: 94.249.180.86
   port: 443
   udp: true
   type: vless
-  uuid: 5fb552a8-9c41-4031-86f5-ca10fc802da5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pont2.vethilis.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 13 - netmix
-  server: ru1.radiolumens.uk
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 14 - netmix
-  server: 201.58.181.231
-  port: 4443
-  udp: true
-  type: vless
-  uuid: fafc7c16-f890-45ee-a856-02df225172dd
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: kn7Lh0yi6CYrHW5KpiQrfrs9FED-mbbEEKgOoiDkx2M
-    short-id: 858affa9443ebac6
-  servername: www.kinopoisk.ru
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 15 - netmix
-  server: 201.58.181.231
-  port: 2083
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 10 - netmix
+  server: 217.60.33.67
+  port: 8443
   udp: true
   type: vless
-  uuid: fafc7c16-f890-45ee-a856-02df225172dd
+  uuid: 2a66ad35-93ce-4fd2-831f-bcaa63cdac1e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: uKk4cvAJii_YbhzUm9IeMKLHR851E_1sfiMP-ncyeyM
-    short-id: e69c662141e37e7b
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 16 - netmix
+    public-key: -r5xcA3iTzAf63kkb0VIILrLHH1VUq550pFZ-M74Jlc
+    short-id: de
+  servername: go-obsh-auto-drun.keno.su
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 11 - netmix
   server: 84.23.52.120
   port: 28453
   udp: true
@@ -192,17 +124,39 @@ proxies:
   network: ws
   ws-opts:
     path: /lovelive
-- name: 🇵🇱 波兰 (Poland) 17 - netmix
-  server: 150.251.113.34
+- name: 🇵🇱 波兰 (Poland) 12 - netmix
+  server: 51.83.192.80
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇵🇱 波兰 (Poland) 13 - netmix
+  server: 145.63.143.205
+  port: 8444
+  udp: true
+  type: vless
+  uuid: a8321cfe-39a2-48a0-a918-f01f7d9006ed
+  tls: true
+  servername: pl1.meshbeat.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/v1/devices/10be32b380/telemetry
+    headers:
+      Host: pl1.meshbeat.online
+- name: 🇵🇱 波兰 (Poland) 14 - netmix
+  server: 82.118.22.161
   port: 443
   udp: true
   type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -224,9 +178,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 12 - netmix
   - 🇵🇱 波兰 (Poland) 13 - netmix
   - 🇵🇱 波兰 (Poland) 14 - netmix
-  - 🇵🇱 波兰 (Poland) 15 - netmix
-  - 🇵🇱 波兰 (Poland) 16 - netmix
-  - 🇵🇱 波兰 (Poland) 17 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -246,8 +197,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 12 - netmix
   - 🇵🇱 波兰 (Poland) 13 - netmix
   - 🇵🇱 波兰 (Poland) 14 - netmix
-  - 🇵🇱 波兰 (Poland) 15 - netmix
-  - 🇵🇱 波兰 (Poland) 16 - netmix
-  - 🇵🇱 波兰 (Poland) 17 - netmix
 rules:
 - MATCH,PROXIES

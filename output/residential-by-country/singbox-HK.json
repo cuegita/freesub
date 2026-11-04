@@ -4,36 +4,61 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "tuic",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix",
-      "server": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
+      "server": "54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com",
       "server_port": 443,
-      "password": "367e233c-2f54-11ee-9ae1-f23c9164ca5d",
+      "uuid": "73bfcc1c-5814-5f2a-b43a-3ef6af011db8",
+      "password": "73bfcc1c-5814-5f2a-b43a-3ef6af011db8",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
       "tls": {
         "enabled": true,
-        "server_name": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
-        "insecure": false
+        "server_name": "54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ]
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
-      "server": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
+      "server": "bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
+      "password": "ae5338ae-9a70-58c9-3d47-7d54a5675715",
       "tls": {
         "enabled": true,
-        "server_name": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
-        "insecure": true
+        "server_name": "bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com",
+        "insecure": false
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
+      "server": "112.120.123.140",
+      "server_port": 443,
+      "password": "3f514ea2-4662-11ed-a8bf-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix",
+      "server": "56481.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "images.ctfassets.net",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      }
     },
     {
       "type": "selector",
@@ -42,7 +67,8 @@
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix"
       ]
     },
     {
@@ -51,7 +77,8 @@
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

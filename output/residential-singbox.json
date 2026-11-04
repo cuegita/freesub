@@ -4,80 +4,65 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix",
-      "server": "125.227.86.45",
+      "type": "tuic",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix",
+      "server": "54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com",
       "server_port": 443,
-      "password": "0a9f1f5a397bd427",
+      "uuid": "73bfcc1c-5814-5f2a-b43a-3ef6af011db8",
+      "password": "73bfcc1c-5814-5f2a-b43a-3ef6af011db8",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
       "tls": {
         "enabled": true,
-        "server_name": "TG.freecodes",
-        "insecure": true,
+        "server_name": "54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com",
+        "insecure": false,
         "alpn": [
-          "h2"
+          "h3"
         ]
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "db"
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
-      "server": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
+      "server": "bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "367e233c-2f54-11ee-9ae1-f23c9164ca5d",
+      "password": "ae5338ae-9a70-58c9-3d47-7d54a5675715",
       "tls": {
         "enabled": true,
-        "server_name": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
+        "server_name": "bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com",
         "insecure": false
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
-      "server": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
+      "server": "112.120.123.140",
       "server_port": 443,
-      "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
+      "password": "3f514ea2-4662-11ed-a8bf-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
-        "insecure": true
+        "server_name": "9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com",
+        "insecure": false
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 (移动家宽) - netmix",
-      "server": "pah1.vethilis.ru",
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix",
+      "server": "56481.df6h451rh.xin",
       "server_port": 443,
-      "uuid": "5fb552a8-9c41-4031-86f5-ca10fc802da5",
-      "flow": "xtls-rprx-vision",
+      "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "pah1.vethilis.ru",
-        "insecure": false,
+        "server_name": "images.ctfassets.net",
+        "insecure": true,
         "alpn": [
-          "h2",
           "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        ]
       }
     },
     {
       "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - netmix",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix",
       "server": "terutrrj.d6f54hd1j.cc",
       "server_port": 443,
       "uuid": "a904e307-771f-498b-87ad-8e6e0d0ade4a",
@@ -97,7 +82,7 @@
     },
     {
       "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix",
       "server": "er8u54dh.df6h451rh.xin",
       "server_port": 443,
       "password": "0324fbc29561",
@@ -108,47 +93,28 @@
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix",
-      "server": "684616s4.df6h451rh.xin",
-      "server_port": 443,
-      "password": "0324fbc29561",
-      "tls": {
-        "enabled": true,
-        "server_name": "px.ads.linkedin.com",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
         "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
-        "🇬🇧 英国 (United Kingdom) 04 (移动家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
         "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
-        "🇬🇧 英国 (United Kingdom) 04 (移动家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

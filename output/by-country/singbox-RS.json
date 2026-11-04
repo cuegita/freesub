@@ -5,22 +5,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 01 - netmix",
-      "server": "85.90.197.220",
+      "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - netmix",
+      "server": "185.72.11.43",
       "server_port": 443,
-      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
+      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "rs8.speedtestinternet.link",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
-          "short_id": "94acb54627612d43"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -29,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01 - netmix"
+        "🇷🇸 塞尔维亚 (Serbia) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01 - netmix"
+        "🇷🇸 塞尔维亚 (Serbia) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
