@@ -18,13 +18,13 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - netmix",
-      "server": "hy2-new.aspidnet.xyz",
+      "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
       "tls": {
         "enabled": true,
         "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -34,13 +34,13 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 03 - netmix",
-      "server": "162.249.125.133",
+      "server": "hy2-new.aspidnet.xyz",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
       "tls": {
         "enabled": true,
         "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": false
+        "insecure": true
       },
       "obfs": {
         "type": "salamander",
@@ -59,7 +59,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -77,14 +77,6 @@
       "password": "U83u9OGpvSatIUW7LsWffr"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - netmix",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -93,8 +85,7 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - netmix",
         "🇷🇴 罗马尼亚 (Romania) 03 - netmix",
         "🇷🇴 罗马尼亚 (Romania) 04 - netmix",
-        "🇷🇴 罗马尼亚 (Romania) 05 - netmix",
-        "🇷🇴 罗马尼亚 (Romania) 06 - netmix"
+        "🇷🇴 罗马尼亚 (Romania) 05 - netmix"
       ]
     },
     {
@@ -105,8 +96,7 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - netmix",
         "🇷🇴 罗马尼亚 (Romania) 03 - netmix",
         "🇷🇴 罗马尼亚 (Romania) 04 - netmix",
-        "🇷🇴 罗马尼亚 (Romania) 05 - netmix",
-        "🇷🇴 罗马尼亚 (Romania) 06 - netmix"
+        "🇷🇴 罗马尼亚 (Romania) 05 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

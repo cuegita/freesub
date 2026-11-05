@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - netmix
-  server: 95.182.115.178
+  server: 195.123.213.28
   port: 443
   udp: true
-  type: vmess
-  uuid: db753334-5fd1-472b-b3e0-458bc2189c58
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - netmix
   server: 138.124.180.137
   port: 443
@@ -25,19 +30,6 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
-  server: 195.123.213.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - netmix
   - 🇱🇻 拉脱维亚 (Latvia) 02 - netmix
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - netmix
   - 🇱🇻 拉脱维亚 (Latvia) 02 - netmix
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
 rules:
 - MATCH,PROXIES

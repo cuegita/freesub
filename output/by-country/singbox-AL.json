@@ -4,11 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇱 AL 01 - netmix",
-      "server": "bot.vudfaro.ir",
-      "server_port": 5051,
-      "uuid": "7df4f23f-b361-412a-883a-54dfdb5b8c8f"
+      "server": "dns22.m3hrzd.ir",
+      "server_port": 1348,
+      "method": "chacha20-ietf-poly1305",
+      "password": "6Gzfdmd2cvye1qyKoub9E7eWijMDR2lK"
     },
     {
       "type": "selector",
