@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - netmix
-  server: 23.175.201.177
-  port: 63691
+  server: 85.155.149.190
+  port: 443
   udp: true
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: d1rPFOP0VHkK296iGDM/eg==
+  type: vless
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pGCqNljaUIUVC7xpHa9nFnu6vsQ0OX3QyfvYMhLZuWY
+    short-id: bee10b047804c637
+  servername: hk1.japancase.site
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
   server: 103.204.174.80
   port: 443
@@ -25,14 +31,30 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16113
+  server: 202.146.222.29
+  port: 443
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vk.com
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
   server: 210.0.244.157
   port: 443
   udp: true
@@ -43,68 +65,29 @@ proxies:
     public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
   servername: cloudflare.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - netmix
-  server: 210.0.244.227
-  port: 443
+  server: 112.120.54.238
+  port: 39471
   udp: true
   type: vless
-  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
+  uuid: 5e9ec451-4302-4be2-911b-6ae2042fca45
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
-  servername: cloudflare.com
+    public-key: 79kBx_jBo5cqkQ-9Hlm5s-1i_DnddFx9rJ8NBaXY-GQ
+  servername: www.byu.edu
   client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
-  server: 202.146.222.29
-  port: 443
+  server: 152.32.254.68
+  port: 5010
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá®üá≥
-  skip-cert-verify: true
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - netmix
-  server: 165.154.63.139
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
-  server: 85.155.149.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pGCqNljaUIUVC7xpHa9nFnu6vsQ0OX3QyfvYMhLZuWY
-    short-id: bee10b047804c637
-  servername: hk1.japancase.site
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - netmix
   server: vipccc.cc
   port: 443
   udp: true
@@ -120,6 +103,16 @@ proxies:
     path: /ray_proxy
     headers:
       Host: vipccc.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  server: 152.175.6.229
+  port: 31884
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: hk010.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -135,7 +128,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -151,6 +143,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
 rules:
 - MATCH,PROXIES
