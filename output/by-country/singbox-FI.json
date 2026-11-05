@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇫🇮 芬兰 (Finland) 01 - netmix",
+      "server": "65.108.240.210",
+      "server_port": 39018,
+      "uuid": "45dc10c6-04c8-4c70-a06a-d396254a6c0b",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - netmix",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "b79d736d-0f10-4169-b626-362059d18204",
@@ -20,27 +28,6 @@
           "enabled": true,
           "public_key": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs",
           "short_id": "10351b07c712d2a2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - netmix",
-      "server": "217.144.188.185",
-      "server_port": 443,
-      "uuid": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.nordea.fi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk",
-          "short_id": ""
         }
       }
     },
@@ -61,17 +48,47 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
+      "server": "217.144.188.185",
+      "server_port": 443,
+      "uuid": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nordea.fi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
+      "server": "cd0.bmi.ir.kolman.com.de",
+      "server_port": 80,
+      "uuid": "b64d1d2c-4186-4265-a7a6-367ccdfffd74",
+      "security": "auto",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/f9bGbG7ZNy5L0tzXKZNxSX4q",
+        "host": "bmi.ir.draft.co.impossible.com.ir.bmi.ir.com.iran.ir6.ifilmino.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - netmix",
       "server": "146.103.118.189",
       "server_port": 443,
       "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
       "tls": {
         "enabled": true,
         "server_name": "nl2.574ck.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -82,30 +99,9 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
-      "server": "89.144.53.4",
-      "server_port": 8445,
-      "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "videos.porsche.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
-          "short_id": "1a2b3c4d"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - netmix",
-      "server": "104.24.0.1",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - netmix",
+      "server": "188.114.96.3",
       "server_port": 2053,
       "password": "gHQP0D7D15",
       "tls": {
@@ -129,6 +125,43 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 08 - netmix",
+      "server": "fn1s.sublinkplas.ir",
+      "server_port": 53731,
+      "method": "chacha20-ietf-poly1305",
+      "password": "9RF5sK0eSRFL621xGEDwr0y9bioEjbPs"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 09 - netmix",
+      "server": "6.bmi.ir.asopardaz.ir",
+      "server_port": 8443,
+      "uuid": "b64d1d2c-4186-4265-a7a6-367ccdfffd74",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "timeline.www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
+          "short_id": "e915"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 10 - netmix",
+      "server": "65.108.240.210",
+      "server_port": 39018,
+      "uuid": "96c987c9-c2d9-4993-b9bd-c9bc36255ee1",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -138,7 +171,11 @@
         "🇫🇮 芬兰 (Finland) 03 - netmix",
         "🇫🇮 芬兰 (Finland) 04 - netmix",
         "🇫🇮 芬兰 (Finland) 05 - netmix",
-        "🇫🇮 芬兰 (Finland) 06 - netmix"
+        "🇫🇮 芬兰 (Finland) 06 - netmix",
+        "🇫🇮 芬兰 (Finland) 07 - netmix",
+        "🇫🇮 芬兰 (Finland) 08 - netmix",
+        "🇫🇮 芬兰 (Finland) 09 - netmix",
+        "🇫🇮 芬兰 (Finland) 10 - netmix"
       ]
     },
     {
@@ -150,7 +187,11 @@
         "🇫🇮 芬兰 (Finland) 03 - netmix",
         "🇫🇮 芬兰 (Finland) 04 - netmix",
         "🇫🇮 芬兰 (Finland) 05 - netmix",
-        "🇫🇮 芬兰 (Finland) 06 - netmix"
+        "🇫🇮 芬兰 (Finland) 06 - netmix",
+        "🇫🇮 芬兰 (Finland) 07 - netmix",
+        "🇫🇮 芬兰 (Finland) 08 - netmix",
+        "🇫🇮 芬兰 (Finland) 09 - netmix",
+        "🇫🇮 芬兰 (Finland) 10 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

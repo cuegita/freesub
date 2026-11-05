@@ -5,80 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - netmix
-  server: 103.149.182.79
-  port: 8388
+  server: 23.175.201.177
+  port: 63691
   udp: true
   type: ss
-  cipher: chacha20-ietf
-  password: asd123456
+  cipher: 2022-blake3-aes-128-gcm
+  password: d1rPFOP0VHkK296iGDM/eg==
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16114
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
-  server: 210.0.244.157
-  port: 443
-  udp: true
-  type: vless
-  uuid: f3ff9bac-2904-4f38-bae1-54ab1a72891b
-  tls: true
-  reality-opts:
-    public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
-  servername: cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
-  server: 210.0.244.227
-  port: 443
-  udp: true
-  type: vless
-  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
-  tls: true
-  reality-opts:
-    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
-  servername: cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - netmix
-  server: 165.154.63.139
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - netmix
   server: 103.204.174.80
   port: 443
   udp: true
@@ -91,50 +24,102 @@ proxies:
     short-id: 9b1813e63f474741
   servername: gateway.icloud.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
-  server: vpn-hk-004.fastervpn.world
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16113
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
+  server: 210.0.244.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: f3ff9bac-2904-4f38-bae1-54ab1a72891b
+  tls: true
+  reality-opts:
+    public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
+  servername: cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
+  sni: 202.146.222.89
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - netmix
+  server: 210.0.244.227
+  port: 443
+  udp: true
+  type: vless
+  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
+  tls: true
+  reality-opts:
+    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
+  servername: cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2üá®üá≥
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - netmix
+  server: 165.154.63.139
+  port: 443
+  udp: true
+  type: vless
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  server: 85.155.149.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pGCqNljaUIUVC7xpHa9nFnu6vsQ0OX3QyfvYMhLZuWY
+    short-id: bee10b047804c637
+  servername: hk1.japancase.site
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - netmix
-  server: hk.wawojk.dpdns.org
-  port: 50007
+  server: vipccc.cc
+  port: 443
   udp: true
   type: vmess
-  uuid: 0d824a74-1207-48c4-a7a0-d283d5f10b4e
+  uuid: 5bead32f-a987-4f57-b1a8-6698778facda
   alterId: 0
   cipher: auto
   tls: true
-  servername: hk.wawojk.dpdns.org
+  servername: vipccc.cc
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /hk-vmess-ws-c9f3a2
+    path: /ray_proxy
     headers:
-      Host: hk.wawojk.dpdns.org
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - netmix
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - netmix
-  server: 152.175.6.229
-  port: 31884
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: hk010.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+      Host: vipccc.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -151,8 +136,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 12 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 13 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -169,7 +152,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 12 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 13 - netmix
 rules:
 - MATCH,PROXIES

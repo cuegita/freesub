@@ -25,6 +25,16 @@ proxies:
   obfs: salamander
   obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
 - name: 🇹🇷 土耳其 (Turkey) 03 - netmix
+  server: 153.56.210.134
+  port: 57251
+  udp: true
+  type: hysteria2
+  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
+- name: 🇹🇷 土耳其 (Turkey) 04 - netmix
   server: 153.56.210.61
   port: 443
   udp: true
@@ -37,56 +47,38 @@ proxies:
     short-id: a696de84963656de
   servername: amd.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - netmix
-  server: 153.56.210.134
-  port: 57251
-  udp: true
-  type: hysteria2
-  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
 - name: 🇹🇷 土耳其 (Turkey) 05 - netmix
-  server: 151.241.226.201
-  port: 2053
+  server: 78.135.73.47
+  port: 443
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 06 - netmix
-  server: 62.133.63.45
-  port: 8444
-  udp: true
-  type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 07 - netmix
-  server: 147.45.66.60
-  port: 43000
-  udp: true
-  type: vless
-  uuid: 01e61db7-9e0b-4431-a995-a5288a01b951
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg
-    short-id: 4d3d8e15
-  servername: 147.45.66.60
-  client-fingerprint: chrome
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 06 - netmix
+  server: bot.vudfaro.ir
+  port: 5055
+  udp: true
+  type: vless
+  uuid: 7df4f23f-b361-412a-883a-54dfdb5b8c8f
+- name: 🇹🇷 土耳其 (Turkey) 07 - netmix
+  server: tr1.japancase.site
+  port: 443
+  udp: true
+  type: vless
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
+    short-id: 41ae8e266bc3346f
+  servername: tr1.japancase.site
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select

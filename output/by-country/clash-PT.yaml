@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - netmix
-  server: 49.254.204.133
-  port: 1774
+- name: 🇵🇹 葡萄牙 (Portugal) 01 - netmix
+  server: 185.231.233.91
+  port: 17167
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  cipher: aes-128-gcm
+  password: d925ddb6fe1e6e62887cf3dc3f5137f3
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - netmix
+  - 🇵🇹 葡萄牙 (Portugal) 01 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - netmix
+  - 🇵🇹 葡萄牙 (Portugal) 01 - netmix
 rules:
 - MATCH,PROXIES

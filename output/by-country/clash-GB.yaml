@@ -5,47 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - netmix
-  server: 38.114.120.221
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇬🇧 英国 (United Kingdom) 02 - netmix
   server: 141.98.101.181
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 03 - netmix
-  server: 142.202.51.22
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇬🇧 英国 (United Kingdom) 04 - netmix
+- name: 🇬🇧 英国 (United Kingdom) 02 - netmix
   server: 185.176.206.9
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇬🇧 英国 (United Kingdom) 05 - netmix
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 06 - netmix
+- name: 🇬🇧 英国 (United Kingdom) 03 - netmix
   server: 51.89.194.151
   port: 2053
   udp: true
@@ -56,45 +29,67 @@ proxies:
     public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
     short-id: d051f678212f9d54
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 04 - netmix
+  server: 142.202.51.22
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇬🇧 英国 (United Kingdom) 05 - netmix
+  server: 51.38.71.147
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  tls: true
+  servername: node-uk.connectsuite.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 06 - netmix
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
+  network: ws
+  ws-opts:
+    path: /vless/
 - name: 🇬🇧 英国 (United Kingdom) 07 - netmix
   server: 57.129.132.223
   port: 80
   udp: true
   type: vless
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
   network: ws
   ws-opts:
     path: /vless/
     headers:
-      Host: google.com
+      Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
 - name: 🇬🇧 英国 (United Kingdom) 08 - netmix
-  server: dns27.m3hrzd.ir
-  port: 1353
+  server: 38.114.120.221
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇬🇧 英国 (United Kingdom) 09 - netmix
+  server: 104.239.12.81
+  port: 43385
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 6Gzfdmd2cvye1qyKoub9E7eWijMDR2lK
-- name: 🇬🇧 英国 (United Kingdom) 09 - netmix
-  server: 149.7.16.228
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
+  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
 - name: 🇬🇧 英国 (United Kingdom) 10 - netmix
-  server: 146.70.61.18
+  server: 146.70.61.37
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 11 - netmix
-  server: 146.70.61.37
+  server: 146.70.46.214
   port: 8080
   udp: true
   type: ss
@@ -108,56 +103,34 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 13 - netmix
-  server: 51.38.71.147
-  port: 8443
+  server: promo2.betust.net
+  port: 443
   udp: true
-  type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  tls: true
-  servername: node-uk.connectsuite.org
+  type: hysteria2
+  password: 2bc6428196efb899f544d750bea0c06d
+  sni: promo2.betust.net
   skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 14 - netmix
-  server: 146.70.46.214
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 15 - netmix
-  server: 98.98.142.161
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 16 - netmix
   server: 98.98.207.163
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 17 - netmix
-  server: 46.250.250.149
-  port: 2053
+- name: 🇬🇧 英国 (United Kingdom) 15 - netmix
+  server: 157.228.64.24
+  port: 443
   udp: true
   type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 18 - netmix
-  server: sql.popmintxo.cc
-  port: 43385
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
-- name: 🇬🇧 英国 (United Kingdom) 19 - netmix
+    public-key: QFYzek1TNFeZxhHP3gH-42RUYDGw0ZiigeDcUOFL2Vs
+    short-id: bd44ae7c721b8252
+  servername: gb1.japancase.site
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 16 - netmix
   server: 191.44.108.31
   port: 443
   udp: true
@@ -170,14 +143,37 @@ proxies:
     short-id: 3ba10d9ce34380c9
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 20 - netmix
-  server: promo2.betust.net
-  port: 443
+- name: 🇬🇧 英国 (United Kingdom) 17 - netmix
+  server: 98.98.142.161
+  port: 8080
   udp: true
-  type: hysteria2
-  password: 2bc6428196efb899f544d750bea0c06d
-  sni: promo2.betust.net
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 18 - netmix
+  server: 146.70.61.18
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 19 - netmix
+  server: 149.7.16.228
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇬🇧 英国 (United Kingdom) 20 - netmix
+  server: static.84.151.104.178.clients.your-server.de
+  port: 41432
+  udp: true
+  type: vless
+  uuid: fe1cfc86-a077-403f-afc7-b97cee3f15e1
 - name: 🇬🇧 英国 (United Kingdom) 21 - netmix
   server: 191.44.108.30
   port: 443
@@ -192,6 +188,19 @@ proxies:
   servername: c8.qwyak.ru
   client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 22 - netmix
+  server: 132.243.167.147
+  port: 443
+  udp: true
+  type: vless
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nIXZmF729Mzn5hq8aWSxsv8wBDawVYmFNzwBytwYfm0
+    short-id: aafcd65859993991
+  servername: ch1.japancase.site
+  client-fingerprint: ios
+- name: 🇬🇧 英国 (United Kingdom) 23 - netmix
   server: 191.44.108.6
   port: 443
   udp: true
@@ -204,20 +213,65 @@ proxies:
     short-id: 3cf8d11aa0415d29
   servername: c9.qwyak.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 23 - netmix
-  server: 138.124.125.193
-  port: 10444
+- name: 🇬🇧 英国 (United Kingdom) 24 - netmix
+  server: uk1.connectsuite.org
+  port: 443
   udp: true
   type: vless
-  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  tls: true
+  servername: uk1.connectsuite.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+- name: 🇬🇧 英国 (United Kingdom) 25 - netmix
+  server: 46.250.250.149
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  tls: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 26 - netmix
+  server: 193.163.203.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 24 - netmix
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 27 - netmix
+  server: 132.243.207.154
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tVx2o1LD0BI7CCoXfFSv-Rr_etGde9XpQ-iNA9P3338
+    short-id: 59d2296aa6320c76
+  servername: get-37.topp-con.xyz
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 28 - netmix
+  server: dns27.m3hrzd.ir
+  port: 1353
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6Gzfdmd2cvye1qyKoub9E7eWijMDR2lK
+- name: 🇬🇧 英国 (United Kingdom) 29 - netmix
   server: 46.250.240.80
   port: 2053
   udp: true
@@ -228,8 +282,8 @@ proxies:
     public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
     short-id: 4cc9dc65f7770115
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 25 - netmix
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 30 - netmix
   server: 104.239.12.81
   port: 443
   udp: true
@@ -242,45 +296,39 @@ proxies:
     short-id: b558b9305a0b
   servername: www.microsoft.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 26 - netmix
-  server: 87.239.249.137
+- name: 🇬🇧 英国 (United Kingdom) 31 - netmix
+  server: 107.181.151.128
   port: 443
   udp: true
   type: vless
-  uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
-    short-id: 91af08b1ce1f
-  servername: www.foxsports.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 27 - netmix
-  server: webdisk.jaggyslawa.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 88742d38-3f5c-4b9c-b256-7df5db8257ec
+  uuid: e5bfbdaf-b48e-492e-ba75-4278c437a0ec
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 8f79726c5002
+    short-id: 6765a8f49c21
   servername: www.mozilla.org
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 28 - netmix
-  server: 51.38.71.147
-  port: 443
+- name: 🇬🇧 英国 (United Kingdom) 32 - netmix
+  server: 94.156.250.148
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇬🇧 英国 (United Kingdom) 33 - netmix
+  server: 138.124.125.193
+  port: 10444
   udp: true
   type: vless
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
+  flow: xtls-rprx-vision
   tls: true
-  servername: uk1.connectsuite.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cdn-cgi/ws
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -314,6 +362,11 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 26 - netmix
   - 🇬🇧 英国 (United Kingdom) 27 - netmix
   - 🇬🇧 英国 (United Kingdom) 28 - netmix
+  - 🇬🇧 英国 (United Kingdom) 29 - netmix
+  - 🇬🇧 英国 (United Kingdom) 30 - netmix
+  - 🇬🇧 英国 (United Kingdom) 31 - netmix
+  - 🇬🇧 英国 (United Kingdom) 32 - netmix
+  - 🇬🇧 英国 (United Kingdom) 33 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -347,5 +400,10 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 26 - netmix
   - 🇬🇧 英国 (United Kingdom) 27 - netmix
   - 🇬🇧 英国 (United Kingdom) 28 - netmix
+  - 🇬🇧 英国 (United Kingdom) 29 - netmix
+  - 🇬🇧 英国 (United Kingdom) 30 - netmix
+  - 🇬🇧 英国 (United Kingdom) 31 - netmix
+  - 🇬🇧 英国 (United Kingdom) 32 - netmix
+  - 🇬🇧 英国 (United Kingdom) 33 - netmix
 rules:
 - MATCH,PROXIES
