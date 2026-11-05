@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - netmix
+  server: 208.103.161.16
+  port: 2096
+  udp: true
+  type: trojan
+  password: hWsj5AwIRPF8
+  sni: rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+- name: 🇫🇮 芬兰 (Finland) 02 - netmix
   server: 92.242.165.40
   port: 8443
   udp: true
@@ -12,7 +23,7 @@ proxies:
   password: 2f0fccb6-4a86-4d9f-9e03-a2dfee6ed7f5
   sni: speedtestmark.com
   skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 02 - netmix
+- name: 🇫🇮 芬兰 (Finland) 03 - netmix
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -23,20 +34,32 @@ proxies:
     public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - netmix
-  server: 217.144.188.185
-  port: 443
+  client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 04 - netmix
+  server: 45.144.234.157
+  port: 14430
   udp: true
   type: vless
-  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 05 - netmix
+  server: 89.144.53.4
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
-  servername: www.nordea.fi
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: videos.porsche.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - netmix
+- name: 🇫🇮 芬兰 (Finland) 06 - netmix
   server: 146.103.118.189
   port: 443
   udp: true
@@ -51,21 +74,20 @@ proxies:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
-- name: 🇫🇮 芬兰 (Finland) 05 - netmix
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
+- name: 🇫🇮 芬兰 (Finland) 07 - netmix
+  server: 217.144.188.185
+  port: 443
   udp: true
   type: vless
-  uuid: 875942c6-1d42-4681-b49b-521a2bf10e8c
+  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: timeline.www.cloudflare.com
+    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
+  servername: www.nordea.fi
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - netmix
-  server: 188.114.96.3
+- name: 🇫🇮 芬兰 (Finland) 08 - netmix
+  server: 104.24.0.1
   port: 2053
   udp: true
   type: trojan
@@ -75,6 +97,22 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇫🇮 芬兰 (Finland) 09 - netmix
+  server: mein-1.octavia.dpdns.org
+  port: 60000
+  udp: true
+  type: hysteria2
+  password: xo43w4tc13ou2h3x
+  sni: main-1.octavia.dpdns.org
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: ckwudzzsfoltmbmi
+- name: 🇫🇮 芬兰 (Finland) 10 - netmix
+  server: tanl.vudfaro.ir
+  port: 5064
+  udp: true
+  type: vless
+  uuid: 7df4f23f-b361-412a-883a-54dfdb5b8c8f
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,6 +124,10 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - netmix
   - 🇫🇮 芬兰 (Finland) 05 - netmix
   - 🇫🇮 芬兰 (Finland) 06 - netmix
+  - 🇫🇮 芬兰 (Finland) 07 - netmix
+  - 🇫🇮 芬兰 (Finland) 08 - netmix
+  - 🇫🇮 芬兰 (Finland) 09 - netmix
+  - 🇫🇮 芬兰 (Finland) 10 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,5 +139,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - netmix
   - 🇫🇮 芬兰 (Finland) 05 - netmix
   - 🇫🇮 芬兰 (Finland) 06 - netmix
+  - 🇫🇮 芬兰 (Finland) 07 - netmix
+  - 🇫🇮 芬兰 (Finland) 08 - netmix
+  - 🇫🇮 芬兰 (Finland) 09 - netmix
+  - 🇫🇮 芬兰 (Finland) 10 - netmix
 rules:
 - MATCH,PROXIES

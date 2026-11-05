@@ -4,8 +4,45 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇮🇩 印尼 (Indonesia) 01 - netmix",
+      "server": "188.114.97.6",
+      "server_port": 80,
+      "uuid": "33ebe52d-cd35-4d0f-a3e9-14adb7ff1ff4",
+      "transport": {
+        "type": "ws",
+        "path": "/id-tksi",
+        "headers": {
+          "Host": "www.genflix.co.id.r3xxe.eu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇩 印尼 (Indonesia) 02 - netmix",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "1246e51a-97cd-4d5c-9842-76dd3420bbe2",
+      "tls": {
+        "enabled": true,
+        "server_name": "investor.fb.com.r3xxe.eu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/id-tksi",
+        "headers": {
+          "Host": "investor.fb.com.r3xxe.eu.cc"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇩 印尼 (Indonesia) 03 - netmix",
       "server": "zfd-boardv2.kunlun01dns.com",
       "server_port": 16298,
       "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
@@ -16,14 +53,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - netmix"
+        "🇮🇩 印尼 (Indonesia) 01 - netmix",
+        "🇮🇩 印尼 (Indonesia) 02 - netmix",
+        "🇮🇩 印尼 (Indonesia) 03 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - netmix"
+        "🇮🇩 印尼 (Indonesia) 01 - netmix",
+        "🇮🇩 印尼 (Indonesia) 02 - netmix",
+        "🇮🇩 印尼 (Indonesia) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

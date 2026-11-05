@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - netmix",
+      "server": "95.182.115.178",
+      "server_port": 443,
+      "uuid": "db753334-5fd1-472b-b3e0-458bc2189c58",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - netmix",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -15,7 +23,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -26,7 +34,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - netmix",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - netmix",
       "server": "195.123.213.28",
       "server_port": 443,
       "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
@@ -51,7 +59,8 @@
       "outbounds": [
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - netmix",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - netmix"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - netmix",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - netmix"
       ]
     },
     {
@@ -59,7 +68,8 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - netmix",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - netmix"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - netmix",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 01 - netmix",
-      "server": "102.37.156.224",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "aduB9HGxQHjA2SBMRjkHX6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 02 - netmix",
       "server": "102.133.165.160",
       "server_port": 16233,
       "method": "chacha20-ietf-poly1305",
@@ -21,11 +13,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 03 - netmix",
-      "server": "38.54.64.62",
-      "server_port": 17161,
-      "method": "aes-128-gcm",
-      "password": "949b2348758e3fd1ec4a4f05882762b0"
+      "tag": "🇿🇦 南非 (South Africa) 02 - netmix",
+      "server": "102.37.156.224",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "aduB9HGxQHjA2SBMRjkHX6"
     },
     {
       "type": "selector",
@@ -33,8 +25,7 @@
       "outbounds": [
         "auto",
         "🇿🇦 南非 (South Africa) 01 - netmix",
-        "🇿🇦 南非 (South Africa) 02 - netmix",
-        "🇿🇦 南非 (South Africa) 03 - netmix"
+        "🇿🇦 南非 (South Africa) 02 - netmix"
       ]
     },
     {
@@ -42,8 +33,7 @@
       "tag": "auto",
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - netmix",
-        "🇿🇦 南非 (South Africa) 02 - netmix",
-        "🇿🇦 南非 (South Africa) 03 - netmix"
+        "🇿🇦 南非 (South Africa) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

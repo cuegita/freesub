@@ -6,16 +6,13 @@
     {
       "type": "trojan",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix",
-      "server": "125.227.86.45",
+      "server": "125.227.86.46",
       "server_port": 443,
       "password": "0a9f1f5a397bd427",
       "tls": {
         "enabled": true,
         "server_name": "TG.freecodes",
-        "insecure": true,
-        "alpn": [
-          "h2"
-        ]
+        "insecure": true
       },
       "transport": {
         "type": "grpc",
@@ -31,30 +28,7 @@
       "tls": {
         "enabled": true,
         "server_name": "px.ads.linkedin.com",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix",
-      "server": "terutrrj.d6f54hd1j.cc",
-      "server_port": 443,
-      "uuid": "a904e307-771f-498b-87ad-8e6e0d0ade4a",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "terutrrj.d6f54hd1j.cc",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "terutrrj.d6f54hd1j.cc"
-        }
+        "insecure": true
       }
     },
     {
@@ -63,8 +37,7 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix"
       ]
     },
     {
@@ -72,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
