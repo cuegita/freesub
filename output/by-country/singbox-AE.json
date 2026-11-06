@@ -6,12 +6,12 @@
     {
       "type": "trojan",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - netmix",
-      "server": "208.103.161.16",
-      "server_port": 2096,
-      "password": "hWsj5AwIRPF8",
+      "server": "arc.net",
+      "server_port": 2083,
+      "password": "BQbRrd5QMMEF",
       "tls": {
         "enabled": true,
-        "server_name": "rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV",
+        "server_name": "rayaN04-frqBdb4h-t2.rayAn-04.woRkers.dEv",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -22,14 +22,14 @@
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-          "Host": "rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV"
+          "Host": "rayaN04-frqBdb4h-t2.rayAn-04.woRkers.dEv"
         }
       }
     },
     {
       "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - netmix",
-      "server": "151.241.19.36",
+      "server": "151.241.19.29",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -53,7 +53,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - netmix",
-      "server": "151.241.19.29",
+      "server": "151.241.19.36",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -61,58 +61,12 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - netmix",
-      "server": "104.21.108.4",
-      "server_port": 443,
-      "uuid": "fa45096d-bed0-ad80-c773-23c300000018",
-      "tls": {
-        "enabled": true,
-        "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - netmix",
-      "server": "107.191.53.86",
-      "server_port": 4798,
-      "uuid": "f4053878-7905-4a41-9efa-3c55b954e569",
-      "tls": {
-        "enabled": true,
-        "server_name": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - netmix",
-      "server": "57.129.52.47",
+      "server": "57.129.130.57",
       "server_port": 52014,
-      "uuid": "b135a1e0-ebdb-4d46-b3fa-bd1e78580244",
+      "uuid": "4c6609bf-8457-4260-b4fa-321379e57a4e",
       "tls": {
         "enabled": true,
-        "server_name": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev",
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -123,13 +77,13 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 08 - netmix",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - netmix",
       "server": "38.180.11.182",
       "server_port": 12146,
       "method": "aes-128-gcm",
@@ -137,7 +91,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 09 - netmix",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - netmix",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
@@ -147,18 +101,25 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇦🇪 阿联酋 (UAE) 10 - netmix",
-      "server": "157.254.38.210",
-      "server_port": 20086,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 08 - netmix",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "3f87daa8-3af8-40a0-b655-127911e008dc",
       "tls": {
         "enabled": true,
-        "server_name": "hk.catxstar.com",
+        "server_name": "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev"
         }
       }
     },
@@ -174,9 +135,7 @@
         "🇦🇪 阿联酋 (UAE) 05 - netmix",
         "🇦🇪 阿联酋 (UAE) 06 - netmix",
         "🇦🇪 阿联酋 (UAE) 07 - netmix",
-        "🇦🇪 阿联酋 (UAE) 08 - netmix",
-        "🇦🇪 阿联酋 (UAE) 09 - netmix",
-        "🇦🇪 阿联酋 (UAE) 10 - netmix"
+        "🇦🇪 阿联酋 (UAE) 08 - netmix"
       ]
     },
     {
@@ -190,9 +149,7 @@
         "🇦🇪 阿联酋 (UAE) 05 - netmix",
         "🇦🇪 阿联酋 (UAE) 06 - netmix",
         "🇦🇪 阿联酋 (UAE) 07 - netmix",
-        "🇦🇪 阿联酋 (UAE) 08 - netmix",
-        "🇦🇪 阿联酋 (UAE) 09 - netmix",
-        "🇦🇪 阿联酋 (UAE) 10 - netmix"
+        "🇦🇪 阿联酋 (UAE) 08 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

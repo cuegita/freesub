@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - netmix",
-      "server": "65.108.240.210",
-      "server_port": 39018,
-      "uuid": "fa15684a-81e6-4ba7-bc4b-f601c0d998e9",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - netmix",
-      "server": "65.108.240.210",
-      "server_port": 39018,
-      "uuid": "8ca123a8-720b-47c5-bd0c-637431418b09",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - netmix",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - netmix",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "b79d736d-0f10-4169-b626-362059d18204",
@@ -41,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - netmix",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -55,28 +39,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
-      "server": "89.144.53.4",
-      "server_port": 8445,
-      "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "videos.porsche.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
-          "short_id": "1a2b3c4d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - netmix",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - netmix",
       "server": "217.144.188.185",
       "server_port": 443,
       "uuid": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
@@ -97,7 +60,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - netmix",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
       "server": "146.103.118.189",
       "server_port": 443,
       "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
@@ -115,32 +78,17 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - netmix",
-      "server": "84.22.150.39",
-      "server_port": 7443,
-      "uuid": "5cc814de-2bbb-4409-ad8c-ee841ca7bad1",
-      "tls": {
-        "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
-        }
-      }
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
+      "server": "65.108.240.210",
+      "server_port": 39018,
+      "uuid": "18f60a4c-ad76-4157-8ecb-661974f02f30",
+      "security": "auto"
     },
     {
       "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 09 - netmix",
-      "server": "172.66.0.1",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - netmix",
+      "server": "104.24.0.1",
       "server_port": 2053,
       "password": "gHQP0D7D15",
       "tls": {
@@ -164,6 +112,14 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - netmix",
+      "server": "65.108.240.210",
+      "server_port": 39018,
+      "uuid": "77fb7a80-4724-4e33-9558-4f20c1634c5a",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -174,9 +130,7 @@
         "🇫🇮 芬兰 (Finland) 04 - netmix",
         "🇫🇮 芬兰 (Finland) 05 - netmix",
         "🇫🇮 芬兰 (Finland) 06 - netmix",
-        "🇫🇮 芬兰 (Finland) 07 - netmix",
-        "🇫🇮 芬兰 (Finland) 08 - netmix",
-        "🇫🇮 芬兰 (Finland) 09 - netmix"
+        "🇫🇮 芬兰 (Finland) 07 - netmix"
       ]
     },
     {
@@ -189,9 +143,7 @@
         "🇫🇮 芬兰 (Finland) 04 - netmix",
         "🇫🇮 芬兰 (Finland) 05 - netmix",
         "🇫🇮 芬兰 (Finland) 06 - netmix",
-        "🇫🇮 芬兰 (Finland) 07 - netmix",
-        "🇫🇮 芬兰 (Finland) 08 - netmix",
-        "🇫🇮 芬兰 (Finland) 09 - netmix"
+        "🇫🇮 芬兰 (Finland) 07 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

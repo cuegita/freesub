@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - netmix
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -30,36 +14,118 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
-  server: 165.154.63.139
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: https://t.me/clashv8🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: 202.146.222.29
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
+  server: 47.244.120.197
+  port: 23026
+  udp: true
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
+  server: 47.244.120.197
+  port: 23026
+  udp: true
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - netmix
+  server: 47.244.120.197
+  port: 23026
+  udp: true
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
+  server: 47.244.120.197
+  port: 23026
+  udp: true
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - netmix
+  server: 47.244.120.197
+  port: 23026
+  udp: true
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  server: 47.244.120.197
+  port: 23026
+  udp: true
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - netmix
+  server: 47.244.120.197
+  port: 23026
+  udp: true
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - netmix
   server: 85.155.149.190
   port: 443
   udp: true
@@ -72,19 +138,17 @@ proxies:
     short-id: bee10b047804c637
   servername: hk1.japancase.site
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
-  server: 112.120.54.238
-  port: 39471
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - netmix
+  server: 152.175.6.229
+  port: 31884
   udp: true
   type: vless
-  uuid: 35bf718e-d929-457c-804a-2e9035d541c4
-  flow: xtls-rprx-vision
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
-  reality-opts:
-    public-key: 79kBx_jBo5cqkQ-9Hlm5s-1i_DnddFx9rJ8NBaXY-GQ
-  servername: www.byu.edu
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - netmix
+  servername: hk010.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - netmix
   server: vipccc.cc
   port: 443
   udp: true
@@ -100,15 +164,18 @@ proxies:
     path: /ray_proxy
     headers:
       Host: vipccc.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
-  server: hk010.zestapp778.com
-  port: 31884
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - netmix
+  server: 165.154.63.139
+  port: 443
   udp: true
   type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
   tls: true
-  servername: hk010.zestapp778.com
-  skip-cert-verify: false
+  reality-opts:
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  servername: www.amazon.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -125,6 +192,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 12 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 13 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 14 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 15 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -140,5 +212,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 12 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 13 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 14 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 15 - netmix
 rules:
 - MATCH,PROXIES

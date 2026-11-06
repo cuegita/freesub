@@ -46,27 +46,6 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - netmix",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - netmix",
       "server": "198.105.123.224",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -87,7 +66,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - netmix",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - netmix",
       "server": "153.56.210.61",
       "server_port": 443,
       "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
@@ -107,26 +86,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - netmix",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -134,9 +93,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - netmix",
         "🇹🇷 土耳其 (Turkey) 02 - netmix",
         "🇹🇷 土耳其 (Turkey) 03 - netmix",
-        "🇹🇷 土耳其 (Turkey) 04 - netmix",
-        "🇹🇷 土耳其 (Turkey) 05 - netmix",
-        "🇹🇷 土耳其 (Turkey) 06 - netmix"
+        "🇹🇷 土耳其 (Turkey) 04 - netmix"
       ]
     },
     {
@@ -146,9 +103,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - netmix",
         "🇹🇷 土耳其 (Turkey) 02 - netmix",
         "🇹🇷 土耳其 (Turkey) 03 - netmix",
-        "🇹🇷 土耳其 (Turkey) 04 - netmix",
-        "🇹🇷 土耳其 (Turkey) 05 - netmix",
-        "🇹🇷 土耳其 (Turkey) 06 - netmix"
+        "🇹🇷 土耳其 (Turkey) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

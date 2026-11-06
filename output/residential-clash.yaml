@@ -12,23 +12,16 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: us001.zestapp778.com
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - netmix
-  server: 49.254.204.133
-  port: 1774
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
+  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix
-  server: dog-hk.kunlun01dns.com
-  port: 21021
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
-  server: 125.227.86.46
+  type: hysteria2
+  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
+  server: 125.227.86.45
   port: 443
   udp: true
   type: trojan
@@ -38,6 +31,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: db
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
+  server: 112.120.123.140
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  sni: fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
+  skip-cert-verify: false
 - name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - netmix
   server: free.ertebatgoostar.ir
   port: 443
@@ -66,9 +67,9 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (移动家宽) - netmix
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
   - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
 - name: AUTO
@@ -77,9 +78,9 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (移动家宽) - netmix
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
   - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
 rules:

@@ -20,35 +20,46 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - netmix",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21021,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
+      "server": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
+        "insecure": true
+      }
     },
     {
       "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix",
-      "server": "125.227.86.46",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix",
+      "server": "125.227.86.45",
       "server_port": 443,
       "password": "0a9f1f5a397bd427",
       "tls": {
         "enabled": true,
         "server_name": "TG.freecodes",
-        "insecure": true
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
       },
       "transport": {
         "type": "grpc",
         "service_name": "db"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix",
+      "server": "112.120.123.140",
+      "server_port": 443,
+      "password": "40fb1315-191a-11ed-b0ca-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com",
+        "insecure": false
       }
     },
     {
@@ -84,9 +95,9 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (移动家宽) - netmix",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix",
         "🇹🇷 土耳其 (Turkey) 05 (移动家宽) - netmix",
         "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix"
       ]
@@ -96,9 +107,9 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (移动家宽) - netmix",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix",
         "🇹🇷 土耳其 (Turkey) 05 (移动家宽) - netmix",
         "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix"
       ],
