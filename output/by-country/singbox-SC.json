@@ -4,17 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - netmix",
-      "server": "45.207.207.25",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "gj1+XKulKV0nmw6IThckOkkJh5DSM7+C"
+      "server": "46.29.255.123",
+      "server_port": 59539,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloudflare-dns.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ",
+          "short_id": ""
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - netmix",
-      "server": "hk3n.wxgqlfx.vip",
+      "server": "156.226.168.221",
       "server_port": 35193,
       "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
       "flow": "xtls-rprx-vision",
@@ -23,7 +36,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -33,12 +46,56 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - netmix",
+      "server": "13.143.184.61",
+      "server_port": 2083,
+      "uuid": "2f6c70f3-206a-4bc1-ac1f-6b70153f9c73",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "unpkg.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko",
+          "short_id": "b0d8c9a285c70f6f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 04 - netmix",
+      "server": "connect.accessgate.link",
+      "server_port": 2081,
+      "uuid": "2f6c70f3-206a-4bc1-ac1f-6b70153f9c73",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "unpkg.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko",
+          "short_id": "b0d8c9a285c70f6f"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - netmix",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - netmix"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - netmix",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - netmix",
+        "🇸🇨 塞舌尔 (Seychelles) 04 - netmix"
       ]
     },
     {
@@ -46,7 +103,9 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - netmix",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - netmix"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - netmix",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - netmix",
+        "🇸🇨 塞舌尔 (Seychelles) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

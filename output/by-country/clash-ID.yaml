@@ -5,26 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - netmix
-  server: 130.94.95.198
+  server: 103.172.197.3
+  port: 16006
+  udp: true
+  type: vless
+  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇩 印尼 (Indonesia) 02 - netmix
+  server: in001.zestapp778.com
   port: 57353
   udp: true
   type: vless
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
   servername: in001.zestapp778.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇩 印尼 (Indonesia) 01 - netmix
+  - 🇮🇩 印尼 (Indonesia) 02 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇩 印尼 (Indonesia) 01 - netmix
+  - 🇮🇩 印尼 (Indonesia) 02 - netmix
 rules:
 - MATCH,PROXIES

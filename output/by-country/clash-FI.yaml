@@ -5,17 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - netmix
-  server: 95.216.27.15
-  port: 2053
+  server: 65.108.240.210
+  port: 39018
   udp: true
-  type: vless
-  uuid: b79d736d-0f10-4169-b626-362059d18204
-  tls: true
-  reality-opts:
-    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
-    short-id: 10351b07c712d2a2
-  servername: www.cloudflare.com
-  client-fingerprint: ''
+  type: vmess
+  uuid: 45dc10c6-04c8-4c70-a06a-d396254a6c0b
+  alterId: 0
+  cipher: auto
 - name: 🇫🇮 芬兰 (Finland) 02 - netmix
   server: 45.144.234.157
   port: 14430
@@ -28,6 +24,18 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - netmix
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b79d736d-0f10-4169-b626-362059d18204
+  tls: true
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+    short-id: 10351b07c712d2a2
+  servername: www.cloudflare.com
+  client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 04 - netmix
   server: 217.144.188.185
   port: 443
   udp: true
@@ -39,30 +47,8 @@ proxies:
     public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
   servername: www.nordea.fi
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - netmix
-  server: 146.103.118.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
-  tls: true
-  servername: nl2.574ck.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /574ck-finland
-    headers:
-      Host: nl2.574ck.xyz
 - name: 🇫🇮 芬兰 (Finland) 05 - netmix
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: 18f60a4c-ad76-4157-8ecb-661974f02f30
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 06 - netmix
-  server: 104.24.0.1
+  server: 104.18.0.1
   port: 2053
   udp: true
   type: trojan
@@ -72,14 +58,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇫🇮 芬兰 (Finland) 07 - netmix
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,8 +68,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - netmix
   - 🇫🇮 芬兰 (Finland) 04 - netmix
   - 🇫🇮 芬兰 (Finland) 05 - netmix
-  - 🇫🇮 芬兰 (Finland) 06 - netmix
-  - 🇫🇮 芬兰 (Finland) 07 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -102,7 +78,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - netmix
   - 🇫🇮 芬兰 (Finland) 04 - netmix
   - 🇫🇮 芬兰 (Finland) 05 - netmix
-  - 🇫🇮 芬兰 (Finland) 06 - netmix
-  - 🇫🇮 芬兰 (Finland) 07 - netmix
 rules:
 - MATCH,PROXIES

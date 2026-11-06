@@ -4,34 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - netmix
-  server: 130.94.19.95
-  port: 57277
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
+  server: dog-hk.kunlun01dns.com
+  port: 21022
   udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us001.zestapp778.com
-  skip-cert-verify: false
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  server: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
-  server: 125.227.86.45
-  port: 443
-  udp: true
-  type: trojan
-  password: 0a9f1f5a397bd427
-  sni: TG.freecodes
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: db
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
+  password: 367e233c-2f54-11ee-9ae1-f23c9164ca5d
+  sni: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
   server: 112.120.123.140
   port: 443
   udp: true
@@ -39,15 +28,7 @@ proxies:
   password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
   sni: fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
   skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - netmix
-  server: free.ertebatgoostar.ir
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 1ffa1361-1552-45cc-ba33-dc9a71d37476
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
   server: 60.248.219.78
   port: 443
   udp: true
@@ -66,22 +47,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
-  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
 rules:
 - MATCH,PROXIES

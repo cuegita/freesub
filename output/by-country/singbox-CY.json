@@ -6,13 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - netmix",
-      "server": "45.86.60.174",
-      "server_port": 16443,
-      "uuid": "13e541f3-d09d-4633-89df-8513db0ced20"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - netmix",
       "server": "45.86.60.190",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -33,24 +26,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - netmix",
-      "server": "5.253.30.99",
-      "server_port": 40443,
-      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
-        }
-      }
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - netmix",
+      "server": "45.86.60.174",
+      "server_port": 16443,
+      "uuid": "13e541f3-d09d-4633-89df-8513db0ced20"
     },
     {
       "type": "selector",
@@ -58,8 +37,7 @@
       "outbounds": [
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01 - netmix",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - netmix",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - netmix"
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - netmix"
       ]
     },
     {
@@ -67,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01 - netmix",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - netmix",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - netmix"
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

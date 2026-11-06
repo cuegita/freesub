@@ -30,6 +30,26 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
+      "server": "83.147.13.74",
+      "server_port": 8443,
+      "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.githubassets.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
+          "short_id": "4ad2e4e660550e43"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
       "server": "152.32.167.33",
       "server_port": 443,
       "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
@@ -49,13 +69,27 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - netmix",
+      "server": "18.141.210.28",
+      "server_port": 10000,
+      "password": "eRlY6dXnQ4QUzVOQi6YDfZWq",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg-transit-3.nebulacloud.win",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 03 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 05 - netmix"
       ]
     },
     {
@@ -64,7 +98,9 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 03 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 05 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

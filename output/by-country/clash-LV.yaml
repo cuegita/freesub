@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - netmix
-  server: live.flicker.work
-  port: 443
-  udp: true
-  type: vless
-  uuid: 255a8044-3337-473e-af26-46a37208adcc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PZwky05a2NPTC1x7YolaKV7IGDuJDJD47fUEk8nVqFw
-    short-id: 1995a38bfed15b2a
-  servername: live.flicker.work
-  client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - netmix
   server: 195.123.213.28
   port: 443
   udp: true
@@ -30,7 +17,7 @@ proxies:
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - netmix
   server: 138.124.180.137
   port: 443
   udp: true
@@ -42,7 +29,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - netmix
   - 🇱🇻 拉脱维亚 (Latvia) 02 - netmix
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - netmix
   - 🇱🇻 拉脱维亚 (Latvia) 02 - netmix
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - netmix
 rules:
 - MATCH,PROXIES

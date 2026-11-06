@@ -5,24 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - netmix
-  server: arc.net
-  port: 2083
-  udp: true
-  type: trojan
-  password: BQbRrd5QMMEF
-  sni: rayaN04-frqBdb4h-t2.rayAn-04.woRkers.dEv
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-- name: 🇦🇪 阿联酋 (UAE) 02 - netmix
   server: 151.241.19.29
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 03 - netmix
+- name: 🇦🇪 阿联酋 (UAE) 02 - netmix
   server: 130.49.161.70
   port: 443
   udp: true
@@ -32,36 +21,14 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - netmix
+- name: 🇦🇪 阿联酋 (UAE) 03 - netmix
   server: 151.241.19.36
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 05 - netmix
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 4c6609bf-8457-4260-b4fa-321379e57a4e
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 06 - netmix
-  server: 38.180.11.182
-  port: 12146
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 37a7c5fb6a3109207a0860d30bedb37c
-- name: 🇦🇪 阿联酋 (UAE) 07 - netmix
+- name: 🇦🇪 阿联酋 (UAE) 04 - netmix
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -70,21 +37,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 08 - netmix
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 3f87daa8-3af8-40a0-b655-127911e008dc
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,10 +46,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - netmix
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
-  - 🇦🇪 阿联酋 (UAE) 05 - netmix
-  - 🇦🇪 阿联酋 (UAE) 06 - netmix
-  - 🇦🇪 阿联酋 (UAE) 07 - netmix
-  - 🇦🇪 阿联酋 (UAE) 08 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -107,9 +55,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - netmix
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
-  - 🇦🇪 阿联酋 (UAE) 05 - netmix
-  - 🇦🇪 阿联酋 (UAE) 06 - netmix
-  - 🇦🇪 阿联酋 (UAE) 07 - netmix
-  - 🇦🇪 阿联酋 (UAE) 08 - netmix
 rules:
 - MATCH,PROXIES
