@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - netmix
+  server: 185.18.250.252
+  port: 443
+  udp: true
+  type: trojan
+  password: 74480619-b6a8-4ab8-94e1-1132fc18b2fa
+  sni: unnes.ac.id.r3xxe.eu.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /au-mt
+- name: 🇦🇺 澳大利亚 (Australia) 02 - netmix
   server: 152.67.115.203
   port: 443
   udp: true
@@ -14,13 +25,21 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇦🇺 澳大利亚 (Australia) 02 - netmix
+- name: 🇦🇺 澳大利亚 (Australia) 03 - netmix
   server: 45.63.30.142
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: 45.63.30.142
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 04 - netmix
+  server: 211.20.156.191
+  port: 28161
+  udp: true
+  type: trojan
+  password: i99Cef
+  sni: download.windowsupdate.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -29,6 +48,8 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - netmix
   - 🇦🇺 澳大利亚 (Australia) 02 - netmix
+  - 🇦🇺 澳大利亚 (Australia) 03 - netmix
+  - 🇦🇺 澳大利亚 (Australia) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +57,7 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - netmix
   - 🇦🇺 澳大利亚 (Australia) 02 - netmix
+  - 🇦🇺 澳大利亚 (Australia) 03 - netmix
+  - 🇦🇺 澳大利亚 (Australia) 04 - netmix
 rules:
 - MATCH,PROXIES

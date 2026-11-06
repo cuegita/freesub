@@ -19,18 +19,6 @@
     {
       "type": "trojan",
       "tag": "🇧🇷 巴西 (Brazil) 02 - netmix",
-      "server": "216.238.104.154",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇧🇷 巴西 (Brazil) 03 - netmix",
       "server": "br001.zestapp778.com",
       "server_port": 39533,
       "password": "5t6i121em5lkmsmk",
@@ -41,13 +29,42 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇧🇷 巴西 (Brazil) 03 - netmix",
+      "server": "216.238.104.154",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇧🇷 巴西 (Brazil) 04 - netmix",
+      "server": "211.20.156.191",
+      "server_port": 28123,
+      "password": "i99Cef",
+      "tls": {
+        "enabled": true,
+        "server_name": "ctldl.windowsupdate.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇧🇷 巴西 (Brazil) 01 - netmix",
         "🇧🇷 巴西 (Brazil) 02 - netmix",
-        "🇧🇷 巴西 (Brazil) 03 - netmix"
+        "🇧🇷 巴西 (Brazil) 03 - netmix",
+        "🇧🇷 巴西 (Brazil) 04 - netmix"
       ]
     },
     {
@@ -56,7 +73,8 @@
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 - netmix",
         "🇧🇷 巴西 (Brazil) 02 - netmix",
-        "🇧🇷 巴西 (Brazil) 03 - netmix"
+        "🇧🇷 巴西 (Brazil) 03 - netmix",
+        "🇧🇷 巴西 (Brazil) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

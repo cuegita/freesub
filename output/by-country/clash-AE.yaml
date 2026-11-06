@@ -5,14 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - netmix
-  server: 151.241.19.36
-  port: 19999
+  server: 208.103.161.16
+  port: 2096
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: trojan
+  password: hWsj5AwIRPF8
+  sni: rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
 - name: 🇦🇪 阿联酋 (UAE) 02 - netmix
-  server: 151.241.19.29
+  server: 151.241.19.36
   port: 19999
   udp: true
   type: ss
@@ -29,14 +33,65 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - netmix
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16284
+  server: 151.241.19.29
+  port: 19999
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 05 - netmix
+  server: 104.21.108.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: fa45096d-bed0-ad80-c773-23c300000018
+  tls: true
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 06 - netmix
+  server: 107.191.53.86
+  port: 4798
+  udp: true
+  type: vless
+  uuid: f4053878-7905-4a41-9efa-3c55b954e569
+  tls: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 07 - netmix
+  server: 57.129.52.47
+  port: 52014
+  udp: true
+  type: vless
+  uuid: b135a1e0-ebdb-4d46-b3fa-bd1e78580244
+  tls: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 08 - netmix
+  server: 38.180.11.182
+  port: 12146
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 37a7c5fb6a3109207a0860d30bedb37c
+- name: 🇦🇪 阿联酋 (UAE) 09 - netmix
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -45,11 +100,9 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 06 - netmix
-  server: Sclass-00.catcat321.com
-  port: 20123
+- name: 🇦🇪 阿联酋 (UAE) 10 - netmix
+  server: 157.254.38.210
+  port: 20086
   udp: true
   type: trojan
   password: d9064589-74af-432a-9390-5d8a9da281bf
@@ -66,6 +119,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
   - 🇦🇪 阿联酋 (UAE) 05 - netmix
   - 🇦🇪 阿联酋 (UAE) 06 - netmix
+  - 🇦🇪 阿联酋 (UAE) 07 - netmix
+  - 🇦🇪 阿联酋 (UAE) 08 - netmix
+  - 🇦🇪 阿联酋 (UAE) 09 - netmix
+  - 🇦🇪 阿联酋 (UAE) 10 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,5 +134,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
   - 🇦🇪 阿联酋 (UAE) 05 - netmix
   - 🇦🇪 阿联酋 (UAE) 06 - netmix
+  - 🇦🇪 阿联酋 (UAE) 07 - netmix
+  - 🇦🇪 阿联酋 (UAE) 08 - netmix
+  - 🇦🇪 阿联酋 (UAE) 09 - netmix
+  - 🇦🇪 阿联酋 (UAE) 10 - netmix
 rules:
 - MATCH,PROXIES
