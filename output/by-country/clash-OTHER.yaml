@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - netmix
-  server: 172.67.165.32
-  port: 8443
+  server: 104.21.60.109
+  port: 443
   udp: true
   type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   tls: true
-  servername: n04.jinggai.online
+  servername: u.srilankangrill.online
   skip-cert-verify: false
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
+    path: /
     headers:
-      Host: n04.jinggai.online
+      Host: u.srilankangrill.online
 proxy-groups:
 - name: PROXIES
   type: select

@@ -8,7 +8,7 @@
       "tag": "🇫🇮 芬兰 (Finland) 01 - netmix",
       "server": "65.108.240.210",
       "server_port": 39018,
-      "uuid": "45dc10c6-04c8-4c70-a06a-d396254a6c0b",
+      "uuid": "8ca123a8-720b-47c5-bd0c-637431418b09",
       "security": "auto"
     },
     {
@@ -46,43 +46,51 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
-      "server": "217.144.188.185",
+      "server": "199.232.8.223",
       "server_port": 443,
-      "uuid": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
-      "flow": "xtls-rprx-vision",
+      "password": "TtI1G9ChUwNxRuPgOxiPNwAd6FN4BlBJ",
       "tls": {
         "enabled": true,
-        "server_name": "www.nordea.fi",
+        "server_name": "community.fastly.steamstatic.com",
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk",
-          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Hokkaneno-acc2-pirima.global.ssl.fastly.net"
         }
       }
     },
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
-      "server": "104.18.0.1",
+      "server": "cd0.bmi.ir.kolman.com.de",
+      "server_port": 80,
+      "uuid": "fe4d2b3e-965f-4389-a6e4-05887ef5fd2b",
+      "security": "auto",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/f9bGbG7ZNy5L0tzXKZNxSX4q",
+        "host": "bmi.ir.draft.co.impossible.com.ir.bmi.ir.com.iran.ir6.ifilmino.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - netmix",
+      "server": "104.24.0.1",
       "server_port": 2053,
       "password": "gHQP0D7D15",
       "tls": {
         "enabled": true,
         "server_name": "marvdasht.phonecomparisonblog.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -93,6 +101,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - netmix",
+      "server": "6.bmi.ir.asopardaz.ir",
+      "server_port": 8443,
+      "uuid": "fe4d2b3e-965f-4389-a6e4-05887ef5fd2b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hostgator.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
+          "short_id": "e915"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 08 - netmix",
+      "server": "6.bmi.ir.asopardaz.ir",
+      "server_port": 35176,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "NjcyNmVjMTU1ZWU5NDA5ZDk0ODg1NWM1MzJjZTE3NDk=:ZmU0ZDJiM2U5NjVmNDM4OWE2ZTQwNTg4N2VmNWZkMmI="
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -101,7 +138,10 @@
         "🇫🇮 芬兰 (Finland) 02 - netmix",
         "🇫🇮 芬兰 (Finland) 03 - netmix",
         "🇫🇮 芬兰 (Finland) 04 - netmix",
-        "🇫🇮 芬兰 (Finland) 05 - netmix"
+        "🇫🇮 芬兰 (Finland) 05 - netmix",
+        "🇫🇮 芬兰 (Finland) 06 - netmix",
+        "🇫🇮 芬兰 (Finland) 07 - netmix",
+        "🇫🇮 芬兰 (Finland) 08 - netmix"
       ]
     },
     {
@@ -112,7 +152,10 @@
         "🇫🇮 芬兰 (Finland) 02 - netmix",
         "🇫🇮 芬兰 (Finland) 03 - netmix",
         "🇫🇮 芬兰 (Finland) 04 - netmix",
-        "🇫🇮 芬兰 (Finland) 05 - netmix"
+        "🇫🇮 芬兰 (Finland) 05 - netmix",
+        "🇫🇮 芬兰 (Finland) 06 - netmix",
+        "🇫🇮 芬兰 (Finland) 07 - netmix",
+        "🇫🇮 芬兰 (Finland) 08 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

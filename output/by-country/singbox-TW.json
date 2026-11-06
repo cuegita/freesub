@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
-      "server": "160.187.100.109",
+      "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
@@ -28,8 +28,24 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
+      "server": "125.227.86.46",
+      "server_port": 443,
+      "password": "0a9f1f5a397bd427",
+      "tls": {
+        "enabled": true,
+        "server_name": "TG.freecodes",
+        "insecure": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
       "server": "83.147.13.74",
       "server_port": 8443,
       "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
@@ -49,7 +65,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - netmix",
       "server": "152.32.167.33",
       "server_port": 443,
       "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
@@ -59,7 +75,7 @@
         "server_name": "www.amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -70,7 +86,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 - netmix",
       "server": "18.141.210.28",
       "server_port": 10000,
       "password": "eRlY6dXnQ4QUzVOQi6YDfZWq",
@@ -89,7 +105,8 @@
         "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 05 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 05 - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 06 - netmix"
       ]
     },
     {
@@ -100,7 +117,8 @@
         "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 05 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 05 - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 06 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

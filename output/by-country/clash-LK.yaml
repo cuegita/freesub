@@ -13,7 +13,7 @@ proxies:
   tls: true
   servername: free.vkehi.store
   skip-cert-verify: false
-  client-fingerprint: android
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /

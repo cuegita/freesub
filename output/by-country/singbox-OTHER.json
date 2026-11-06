@@ -6,23 +6,23 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - netmix",
-      "server": "172.67.165.32",
-      "server_port": 8443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "server": "104.21.60.109",
+      "server_port": 443,
+      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
       "tls": {
         "enabled": true,
-        "server_name": "n04.jinggai.online",
+        "server_name": "u.srilankangrill.online",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
+        "path": "/",
         "headers": {
-          "Host": "n04.jinggai.online"
+          "Host": "u.srilankangrill.online"
         }
       }
     },
