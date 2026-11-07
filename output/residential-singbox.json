@@ -4,8 +4,73 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - netmix",
+      "server": "104.21.13.229",
+      "server_port": 443,
+      "uuid": "5f11c240-89df-494c-9c81-8b619023bb58",
+      "tls": {
+        "enabled": true,
+        "server_name": "789156.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "789156.xyz"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 02 (移动家宽) - netmix",
+      "server": "idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev",
+      "server_port": 443,
+      "password": "TsX0XJKMa2h$CbKr0k",
+      "tls": {
+        "enabled": true,
+        "server_name": "iDB8onmvBnTuyt5T7T6CejfW8vlRb.PagES.DeV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/60XnEWrAQkStT4oTTwmkao9a4sc"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix",
+      "server": "125.227.86.45",
+      "server_port": 443,
+      "password": "0a9f1f5a397bd427",
+      "tls": {
+        "enabled": true,
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix",
       "server": "dog-hk.kunlun01dns.com",
       "server_port": 21022,
       "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
@@ -13,7 +78,7 @@
     },
     {
       "type": "tuic",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix",
       "server": "54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com",
       "server_port": 443,
       "uuid": "73bfcc1c-5814-5f2a-b43a-3ef6af011db8",
@@ -31,21 +96,57 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
-      "server": "e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix",
+      "server": "9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
+      "password": "3be8cba8-b721-11ec-8b04-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com",
-        "insecure": true
+        "server_name": "9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - netmix",
+      "server": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "3bd247a8-993e-11ec-a8bf-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
+        "insecure": false
       }
     },
     {
       "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 (移动家宽) - netmix",
       "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21021,
+      "server_port": 21020,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 09 (家宽) - netmix",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 10 (家宽) - netmix",
+      "server": "dog-tw.kunlun01dns.com",
+      "server_port": 21035,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 11 (家宽) - netmix",
+      "server": "dog-tw.kunlun01dns.com",
+      "server_port": 21037,
       "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
       "security": "auto"
     },
@@ -54,20 +155,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix"
+        "🇺🇸 美国 (United States) 01 (家宽) - netmix",
+        "🇩🇪 德国 (Germany) 02 (移动家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 08 (移动家宽) - netmix",
+        "🇰🇷 韩国 (South Korea) 09 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 10 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 11 (家宽) - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix"
+        "🇺🇸 美国 (United States) 01 (家宽) - netmix",
+        "🇩🇪 德国 (Germany) 02 (移动家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 08 (移动家宽) - netmix",
+        "🇰🇷 韩国 (South Korea) 09 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 10 (家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 11 (家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

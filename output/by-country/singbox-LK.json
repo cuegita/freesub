@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - netmix",
-      "server": "news.zoom.us",
+      "server": "141.193.213.20",
       "server_port": 2087,
       "uuid": "0ef68b97-f878-4cea-b756-c56ea3632851",
       "tls": {
@@ -18,7 +18,7 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "android"
         }
       },
       "transport": {

@@ -9,20 +9,21 @@ proxies:
   port: 39018
   udp: true
   type: vmess
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  uuid: 96c987c9-c2d9-4993-b9bd-c9bc36255ee1
   alterId: 0
   cipher: auto
 - name: 🇫🇮 芬兰 (Finland) 02 - netmix
-  server: 45.144.234.157
-  port: 14430
+  server: 217.144.188.185
+  port: 443
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
+  servername: www.nordea.fi
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - netmix
   server: 95.216.27.15
   port: 2053
@@ -36,27 +37,33 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 04 - netmix
-  server: 199.232.8.223
-  port: 443
+  server: 45.144.234.157
+  port: 14430
   udp: true
-  type: trojan
-  password: TtI1G9ChUwNxRuPgOxiPNwAd6FN4BlBJ
-  sni: community.fastly.steamstatic.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   network: ws
   ws-opts:
-    path: /
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 05 - netmix
-  server: cd0.bmi.ir.kolman.com.de
-  port: 80
+  server: 84.22.150.39
+  port: 7443
   udp: true
-  type: vmess
-  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
+  type: vless
+  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 - name: 🇫🇮 芬兰 (Finland) 06 - netmix
-  server: 104.24.0.1
+  server: 172.66.0.1
   port: 2053
   udp: true
   type: trojan
@@ -67,25 +74,28 @@ proxies:
   ws-opts:
     path: /
 - name: 🇫🇮 芬兰 (Finland) 07 - netmix
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
+  server: 65.108.240.210
+  port: 39018
+  udp: true
+  type: vmess
+  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
+  alterId: 0
+  cipher: auto
+- name: 🇫🇮 芬兰 (Finland) 08 - netmix
+  server: latvia.zovip2.ir
+  port: 443
   udp: true
   type: vless
-  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
-  flow: xtls-rprx-vision
+  uuid: 3694cbd9-986b-4bf3-95df-3649b37ccb47
   tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
+  servername: sync.zovip2.ir
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 08 - netmix
-  server: 6.bmi.ir.asopardaz.ir
-  port: 35176
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: NjcyNmVjMTU1ZWU5NDA5ZDk0ODg1NWM1MzJjZTE3NDk=:ZmU0ZDJiM2U5NjVmNDM4OWE2ZTQwNTg4N2VmNWZkMmI=
+  network: ws
+  ws-opts:
+    path: /api/v3/pulse
+    headers:
+      Host: sync.zovip2.ir
 proxy-groups:
 - name: PROXIES
   type: select

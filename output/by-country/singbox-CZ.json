@@ -46,12 +46,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - netmix",
+      "server": "193.124.17.190",
+      "server_port": 443,
+      "uuid": "13aef2e0-b3fb-4322-a0e9-c10b908ce6b5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.techradar.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "87f895f23064"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - netmix",
-        "🇨🇿 捷克 (Czech) 02 - netmix"
+        "🇨🇿 捷克 (Czech) 02 - netmix",
+        "🇨🇿 捷克 (Czech) 03 - netmix"
       ]
     },
     {
@@ -59,7 +81,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - netmix",
-        "🇨🇿 捷克 (Czech) 02 - netmix"
+        "🇨🇿 捷克 (Czech) 02 - netmix",
+        "🇨🇿 捷克 (Czech) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

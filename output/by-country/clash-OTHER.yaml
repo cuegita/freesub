@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - netmix
-  server: 104.21.60.109
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless

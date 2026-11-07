@@ -5,29 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - netmix
-  server: 103.172.197.3
-  port: 16006
+  server: 188.114.97.6
+  port: 80
   udp: true
   type: vless
-  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  uuid: 33ebe52d-cd35-4d0f-a3e9-14adb7ff1ff4
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: www.genflix.co.id.r3xxe.eu.cc
 - name: 🇮🇩 印尼 (Indonesia) 02 - netmix
-  server: 103.172.197.2
-  port: 29172
+  server: 188.114.97.6
+  port: 443
   udp: true
   type: vless
-  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
-  flow: xtls-rprx-vision
+  uuid: 1246e51a-97cd-4d5c-9842-76dd3420bbe2
   tls: true
-  reality-opts:
-    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
-  servername: aws.amazon.com
+  servername: investor.fb.com.r3xxe.eu.cc
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: investor.fb.com.r3xxe.eu.cc
+- name: 🇮🇩 印尼 (Indonesia) 03 - netmix
+  server: free2.rajaserver2.web.id
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 4d4708ef-0729-44ac-b2b0-411ce0242e89
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: free2.rajaserver2.web.id
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +50,7 @@ proxy-groups:
   - AUTO
   - 🇮🇩 印尼 (Indonesia) 01 - netmix
   - 🇮🇩 印尼 (Indonesia) 02 - netmix
+  - 🇮🇩 印尼 (Indonesia) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +58,6 @@ proxy-groups:
   proxies:
   - 🇮🇩 印尼 (Indonesia) 01 - netmix
   - 🇮🇩 印尼 (Indonesia) 02 - netmix
+  - 🇮🇩 印尼 (Indonesia) 03 - netmix
 rules:
 - MATCH,PROXIES
