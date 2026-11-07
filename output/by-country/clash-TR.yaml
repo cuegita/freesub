@@ -5,35 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - netmix
-  server: 93.190.9.194
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 1589e19a-4ff8-4064-b58a-97f8bfd91b3f
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 02 - netmix
-  server: 153.56.210.134
-  port: 34121
-  udp: true
-  type: hysteria2
-  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
-- name: 🇹🇷 土耳其 (Turkey) 03 - netmix
-  server: 153.56.210.134
-  port: 57251
-  udp: true
-  type: hysteria2
-  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
-- name: 🇹🇷 土耳其 (Turkey) 04 - netmix
   server: 153.56.210.134
   port: 38045
   udp: true
@@ -43,6 +14,38 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
+- name: 🇹🇷 土耳其 (Turkey) 02 - netmix
+  server: 153.56.210.134
+  port: 57251
+  udp: true
+  type: hysteria2
+  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
+- name: 🇹🇷 土耳其 (Turkey) 03 - netmix
+  server: 153.56.210.134
+  port: 34121
+  udp: true
+  type: hysteria2
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+- name: 🇹🇷 土耳其 (Turkey) 04 - netmix
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 05 - netmix
   server: 62.133.63.45
   port: 8444
@@ -52,8 +55,9 @@ proxies:
   tls: true
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -71,31 +75,6 @@ proxies:
   servername: amd.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 07 - netmix
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 08 - netmix
-  server: falmero.store
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8fb19a9e-ca2b-433a-8469-e4c7796033b2
-  tls: true
-  servername: falmero.store
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: glush.de1.v1
-- name: 🇹🇷 土耳其 (Turkey) 09 - netmix
   server: tr1.japancase.site
   port: 443
   udp: true
@@ -107,7 +86,7 @@ proxies:
     public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
     short-id: 41ae8e266bc3346f
   servername: tr1.japancase.site
-  client-fingerprint: chrome
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -120,8 +99,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - netmix
   - 🇹🇷 土耳其 (Turkey) 06 - netmix
   - 🇹🇷 土耳其 (Turkey) 07 - netmix
-  - 🇹🇷 土耳其 (Turkey) 08 - netmix
-  - 🇹🇷 土耳其 (Turkey) 09 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -134,7 +111,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - netmix
   - 🇹🇷 土耳其 (Turkey) 06 - netmix
   - 🇹🇷 土耳其 (Turkey) 07 - netmix
-  - 🇹🇷 土耳其 (Turkey) 08 - netmix
-  - 🇹🇷 土耳其 (Turkey) 09 - netmix
 rules:
 - MATCH,PROXIES

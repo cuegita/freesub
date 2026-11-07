@@ -6,6 +6,41 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - netmix",
+      "server": "buydomains.com",
+      "server_port": 8080,
+      "uuid": "c4940726-7300-46f8-a8ce-925c2b2d6612",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "qgJdrswc-8hh1pa.qgjdRswc.woRkers.deV"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - netmix",
+      "server": "212.102.38.25",
+      "server_port": 443,
+      "uuid": "b34a52cb-cd52-49a8-9362-b8e97c151d49",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "udemy.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE",
+          "short_id": "e90360ec7cc61b20"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - netmix",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -26,29 +61,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - netmix",
-      "server": "212.102.38.25",
-      "server_port": 443,
-      "uuid": "b34a52cb-cd52-49a8-9362-b8e97c151d49",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "udemy.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE",
-          "short_id": "e90360ec7cc61b20"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - netmix",
-      "server": "193.124.17.190",
+      "tag": "🇨🇿 捷克 (Czech) 04 - netmix",
+      "server": "server.slavkiti.monster",
       "server_port": 443,
       "uuid": "13aef2e0-b3fb-4322-a0e9-c10b908ce6b5",
       "flow": "xtls-rprx-vision",
@@ -57,7 +71,7 @@
         "server_name": "www.techradar.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -73,7 +87,8 @@
         "auto",
         "🇨🇿 捷克 (Czech) 01 - netmix",
         "🇨🇿 捷克 (Czech) 02 - netmix",
-        "🇨🇿 捷克 (Czech) 03 - netmix"
+        "🇨🇿 捷克 (Czech) 03 - netmix",
+        "🇨🇿 捷克 (Czech) 04 - netmix"
       ]
     },
     {
@@ -82,7 +97,8 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - netmix",
         "🇨🇿 捷克 (Czech) 02 - netmix",
-        "🇨🇿 捷克 (Czech) 03 - netmix"
+        "🇨🇿 捷克 (Czech) 03 - netmix",
+        "🇨🇿 捷克 (Czech) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

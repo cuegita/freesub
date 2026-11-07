@@ -16,9 +16,9 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
-  server: 95.57.50.87
+  server: kz1.japancase.site
   port: 443
   udp: true
   type: vless
@@ -29,7 +29,7 @@ proxies:
     public-key: eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE
     short-id: 4000cdda6278d236
   servername: kz1.japancase.site
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
   server: 109.248.170.119
   port: 13447
